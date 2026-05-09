@@ -73,6 +73,7 @@ Important generated files:
 - `public/data/leaderboards.json`: benchmark leaderboards used by the app.
 - `public/data/metadata.json`: source and generation metadata.
 - `public/data/graph.json`: generated graph-oriented data.
+- `public/data/data-change.json`: comparison between the previous generated snapshot and the latest refresh.
 - `public/data/unreachable-overall-pairs.json`: lower-intelligence source models that cannot reach higher-intelligence targets in `Overall`.
 - `public/data/report.json`: statistics used by the Report tab.
 
@@ -238,7 +239,7 @@ Data updates are handled by:
 .github/workflows/update-aa-data.yml
 ```
 
-The workflow runs daily and can also be triggered manually from GitHub Actions.
+The workflow runs once a week on Monday at 03:17 UTC and can also be triggered manually from GitHub Actions.
 
 Required GitHub secret:
 
@@ -253,6 +254,20 @@ The workflow:
 3. Runs `npm run data:report`.
 4. Runs `npm test`.
 5. Commits changed `public/data/*.json` files.
+
+During `npm run data:update`, the script compares the previous generated files in `public/data/` with the new Artificial Analysis response. It writes the result to:
+
+```text
+public/data/data-change.json
+```
+
+Then `npm run data:report` embeds that summary into `public/data/report.json`, so the Report tab can describe what changed in the latest data refresh. The change summary includes:
+
+- model count before and after the refresh;
+- added and removed models;
+- largest metric value movements;
+- largest leaderboard rank movements;
+- short human-readable summary sentences.
 
 ## Cloudflare DNS
 

@@ -1,6 +1,21 @@
 {
-  "generatedAt": "2026-05-09T16:07:57.235Z",
+  "generatedAt": "2026-05-09T17:09:43.932Z",
   "title": "LLM Win Report",
+  "changeSummary": {
+    "generatedAt": "2026-05-09T17:09:33.145Z",
+    "previousGeneratedAt": "2026-05-09T17:08:12.564Z",
+    "modelCountBefore": 514,
+    "modelCountAfter": 514,
+    "modelCountDelta": 0,
+    "addedModels": [],
+    "removedModels": [],
+    "metricChanges": [],
+    "rankChanges": [],
+    "summary": [
+      "This refresh has 514 models, no count change compared with the previous snapshot.",
+      "No material model, metric, or rank changes were detected."
+    ]
+  },
   "analysisIdeas": [
     {
       "title": "Weak-to-strong reachability",

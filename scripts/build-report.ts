@@ -18,6 +18,7 @@ const dataDir = path.join(process.cwd(), "public", "data");
 const models = JSON.parse(
   await readFile(path.join(dataDir, "models.json"), "utf8"),
 ) as ModelRecord[];
+const changeSummary = await readOptionalJson(path.join(dataDir, "data-change.json"));
 const metrics = availableMetrics(models);
 const evidenceMetrics = evidenceMetricsForCategory(metrics, "Overall");
 const edges = buildCategoryEdges(models, evidenceMetrics);
@@ -114,6 +115,7 @@ for (const source of modelsWithIntelligence) {
 const report = {
   generatedAt: new Date().toISOString(),
   title: "LLM Win Report",
+  changeSummary,
   analysisIdeas: [
     {
       title: "Weak-to-strong reachability",
@@ -204,6 +206,14 @@ await writeFile(path.join(dataDir, "report.json"), `${JSON.stringify(report, nul
 console.log(
   `Wrote report.json with ${checkedWeakerToStrongerPairs} weak-to-strong pairs and ${edges.length} graph edges.`,
 );
+
+async function readOptionalJson(filePath: string) {
+  try {
+    return JSON.parse(await readFile(filePath, "utf8")) as unknown;
+  } catch {
+    return undefined;
+  }
+}
 
 function buildAdjacency(edges: WinEdge[]) {
   const adjacency = new Map<string, WinEdge[]>();

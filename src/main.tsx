@@ -36,6 +36,30 @@ type AppData = {
 
 type ReportData = {
   generatedAt: string;
+  changeSummary?: {
+    generatedAt: string;
+    previousGeneratedAt?: string;
+    modelCountBefore: number;
+    modelCountAfter: number;
+    modelCountDelta: number;
+    addedModels: Array<{ name: string; provider?: string }>;
+    removedModels: Array<{ name: string; provider?: string }>;
+    metricChanges: Array<{
+      model: { name: string; provider?: string };
+      metricLabel: string;
+      previousFormatted: string;
+      currentFormatted: string;
+      isImprovement: boolean;
+    }>;
+    rankChanges: Array<{
+      model: { name: string; provider?: string };
+      metricLabel: string;
+      previousRank: number;
+      currentRank: number;
+      rankDelta: number;
+    }>;
+    summary: string[];
+  };
   analysisIdeas: Array<{ title: string; question: string; implemented: boolean }>;
   summary: {
     modelCount: number;
@@ -948,6 +972,8 @@ function ReportView({ report }: { report?: ReportData }) {
         <StatCard label="Direct upset edges" value={report.summary.directUpsetEdgeCount.toLocaleString()} />
       </section>
 
+      {report.changeSummary && <DataChangePanel changeSummary={report.changeSummary} />}
+
       <section className="report-grid two">
         <ReportPanel
           title="Benchmark Upsets"
@@ -1029,6 +1055,83 @@ function ReportView({ report }: { report?: ReportData }) {
       </section>
     </section>
   );
+}
+
+function DataChangePanel({ changeSummary }: { changeSummary: NonNullable<ReportData["changeSummary"]> }) {
+  const topMetricChanges = changeSummary.metricChanges.slice(0, 5);
+  const topRankChanges = changeSummary.rankChanges.slice(0, 5);
+  return (
+    <section className="report-section data-change-panel">
+      <div className="panel-heading">
+        <h3>Latest Data Changes</h3>
+        <p>
+          Compared with the previous generated snapshot
+          {changeSummary.previousGeneratedAt ? ` from ${formatDate(changeSummary.previousGeneratedAt)}` : ""}.
+        </p>
+      </div>
+      <div className="change-summary-list">
+        {changeSummary.summary.map((item) => (
+          <p key={item}>{item}</p>
+        ))}
+      </div>
+      <div className="change-mini-grid">
+        <ChangeList
+          title="Model Count"
+          rows={[
+            `${changeSummary.modelCountBefore.toLocaleString()} -> ${changeSummary.modelCountAfter.toLocaleString()} (${formatSignedCount(
+              changeSummary.modelCountDelta,
+            )})`,
+          ]}
+        />
+        <ChangeList
+          title="New Models"
+          rows={changeSummary.addedModels.slice(0, 5).map((model) => model.name)}
+          emptyText="No new models"
+        />
+        <ChangeList
+          title="Metric Moves"
+          rows={topMetricChanges.map(
+            (item) =>
+              `${item.model.name}: ${item.metricLabel} ${item.previousFormatted} -> ${item.currentFormatted}`,
+          )}
+          emptyText="No material metric moves"
+        />
+        <ChangeList
+          title="Rank Moves"
+          rows={topRankChanges.map(
+            (item) =>
+              `${item.model.name}: ${item.metricLabel} #${item.previousRank} -> #${item.currentRank}`,
+          )}
+          emptyText="No rank moves"
+        />
+      </div>
+    </section>
+  );
+}
+
+function ChangeList({
+  title,
+  rows,
+  emptyText = "No changes",
+}: {
+  title: string;
+  rows: string[];
+  emptyText?: string;
+}) {
+  return (
+    <article>
+      <h4>{title}</h4>
+      <ul>
+        {(rows.length ? rows : [emptyText]).map((row) => (
+          <li key={row}>{row}</li>
+        ))}
+      </ul>
+    </article>
+  );
+}
+
+function formatSignedCount(value: number) {
+  return value > 0 ? `+${value.toLocaleString()}` : value.toLocaleString();
 }
 
 function StatCard({ label, value }: { label: string; value: string }) {
