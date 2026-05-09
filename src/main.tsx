@@ -65,6 +65,7 @@ type ReportData = {
     modelCount: number;
     modelsWithIntelligence: number;
     graphEdgeCount: number;
+    directWeakToStrongTriples?: number;
     checkedWeakerToStrongerPairs: number;
     reachablePairs: number;
     unreachablePairs: number;
@@ -72,6 +73,57 @@ type ReportData = {
     unreachableRate: number;
     directUpsetEdgeCount: number;
   };
+  shortestPathAnalysis?: {
+    note: string;
+    meanHops: number;
+    medianHops: number;
+    p90Hops: number;
+    oneHopShare: number;
+    twoOrThreeHopShare: number;
+    interpretation: string;
+  };
+  topWeakToStrongTriples?: Array<{
+    source: { name: string; provider?: string; intelligence: number | null };
+    target: { name: string; provider?: string; intelligence: number | null };
+    metricLabel: string;
+    sourceFormatted: string;
+    targetFormatted: string;
+    intelligenceGap: number;
+    benchmarkMarginFormatted: string;
+    surpriseScore: number;
+  }>;
+  benchmarkReversalScores?: Array<{
+    metric: string;
+    label: string;
+    category: string;
+    coverageRate: number;
+    correlation: number;
+    reversalTriples: number;
+    reversalRate: number;
+    averageIntelligenceGap: number;
+    averageBenchmarkMargin: number;
+    usefulReversalScore: number;
+    interpretation: string;
+  }>;
+  compositeBenchmarkCandidates?: Array<{
+    metric: string;
+    label: string;
+    coverageRate: number;
+    correlation: number;
+    reversalRate: number;
+    compositeUsefulness: number;
+    rationale: string;
+  }>;
+  modelAbilityFingerprints?: Array<{
+    model: { name: string; provider?: string; intelligence: number | null };
+    role: string;
+    upsetPower: { count: number; surprise: number };
+    vulnerability: { count: number; surprise: number };
+    bridgeCount: number;
+    benchmarkCoverage: number;
+    strongResiduals: Array<{ label: string; actual: string; expected: string; residual: number }>;
+    weakResiduals: Array<{ label: string; actual: string; expected: string; residual: number }>;
+  }>;
   benchmarkCoverage: Array<{
     metric: string;
     label: string;
@@ -947,6 +999,7 @@ function ReportView({ report }: { report?: ReportData }) {
 
   const topUpsets = report.directUpsetsByBenchmark.slice(0, 10);
   const lowCorrelations = report.benchmarkCorrelations.slice(0, 10);
+  const reversalScores = report.benchmarkReversalScores?.slice(0, 10) ?? [];
   const selectedUpsetRow =
     topUpsets.find((row) => row.metric === selectedUpset) ?? topUpsets[0];
   const selectedCorrelationRow =
@@ -1018,7 +1071,7 @@ function ReportView({ report }: { report?: ReportData }) {
       </section>
 
       <section className="report-grid two">
-        <ReportPanel title="Chain Lengths" note="Shortest paths found by BFS for weak-to-strong reachable pairs.">
+        <ReportPanel title="Chain Lengths" note="Reconstructed shortest-path lengths for weak-to-strong reachable pairs.">
           <BarChart
             rows={report.pathLengths.map((row) => ({
               key: String(row.hops),
@@ -1042,6 +1095,44 @@ function ReportView({ report }: { report?: ReportData }) {
           />
         </ReportPanel>
       </section>
+
+      {report.shortestPathAnalysis && (
+        <section className="report-section">
+          <h3>Shortest Path Takeaways</h3>
+          <div className="insight-list compact">
+            <p>
+              Mean path length is {report.shortestPathAnalysis.meanHops.toFixed(2)} hops;
+              median is {report.shortestPathAnalysis.medianHops}; p90 is{" "}
+              {report.shortestPathAnalysis.p90Hops}.{" "}
+              {percent(report.shortestPathAnalysis.twoOrThreeHopShare)}% of reachable weak-to-strong
+              pairs resolve in 2-3 hops.
+            </p>
+            <p>{report.shortestPathAnalysis.note}</p>
+            <p>{report.shortestPathAnalysis.interpretation}</p>
+          </div>
+        </section>
+      )}
+
+      <section className="report-grid two">
+        <ReportPanel
+          title="Benchmark Reversal Score"
+          note="High values mean a benchmark often lets lower-Intelligence models beat higher-Intelligence models while still carrying useful coverage."
+        >
+          <BarChart
+            rows={reversalScores.map((row) => ({
+              key: row.metric,
+              label: row.label,
+              value: row.usefulReversalScore,
+            }))}
+            valueFormatter={(value) => value.toFixed(3)}
+          />
+        </ReportPanel>
+        <CompositeCandidateList rows={report.compositeBenchmarkCandidates ?? []} />
+      </section>
+
+      <ReversalTriplesTable rows={report.topWeakToStrongTriples ?? []} />
+
+      <FingerprintList rows={report.modelAbilityFingerprints ?? []} />
 
       <section className="report-grid three">
         <TopModelList title="Bridge Models" rows={report.topBridgeModels} />
@@ -1131,6 +1222,139 @@ function ChangeList({
         ))}
       </ul>
     </article>
+  );
+}
+
+function CompositeCandidateList({
+  rows,
+}: {
+  rows: NonNullable<ReportData["compositeBenchmarkCandidates"]>;
+}) {
+  return (
+    <article className="report-panel compact">
+      <div className="panel-heading">
+        <h3>Composite Candidates</h3>
+        <p>Benchmarks that add reversal information without relying only on one extreme ability.</p>
+      </div>
+      <ol className="model-rank-list">
+        {rows.slice(0, 8).map((row) => (
+          <li key={row.metric}>
+            <span>
+              <strong>{row.label}</strong>
+              <small>
+                reversal {percent(row.reversalRate)}% · coverage {percent(row.coverageRate)}% · r=
+                {row.correlation.toFixed(2)}
+              </small>
+            </span>
+            <b>{row.compositeUsefulness.toFixed(3)}</b>
+          </li>
+        ))}
+      </ol>
+    </article>
+  );
+}
+
+function ReversalTriplesTable({
+  rows,
+}: {
+  rows: NonNullable<ReportData["topWeakToStrongTriples"]>;
+}) {
+  if (!rows.length) return null;
+  return (
+    <section className="report-section">
+      <h3>Top Weak-to-Strong Triples</h3>
+      <p className="section-note">
+        Ranked by surprise: Intelligence gap times benchmark margin. Non-positive benchmark values
+        are treated as missing in this analysis.
+      </p>
+      <div className="compact-table">
+        <table>
+          <thead>
+            <tr>
+              <th>Source</th>
+              <th>Target</th>
+              <th>Benchmark</th>
+              <th>Values</th>
+              <th>Gap</th>
+              <th>Score</th>
+            </tr>
+          </thead>
+          <tbody>
+            {rows.slice(0, 10).map((row) => (
+              <tr key={`${row.source.name}-${row.target.name}-${row.metricLabel}`}>
+                <td>{row.source.name}</td>
+                <td>{row.target.name}</td>
+                <td>{row.metricLabel}</td>
+                <td>
+                  {row.sourceFormatted} {"->"} {row.targetFormatted}
+                </td>
+                <td>
+                  IQ +{row.intelligenceGap.toFixed(1)} · {row.benchmarkMarginFormatted}
+                </td>
+                <td>{row.surpriseScore.toFixed(1)}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </section>
+  );
+}
+
+function FingerprintList({
+  rows,
+}: {
+  rows: NonNullable<ReportData["modelAbilityFingerprints"]>;
+}) {
+  if (!rows.length) return null;
+  return (
+    <section className="report-section">
+      <h3>Model Ability Fingerprints</h3>
+      <p className="section-note">
+        A fingerprint combines direct reversal power, vulnerability, bridge frequency, and residual
+        benchmark strengths after accounting for Intelligence Index.
+      </p>
+      <div className="fingerprint-grid">
+        {rows.slice(0, 6).map((row) => (
+          <article key={row.model.name} className="fingerprint-card">
+            <div>
+              <h4>{row.model.name}</h4>
+              <p>
+                {row.role} · {row.model.provider ?? "Unknown"} · IQ{" "}
+                {row.model.intelligence ?? "N/A"}
+              </p>
+            </div>
+            <div className="fingerprint-stats">
+              <span>upsets {row.upsetPower.count.toLocaleString()}</span>
+              <span>vulnerable {row.vulnerability.count.toLocaleString()}</span>
+              <span>bridge {row.bridgeCount.toLocaleString()}</span>
+            </div>
+            <ResidualList title="Strong residuals" rows={row.strongResiduals} />
+            <ResidualList title="Weak residuals" rows={row.weakResiduals} />
+          </article>
+        ))}
+      </div>
+    </section>
+  );
+}
+
+function ResidualList({
+  title,
+  rows,
+}: {
+  title: string;
+  rows: Array<{ label: string; actual: string; expected: string; residual: number }>;
+}) {
+  return (
+    <div className="residual-list">
+      <strong>{title}</strong>
+      {(rows.length ? rows : [{ label: "None", actual: "", expected: "", residual: 0 }]).map((row) => (
+        <span key={`${title}-${row.label}`}>
+          {row.label}
+          {row.actual && ` ${row.actual} vs expected ${row.expected}`}
+        </span>
+      ))}
+    </div>
   );
 }
 

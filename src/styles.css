@@ -674,6 +674,7 @@ th:first-child {
 
 .analysis-card p,
 .panel-heading p,
+.section-note,
 .panel-detail,
 .insight-list p {
   color: #57483b;
@@ -901,11 +902,84 @@ th:first-child {
   margin-top: 12px;
 }
 
+.insight-list.compact {
+  margin-top: 0;
+}
+
 .insight-list p {
   background: #fffdf7;
   border: 1px solid #f1dca9;
   border-radius: 8px;
   padding: 12px;
+}
+
+.section-note {
+  margin: 8px 0 14px;
+  max-width: 840px;
+}
+
+.compact-table {
+  overflow-x: auto;
+}
+
+.compact-table table {
+  min-width: 920px;
+}
+
+.compact-table th,
+.compact-table td {
+  font-size: 0.84rem;
+}
+
+.fingerprint-grid {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-top: 14px;
+}
+
+.fingerprint-card {
+  background: #fffdf7;
+  border: 1px solid #f1dca9;
+  border-radius: 8px;
+  display: grid;
+  gap: 12px;
+  padding: 14px;
+}
+
+.fingerprint-card h4 {
+  margin: 0 0 4px;
+}
+
+.fingerprint-card p {
+  color: #7c6d60;
+  margin: 0;
+}
+
+.fingerprint-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.fingerprint-stats span,
+.residual-list span {
+  background: #fff1c9;
+  border-radius: 6px;
+  color: #57483b;
+  font-size: 0.8rem;
+  font-weight: 800;
+  padding: 6px 8px;
+}
+
+.residual-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.residual-list strong {
+  flex: 0 0 100%;
 }
 
 @media (max-width: 860px) {
@@ -929,6 +1003,7 @@ th:first-child {
   .analysis-grid,
   .stat-grid,
   .change-mini-grid,
+  .fingerprint-grid,
   .report-grid.two,
   .report-grid.three {
     grid-template-columns: 1fr;
