@@ -1239,7 +1239,7 @@ function MethodologyView({
 }) {
   return (
     <section className="method-grid">
-      <article>
+      <article className="method-card method-card-wide">
         <h2>Data</h2>
         <p>
           Generated from{" "}
@@ -1249,25 +1249,26 @@ function MethodologyView({
           on {formatDate(metadata.generatedAt)}.
         </p>
       </article>
-      <article>
+      <article className="method-card">
         <h2>Algorithm</h2>
         <p>
           Each model is a node. For the selected category, the app builds directed edges from higher-scoring models to lower-scoring models on concrete benchmarks, using rank-neighbor jumps to keep chains readable. It then runs breadth-first search to find the shortest chain from source to target within 9 hops.
         </p>
       </article>
-      <article>
+      <article className="method-card">
         <h2>Overall</h2>
         <p>
           Overall searches across every concrete benchmark from Intelligence, Coding, and Math. Intelligence only searches intelligence benchmarks such as MMLU-Pro, GPQA, HLE, IFBench, LCR, and TAU2.
         </p>
       </article>
-      <article>
+      <article className="method-card method-card-wide">
         <h2>Metrics</h2>
-        <ul>
+        <ul className="method-metric-list">
           {defaultMetricOrder.map((item) => (
             <li key={item} className={metrics.includes(item) ? "" : "muted"}>
-              {getMetricDefinition(item).label}: {getMetricDefinition(item).direction.replaceAll("_", " ")}
-              {metrics.includes(item) ? "" : " (not in current AA API data)"}
+              <strong>{getMetricDefinition(item).label}</strong>
+              <span>{getMetricDefinition(item).direction.replaceAll("_", " ")}</span>
+              {!metrics.includes(item) && <em>not in current AA API data</em>}
             </li>
           ))}
         </ul>

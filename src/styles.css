@@ -118,7 +118,7 @@ h2 {
 .control-panel,
 .result-panel,
 .table-wrap,
-.method-grid article {
+.method-card {
   background: rgba(255, 255, 255, 0.9);
   border: 1px solid #f3d58a;
   border-radius: 8px;
@@ -569,22 +569,51 @@ th:first-child {
 .method-grid {
   display: grid;
   gap: 18px;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
-.method-grid article {
-  padding: 18px;
+.method-card {
+  padding: 22px;
+}
+
+.method-card-wide {
+  grid-column: 1 / -1;
 }
 
 .method-grid h2 {
-  font-size: 1.25rem;
+  font-size: 1.35rem;
 }
 
-.method-grid ul {
+.method-metric-list {
   color: #57483b;
-  line-height: 1.65;
-  margin: 12px 0 0;
-  padding-left: 18px;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  line-height: 1.3;
+  list-style: none;
+  margin: 18px 0 0;
+  padding: 0;
+}
+
+.method-metric-list li {
+  background: #fffdf7;
+  border: 1px solid #f1dca9;
+  border-radius: 8px;
+  display: grid;
+  gap: 4px;
+  min-height: 72px;
+  padding: 12px;
+}
+
+.method-metric-list strong {
+  color: #17120d;
+}
+
+.method-metric-list span,
+.method-metric-list em {
+  color: #7c6d60;
+  font-size: 0.84rem;
+  font-style: normal;
 }
 
 .report-view {
