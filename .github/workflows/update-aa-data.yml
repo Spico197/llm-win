@@ -1,0 +1,30 @@
+name: Update Artificial Analysis Data
+
+on:
+  schedule:
+    - cron: "17 3 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-data:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run data:update
+        env:
+          AA_API_KEY: ${{ secrets.AA_API_KEY }}
+      - run: npm run data:analyze-unreachable
+      - run: npm run data:report
+      - run: npm test
+      - uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Update Artificial Analysis data"
+          file_pattern: "public/data/*.json"

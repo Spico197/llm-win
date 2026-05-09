@@ -1,0 +1,32 @@
+{
+  "generatedAt": "2026-05-09T15:22:08.094Z",
+  "source": "Artificial Analysis",
+  "sourceUrl": "https://artificialanalysis.ai/leaderboards/models",
+  "modelCount": 514,
+  "availableMetrics": [
+    "intelligence",
+    "mmlu_pro",
+    "gpqa",
+    "hle",
+    "ifbench",
+    "lcr",
+    "tau2",
+    "coding",
+    "livecodebench",
+    "scicode",
+    "terminalbench_hard",
+    "math",
+    "math_500",
+    "aime",
+    "aime_25",
+    "outputSpeedTokensPerSecond",
+    "latencySeconds",
+    "endToEndResponseSeconds",
+    "priceUsdPerMillionTokens"
+  ],
+  "rawDataPath": "/data/raw.json",
+  "promptOptions": {
+    "parallel_queries": 1,
+    "prompt_length": 1000
+  }
+}
