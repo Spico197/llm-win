@@ -1029,11 +1029,15 @@ function ReportView({ report }: { report?: ReportData }) {
         </ReportPanel>
         <ReportPanel title="Benchmark Coverage" note="Missing benchmark values can block chains and make targets hard to reach.">
           <BarChart
-            rows={report.benchmarkCoverage.slice(0, 12).map((row) => ({
-              key: row.metric,
-              label: row.label,
-              value: row.coverageRate,
-            }))}
+            rows={report.benchmarkCoverage
+              .slice()
+              .sort((a, b) => b.coverageRate - a.coverageRate)
+              .slice(0, 12)
+              .map((row) => ({
+                key: row.metric,
+                label: row.label,
+                value: row.coverageRate,
+              }))}
             valueFormatter={(value) => `${percent(value)}%`}
           />
         </ReportPanel>
