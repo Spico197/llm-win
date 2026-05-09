@@ -720,6 +720,7 @@ th:first-child {
 }
 
 .report-grid {
+  align-items: start;
   display: grid;
   gap: 18px;
 }
@@ -776,6 +777,7 @@ th:first-child {
 }
 
 .report-panel {
+  align-content: start;
   display: grid;
   gap: 16px;
   padding: 18px;
