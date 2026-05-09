@@ -8,7 +8,7 @@ Why Model A is better than Model B?
 
 Instead of claiming that one model is universally better, the app builds a directed graph from benchmark wins and searches for a short receipt chain. A weak-looking model can sometimes "beat" a stronger model through specific benchmark edges, which makes the result useful as both a meme and a small leaderboard analysis tool.
 
-Live domain:
+Live site:
 
 ```text
 https://llm-win.com
@@ -23,7 +23,7 @@ https://llm-win.com
 - Report tab with statistics about weak-to-strong paths, bridge models, benchmark usage, and unreachable pairs.
 - Share-link button for the current comparison.
 - High-resolution PNG export for sharing comparison results.
-- GitHub Pages deployment with a custom domain.
+- Static deployment through GitHub Pages.
 - Scheduled Artificial Analysis data updates through GitHub Actions.
 - Google Analytics and Baidu Tongji support.
 
@@ -192,44 +192,22 @@ These IDs are bundled into the public frontend. That is expected for analytics t
 
 ## GitHub Pages Deployment
 
-Deployment is handled by:
+This repo includes a GitHub Pages workflow:
 
 ```text
 .github/workflows/deploy-pages.yml
 ```
 
-The workflow:
+It:
 
-1. Checks out the repo.
-2. Installs Node.js 22.
-3. Runs `npm ci`.
-4. Runs `npm test`.
-5. Runs `npm run build`.
-6. Uploads `dist/` as the GitHub Pages artifact.
-7. Deploys with `actions/deploy-pages`.
+1. installs Node.js 22;
+2. runs `npm ci`;
+3. runs `npm test`;
+4. runs `npm run build`;
+5. uploads `dist/` as the GitHub Pages artifact;
+6. deploys with `actions/deploy-pages`.
 
-GitHub setup:
-
-1. Open the repository on GitHub.
-2. Go to `Settings -> Pages`.
-3. Set `Build and deployment` to `GitHub Actions`.
-4. Add the custom domain:
-
-```text
-llm-win.com
-```
-
-The custom domain file is:
-
-```text
-public/CNAME
-```
-
-with content:
-
-```text
-llm-win.com
-```
+To use it in your own fork, enable GitHub Pages with `GitHub Actions` as the build source. If you want to use a custom domain, update or remove `public/CNAME` for your own deployment.
 
 ## Scheduled Data Updates
 
@@ -268,32 +246,6 @@ Then `npm run data:report` embeds that summary into `public/data/report.json`, s
 - largest metric value movements;
 - largest leaderboard rank movements;
 - short human-readable summary sentences.
-
-## Cloudflare DNS
-
-For the root domain `llm-win.com`, add GitHub Pages A records in Cloudflare:
-
-```text
-A  @  185.199.108.153
-A  @  185.199.109.153
-A  @  185.199.110.153
-A  @  185.199.111.153
-```
-
-Optional `www` redirect/support:
-
-```text
-CNAME  www  Spico197.github.io
-```
-
-Recommended order:
-
-1. Configure GitHub Pages first.
-2. Add or confirm Cloudflare DNS records.
-3. In GitHub Pages settings, wait for DNS verification.
-4. Enable `Enforce HTTPS`.
-
-If Cloudflare proxy causes certificate or verification friction, switch the records to DNS-only until GitHub Pages finishes provisioning HTTPS.
 
 ## Project Structure
 
