@@ -1,54 +1,36 @@
 {
-  "generatedAt": "2026-05-25T07:57:51.528Z",
+  "generatedAt": "2026-06-01T08:44:29.624Z",
   "title": "LLM Win Report",
   "changeSummary": {
-    "generatedAt": "2026-05-25T07:57:43.683Z",
-    "previousGeneratedAt": "2026-05-18T07:05:30.559Z",
-    "modelCountBefore": 516,
-    "modelCountAfter": 523,
-    "modelCountDelta": 7,
+    "generatedAt": "2026-06-01T08:44:14.036Z",
+    "previousGeneratedAt": "2026-05-25T07:57:43.683Z",
+    "modelCountBefore": 523,
+    "modelCountAfter": 527,
+    "modelCountDelta": 4,
     "addedModels": [
       {
-        "id": "2e9ff877-fd2c-4ce7-b631-7ca1bdb6d13e",
-        "slug": "command-a-plus",
-        "name": "Command A+",
-        "provider": "Cohere"
+        "id": "992b7b84-5069-4c6a-9295-834252553d50",
+        "slug": "claude-opus-4-8",
+        "name": "Claude Opus 4.8 (Adaptive Reasoning, Max Effort)",
+        "provider": "Anthropic"
       },
       {
-        "id": "0097ebf5-124f-42f6-9463-33b00e711f03",
-        "slug": "gemini-3-5-flash",
-        "name": "Gemini 3.5 Flash (high)",
+        "id": "5016ea75-7b0e-4737-a7e6-1062c6d90fd4",
+        "slug": "gemini-3-5-flash-medium",
+        "name": "Gemini 3.5 Flash (medium)",
         "provider": "Google"
       },
       {
-        "id": "033ade17-d9ec-44e0-b792-b5f1fcd5ab4c",
-        "slug": "gemini-3-5-flash-minimal",
-        "name": "Gemini 3.5 Flash (minimal)",
-        "provider": "Google"
+        "id": "e34ffffb-d8e1-4f5c-a2c7-3ca19c235eeb",
+        "slug": "gpt-5-5-instant-05-26",
+        "name": "GPT-5.5 Instant (May 2026)",
+        "provider": "OpenAI"
       },
       {
-        "id": "fe2c2289-d261-4433-8681-46448372c1f6",
-        "slug": "grok-4-3-low",
-        "name": "Grok 4.3 (low)",
-        "provider": "xAI"
-      },
-      {
-        "id": "5e8b0d98-a3b4-42b5-93d8-ecb748788754",
-        "slug": "grok-4-3-medium",
-        "name": "Grok 4.3 (medium)",
-        "provider": "xAI"
-      },
-      {
-        "id": "69534bed-2ffd-4235-832b-e20a810333ab",
-        "slug": "qwen3-7-max",
-        "name": "Qwen3.7 Max",
-        "provider": "Alibaba"
-      },
-      {
-        "id": "eb4ba465-3fcd-4065-9fe2-e8225e7b2c6c",
-        "slug": "ring-2-6-1t",
-        "name": "Ring-2.6-1T",
-        "provider": "InclusionAI"
+        "id": "d306cccd-0085-4b2f-8aa0-ffcdbb434695",
+        "slug": "minicpm5-1b-non-reasoning",
+        "name": "MiniCPM5-1B (Non-reasoning)",
+        "provider": "OpenBMB"
       }
     ],
     "removedModels": [],
@@ -62,32 +44,14 @@
         },
         "metric": "outputSpeedTokensPerSecond",
         "metricLabel": "Output speed",
-        "previousValue": 864.371,
-        "currentValue": 718.764,
-        "previousFormatted": "864.4 tok/s",
-        "currentFormatted": "718.8 tok/s",
-        "delta": -145.607,
-        "absoluteDelta": 145.607,
-        "direction": "down",
-        "isImprovement": false
-      },
-      {
-        "model": {
-          "id": "764dd095-6ebd-4760-8eb3-cbc40964db2e",
-          "slug": "sarvam-30b",
-          "name": "Sarvam 30B (high)",
-          "provider": "Sarvam"
-        },
-        "metric": "outputSpeedTokensPerSecond",
-        "metricLabel": "Output speed",
-        "previousValue": 193.01,
-        "currentValue": 67.347,
-        "previousFormatted": "193.0 tok/s",
-        "currentFormatted": "67.3 tok/s",
-        "delta": -125.663,
-        "absoluteDelta": 125.663,
-        "direction": "down",
-        "isImprovement": false
+        "previousValue": 718.764,
+        "currentValue": 1004.571,
+        "previousFormatted": "718.8 tok/s",
+        "currentFormatted": "1,004.6 tok/s",
+        "delta": 285.807,
+        "absoluteDelta": 285.807,
+        "direction": "up",
+        "isImprovement": true
       },
       {
         "model": {
@@ -98,68 +62,176 @@
         },
         "metric": "outputSpeedTokensPerSecond",
         "metricLabel": "Output speed",
-        "previousValue": 204,
-        "currentValue": 84.87,
-        "previousFormatted": "204.0 tok/s",
-        "currentFormatted": "84.9 tok/s",
-        "delta": -119.13,
-        "absoluteDelta": 119.13,
+        "previousValue": 84.87,
+        "currentValue": 218.563,
+        "previousFormatted": "84.9 tok/s",
+        "currentFormatted": "218.6 tok/s",
+        "delta": 133.693,
+        "absoluteDelta": 133.693,
+        "direction": "up",
+        "isImprovement": true
+      },
+      {
+        "model": {
+          "id": "2cff73da-4855-403c-afc9-5540feadcc15",
+          "slug": "granite-3-3-8b-instruct",
+          "name": "Granite 3.3 8B (Non-reasoning)",
+          "provider": "IBM"
+        },
+        "metric": "outputSpeedTokensPerSecond",
+        "metricLabel": "Output speed",
+        "previousValue": 340.253,
+        "currentValue": 468.83,
+        "previousFormatted": "340.3 tok/s",
+        "currentFormatted": "468.8 tok/s",
+        "delta": 128.577,
+        "absoluteDelta": 128.577,
+        "direction": "up",
+        "isImprovement": true
+      },
+      {
+        "model": {
+          "id": "764dd095-6ebd-4760-8eb3-cbc40964db2e",
+          "slug": "sarvam-30b",
+          "name": "Sarvam 30B (high)",
+          "provider": "Sarvam"
+        },
+        "metric": "outputSpeedTokensPerSecond",
+        "metricLabel": "Output speed",
+        "previousValue": 67.347,
+        "currentValue": 194.138,
+        "previousFormatted": "67.3 tok/s",
+        "currentFormatted": "194.1 tok/s",
+        "delta": 126.791,
+        "absoluteDelta": 126.791,
+        "direction": "up",
+        "isImprovement": true
+      },
+      {
+        "model": {
+          "id": "d1122eff-ee85-4fdc-8a9f-23bee6590667",
+          "slug": "gemini-3-pro",
+          "name": "Gemini 3 Pro Preview (high)",
+          "provider": "Google"
+        },
+        "metric": "outputSpeedTokensPerSecond",
+        "metricLabel": "Output speed",
+        "previousValue": 122.422,
+        "currentValue": 0,
+        "previousFormatted": "122.4 tok/s",
+        "currentFormatted": "0.0 tok/s",
+        "delta": -122.422,
+        "absoluteDelta": 122.422,
         "direction": "down",
         "isImprovement": false
       },
       {
         "model": {
-          "id": "fc92f822-04b7-420d-9c07-a21af5e9aac7",
-          "slug": "qwen3-coder-next",
-          "name": "Qwen3 Coder Next",
-          "provider": "Alibaba"
+          "id": "272ff333-442f-4169-a804-ac9177bc99d7",
+          "slug": "minimax-m2-1",
+          "name": "MiniMax-M2.1",
+          "provider": "MiniMax"
         },
         "metric": "outputSpeedTokensPerSecond",
         "metricLabel": "Output speed",
-        "previousValue": 75.121,
-        "currentValue": 173.852,
-        "previousFormatted": "75.1 tok/s",
-        "currentFormatted": "173.9 tok/s",
-        "delta": 98.731,
-        "absoluteDelta": 98.731,
+        "previousValue": 84.106,
+        "currentValue": 200.088,
+        "previousFormatted": "84.1 tok/s",
+        "currentFormatted": "200.1 tok/s",
+        "delta": 115.982,
+        "absoluteDelta": 115.982,
         "direction": "up",
         "isImprovement": true
       },
       {
         "model": {
-          "id": "dbbcf240-a69e-4078-8f16-7c94c7a8c514",
-          "slug": "reka-flash-3",
-          "name": "Reka Flash 3",
-          "provider": "Reka AI"
+          "id": "12adec16-19fe-4d92-aeff-5ef3eb7e780a",
+          "slug": "minimax-m2-5",
+          "name": "MiniMax-M2.5",
+          "provider": "MiniMax"
         },
         "metric": "outputSpeedTokensPerSecond",
         "metricLabel": "Output speed",
-        "previousValue": 0,
-        "currentValue": 92.075,
-        "previousFormatted": "0.0 tok/s",
-        "currentFormatted": "92.1 tok/s",
-        "delta": 92.075,
-        "absoluteDelta": 92.075,
+        "previousValue": 92.236,
+        "currentValue": 205.917,
+        "previousFormatted": "92.2 tok/s",
+        "currentFormatted": "205.9 tok/s",
+        "delta": 113.681,
+        "absoluteDelta": 113.681,
         "direction": "up",
         "isImprovement": true
       },
       {
         "model": {
-          "id": "c99f3bde-7c08-4de8-bd5c-8ee9123ebffa",
-          "slug": "gpt-oss-120b-low",
-          "name": "gpt-oss-120b (low)",
-          "provider": "OpenAI"
+          "id": "6056731b-c705-455b-aa0d-43cbf29b1054",
+          "slug": "longcat-flash-lite",
+          "name": "LongCat Flash Lite",
+          "provider": "LongCat"
         },
         "metric": "outputSpeedTokensPerSecond",
         "metricLabel": "Output speed",
-        "previousValue": 283.289,
-        "currentValue": 367.247,
-        "previousFormatted": "283.3 tok/s",
-        "currentFormatted": "367.2 tok/s",
-        "delta": 83.958,
-        "absoluteDelta": 83.958,
+        "previousValue": 103.045,
+        "currentValue": 0,
+        "previousFormatted": "103.0 tok/s",
+        "currentFormatted": "0.0 tok/s",
+        "delta": -103.045,
+        "absoluteDelta": 103.045,
+        "direction": "down",
+        "isImprovement": false
+      },
+      {
+        "model": {
+          "id": "c8673741-5e1a-46a1-9e4f-710a5c920982",
+          "slug": "glm-4-7-flash-non-reasoning",
+          "name": "GLM-4.7-Flash (Non-reasoning)",
+          "provider": "Z AI"
+        },
+        "metric": "outputSpeedTokensPerSecond",
+        "metricLabel": "Output speed",
+        "previousValue": 195.075,
+        "currentValue": 93.438,
+        "previousFormatted": "195.1 tok/s",
+        "currentFormatted": "93.4 tok/s",
+        "delta": -101.637,
+        "absoluteDelta": 101.637,
+        "direction": "down",
+        "isImprovement": false
+      },
+      {
+        "model": {
+          "id": "04787c2b-0751-4269-8029-075b727d7aed",
+          "slug": "grok-4-20-0309",
+          "name": "Grok 4.20 0309 (Reasoning)",
+          "provider": "xAI"
+        },
+        "metric": "outputSpeedTokensPerSecond",
+        "metricLabel": "Output speed",
+        "previousValue": 141.798,
+        "currentValue": 229.256,
+        "previousFormatted": "141.8 tok/s",
+        "currentFormatted": "229.3 tok/s",
+        "delta": 87.458,
+        "absoluteDelta": 87.458,
         "direction": "up",
         "isImprovement": true
+      },
+      {
+        "model": {
+          "id": "0fc6308e-fbd2-42d3-a216-06da3c43e34e",
+          "slug": "kimi-k2-6-non-reasoning",
+          "name": "Kimi K2.6 (Non-reasoning)",
+          "provider": "Kimi"
+        },
+        "metric": "outputSpeedTokensPerSecond",
+        "metricLabel": "Output speed",
+        "previousValue": 118.306,
+        "currentValue": 40.063,
+        "previousFormatted": "118.3 tok/s",
+        "currentFormatted": "40.1 tok/s",
+        "delta": -78.243,
+        "absoluteDelta": 78.243,
+        "direction": "down",
+        "isImprovement": false
       },
       {
         "model": {
@@ -170,12 +242,12 @@
         },
         "metric": "outputSpeedTokensPerSecond",
         "metricLabel": "Output speed",
-        "previousValue": 73.605,
-        "currentValue": 143.429,
-        "previousFormatted": "73.6 tok/s",
-        "currentFormatted": "143.4 tok/s",
-        "delta": 69.824,
-        "absoluteDelta": 69.824,
+        "previousValue": 143.429,
+        "currentValue": 218.886,
+        "previousFormatted": "143.4 tok/s",
+        "currentFormatted": "218.9 tok/s",
+        "delta": 75.457,
+        "absoluteDelta": 75.457,
         "direction": "up",
         "isImprovement": true
       },
@@ -188,283 +260,232 @@
         },
         "metric": "outputSpeedTokensPerSecond",
         "metricLabel": "Output speed",
-        "previousValue": 66.795,
-        "currentValue": 131.392,
-        "previousFormatted": "66.8 tok/s",
-        "currentFormatted": "131.4 tok/s",
-        "delta": 64.597,
-        "absoluteDelta": 64.597,
+        "previousValue": 131.392,
+        "currentValue": 202.647,
+        "previousFormatted": "131.4 tok/s",
+        "currentFormatted": "202.6 tok/s",
+        "delta": 71.255,
+        "absoluteDelta": 71.255,
         "direction": "up",
         "isImprovement": true
       },
       {
         "model": {
-          "id": "04787c2b-0751-4269-8029-075b727d7aed",
-          "slug": "grok-4-20-0309",
-          "name": "Grok 4.20 0309 (Reasoning)",
-          "provider": "xAI"
+          "id": "8c29d66d-bf98-4ea3-8572-5409353ecc66",
+          "slug": "qwen3-6-27b",
+          "name": "Qwen3.6 27B (Reasoning)",
+          "provider": "Alibaba"
+        },
+        "metric": "endToEndResponseSeconds",
+        "metricLabel": "End-to-end response",
+        "previousValue": 34.223,
+        "currentValue": 98.704,
+        "previousFormatted": "34.22 s",
+        "currentFormatted": "98.70 s",
+        "delta": 64.481,
+        "absoluteDelta": 64.481,
+        "direction": "up",
+        "isImprovement": false
+      },
+      {
+        "model": {
+          "id": "0de67206-4d36-4d10-b8f6-cf37fa747a03",
+          "slug": "kimi-k2-6",
+          "name": "Kimi K2.6",
+          "provider": "Kimi"
+        },
+        "metric": "endToEndResponseSeconds",
+        "metricLabel": "End-to-end response",
+        "previousValue": 44.111,
+        "currentValue": 107.326,
+        "previousFormatted": "44.11 s",
+        "currentFormatted": "107.33 s",
+        "delta": 63.215,
+        "absoluteDelta": 63.215,
+        "direction": "up",
+        "isImprovement": false
+      },
+      {
+        "model": {
+          "id": "0de67206-4d36-4d10-b8f6-cf37fa747a03",
+          "slug": "kimi-k2-6",
+          "name": "Kimi K2.6",
+          "provider": "Kimi"
         },
         "metric": "outputSpeedTokensPerSecond",
         "metricLabel": "Output speed",
-        "previousValue": 77.83,
-        "currentValue": 141.798,
-        "previousFormatted": "77.8 tok/s",
-        "currentFormatted": "141.8 tok/s",
-        "delta": 63.968,
-        "absoluteDelta": 63.968,
-        "direction": "up",
-        "isImprovement": true
+        "previousValue": 103.191,
+        "currentValue": 41.994,
+        "previousFormatted": "103.2 tok/s",
+        "currentFormatted": "42.0 tok/s",
+        "delta": -61.197,
+        "absoluteDelta": 61.197,
+        "direction": "down",
+        "isImprovement": false
       },
       {
         "model": {
-          "id": "63872e9c-3377-4a6b-b477-7bba244c38e9",
-          "slug": "nvidia-nemotron-3-super-120b-a12b",
-          "name": "NVIDIA Nemotron 3 Super 120B A12B (Reasoning)",
+          "id": "ab7f016c-a29b-4710-bdf6-6a5cd96aacca",
+          "slug": "nvidia-nemotron-nano-12b-v2-vl",
+          "name": "NVIDIA Nemotron Nano 12B v2 VL (Non-reasoning)",
           "provider": "NVIDIA"
         },
         "metric": "outputSpeedTokensPerSecond",
         "metricLabel": "Output speed",
-        "previousValue": 220.1,
-        "currentValue": 160.161,
-        "previousFormatted": "220.1 tok/s",
-        "currentFormatted": "160.2 tok/s",
-        "delta": -59.939,
-        "absoluteDelta": 59.939,
-        "direction": "down",
-        "isImprovement": false
-      },
-      {
-        "model": {
-          "id": "64312f37-3701-4243-a4c9-7c07a58cd6b9",
-          "slug": "grok-4-20-non-reasoning",
-          "name": "Grok 4.20 0309 v2 (Non-reasoning)",
-          "provider": "xAI"
-        },
-        "metric": "outputSpeedTokensPerSecond",
-        "metricLabel": "Output speed",
-        "previousValue": 70.963,
-        "currentValue": 128.595,
-        "previousFormatted": "71.0 tok/s",
-        "currentFormatted": "128.6 tok/s",
-        "delta": 57.632,
-        "absoluteDelta": 57.632,
+        "previousValue": 223.471,
+        "currentValue": 276.672,
+        "previousFormatted": "223.5 tok/s",
+        "currentFormatted": "276.7 tok/s",
+        "delta": 53.201,
+        "absoluteDelta": 53.201,
         "direction": "up",
         "isImprovement": true
       },
       {
         "model": {
-          "id": "0de67206-4d36-4d10-b8f6-cf37fa747a03",
-          "slug": "kimi-k2-6",
-          "name": "Kimi K2.6",
-          "provider": "Kimi"
+          "id": "f4e8194a-d0e6-48eb-92be-4307de5aeeec",
+          "slug": "gemini-2-5-flash-lite-reasoning",
+          "name": "Gemini 2.5 Flash-Lite (Reasoning)",
+          "provider": "Google"
         },
         "metric": "outputSpeedTokensPerSecond",
         "metricLabel": "Output speed",
-        "previousValue": 46.896,
-        "currentValue": 103.191,
-        "previousFormatted": "46.9 tok/s",
-        "currentFormatted": "103.2 tok/s",
-        "delta": 56.295,
-        "absoluteDelta": 56.295,
+        "previousValue": 236.189,
+        "currentValue": 288.407,
+        "previousFormatted": "236.2 tok/s",
+        "currentFormatted": "288.4 tok/s",
+        "delta": 52.218,
+        "absoluteDelta": 52.218,
         "direction": "up",
         "isImprovement": true
       },
       {
         "model": {
-          "id": "b58b8272-cd3f-44b9-9b68-612f40779ce2",
-          "slug": "hy3-non-reasoning",
-          "name": "Hy3-preview (Non-reasoning)",
-          "provider": "Tencent"
+          "id": "0985ada8-2ed8-404d-bd8b-7357666ce40f",
+          "slug": "qwen3-5-2b-non-reasoning",
+          "name": "Qwen3.5 2B (Non-reasoning)",
+          "provider": "Alibaba"
         },
         "metric": "outputSpeedTokensPerSecond",
         "metricLabel": "Output speed",
-        "previousValue": 142.505,
-        "currentValue": 88.415,
-        "previousFormatted": "142.5 tok/s",
-        "currentFormatted": "88.4 tok/s",
-        "delta": -54.09,
-        "absoluteDelta": 54.09,
+        "previousValue": 321.142,
+        "currentValue": 270.942,
+        "previousFormatted": "321.1 tok/s",
+        "currentFormatted": "270.9 tok/s",
+        "delta": -50.2,
+        "absoluteDelta": 50.2,
         "direction": "down",
         "isImprovement": false
       },
       {
         "model": {
-          "id": "1aa3694e-b656-4dbe-8f84-0c65d8897abb",
-          "slug": "step-3-5-flash",
-          "name": "Step 3.5 Flash 2603",
-          "provider": "StepFun"
+          "id": "806032ff-6252-4c22-ba99-a126e411b7a4",
+          "slug": "qwen3-max-thinking",
+          "name": "Qwen3 Max Thinking",
+          "provider": "Alibaba"
         },
         "metric": "outputSpeedTokensPerSecond",
         "metricLabel": "Output speed",
-        "previousValue": 203.046,
-        "currentValue": 149.347,
-        "previousFormatted": "203.0 tok/s",
-        "currentFormatted": "149.3 tok/s",
-        "delta": -53.699,
-        "absoluteDelta": 53.699,
+        "previousValue": 47.488,
+        "currentValue": 0,
+        "previousFormatted": "47.5 tok/s",
+        "currentFormatted": "0.0 tok/s",
+        "delta": -47.488,
+        "absoluteDelta": 47.488,
         "direction": "down",
         "isImprovement": false
-      },
-      {
-        "model": {
-          "id": "8ca48626-ff5e-48b3-8401-38081376d706",
-          "slug": "hy3",
-          "name": "Hy3-preview (Reasoning)",
-          "provider": "Tencent"
-        },
-        "metric": "outputSpeedTokensPerSecond",
-        "metricLabel": "Output speed",
-        "previousValue": 148.806,
-        "currentValue": 96.657,
-        "previousFormatted": "148.8 tok/s",
-        "currentFormatted": "96.7 tok/s",
-        "delta": -52.149,
-        "absoluteDelta": 52.149,
-        "direction": "down",
-        "isImprovement": false
-      },
-      {
-        "model": {
-          "id": "0de67206-4d36-4d10-b8f6-cf37fa747a03",
-          "slug": "kimi-k2-6",
-          "name": "Kimi K2.6",
-          "provider": "Kimi"
-        },
-        "metric": "endToEndResponseSeconds",
-        "metricLabel": "End-to-end response",
-        "previousValue": 96.146,
-        "currentValue": 44.111,
-        "previousFormatted": "96.15 s",
-        "currentFormatted": "44.11 s",
-        "delta": -52.035,
-        "absoluteDelta": 52.035,
-        "direction": "down",
-        "isImprovement": true
-      },
-      {
-        "model": {
-          "id": "5dba8d07-9992-483c-81db-dac97cb15ba8",
-          "slug": "granite-4-0-h-small",
-          "name": "Granite 4.0 H Small",
-          "provider": "IBM"
-        },
-        "metric": "outputSpeedTokensPerSecond",
-        "metricLabel": "Output speed",
-        "previousValue": 372.42,
-        "currentValue": 423.508,
-        "previousFormatted": "372.4 tok/s",
-        "currentFormatted": "423.5 tok/s",
-        "delta": 51.088,
-        "absoluteDelta": 51.088,
-        "direction": "up",
-        "isImprovement": true
-      },
-      {
-        "model": {
-          "id": "c8158c23-6fff-4c31-911d-954c32d80c28",
-          "slug": "step-3-5-flash-0202",
-          "name": "Step 3.5 Flash",
-          "provider": "StepFun"
-        },
-        "metric": "outputSpeedTokensPerSecond",
-        "metricLabel": "Output speed",
-        "previousValue": 197.185,
-        "currentValue": 149.665,
-        "previousFormatted": "197.2 tok/s",
-        "currentFormatted": "149.7 tok/s",
-        "delta": -47.52,
-        "absoluteDelta": 47.52,
-        "direction": "down",
-        "isImprovement": false
-      },
-      {
-        "model": {
-          "id": "bf220674-68bd-43cc-a1b8-ce5ed4d2f18d",
-          "slug": "deepseek-v4-pro",
-          "name": "DeepSeek V4 Pro (Reasoning, Max Effort)",
-          "provider": "DeepSeek"
-        },
-        "metric": "endToEndResponseSeconds",
-        "metricLabel": "End-to-end response",
-        "previousValue": 148.478,
-        "currentValue": 101.235,
-        "previousFormatted": "148.48 s",
-        "currentFormatted": "101.24 s",
-        "delta": -47.243,
-        "absoluteDelta": 47.243,
-        "direction": "down",
-        "isImprovement": true
-      },
-      {
-        "model": {
-          "id": "43da3718-3d6e-40dd-901a-05664179ff7f",
-          "slug": "mistral-small-3-2",
-          "name": "Mistral Small 3.2",
-          "provider": "Mistral"
-        },
-        "metric": "outputSpeedTokensPerSecond",
-        "metricLabel": "Output speed",
-        "previousValue": 90.454,
-        "currentValue": 136.612,
-        "previousFormatted": "90.5 tok/s",
-        "currentFormatted": "136.6 tok/s",
-        "delta": 46.158,
-        "absoluteDelta": 46.158,
-        "direction": "up",
-        "isImprovement": true
       }
     ],
     "rankChanges": [
       {
         "model": {
-          "id": "dbbcf240-a69e-4078-8f16-7c94c7a8c514",
-          "name": "Reka Flash 3",
-          "provider": "Reka AI"
+          "id": "d1122eff-ee85-4fdc-8a9f-23bee6590667",
+          "name": "Gemini 3 Pro Preview (high)",
+          "provider": "Google"
         },
-        "metric": "outputSpeedTokensPerSecond",
-        "metricLabel": "Output speed",
-        "previousRank": 501,
-        "currentRank": 151,
-        "rankDelta": 350,
+        "metric": "latencySeconds",
+        "metricLabel": "Latency",
+        "previousRank": 511,
+        "currentRank": 80,
+        "rankDelta": 431,
         "direction": "up"
       },
       {
         "model": {
-          "id": "dbbcf240-a69e-4078-8f16-7c94c7a8c514",
-          "name": "Reka Flash 3",
-          "provider": "Reka AI"
-        },
-        "metric": "latencySeconds",
-        "metricLabel": "Latency",
-        "previousRank": 208,
-        "currentRank": 490,
-        "rankDelta": -282,
-        "direction": "down"
-      },
-      {
-        "model": {
-          "id": "dbbcf240-a69e-4078-8f16-7c94c7a8c514",
-          "name": "Reka Flash 3",
-          "provider": "Reka AI"
+          "id": "d1122eff-ee85-4fdc-8a9f-23bee6590667",
+          "name": "Gemini 3 Pro Preview (high)",
+          "provider": "Google"
         },
         "metric": "endToEndResponseSeconds",
         "metricLabel": "End-to-end response",
-        "previousRank": 208,
-        "currentRank": 479,
-        "rankDelta": -271,
+        "previousRank": 464,
+        "currentRank": 80,
+        "rankDelta": 384,
+        "direction": "up"
+      },
+      {
+        "model": {
+          "id": "6056731b-c705-455b-aa0d-43cbf29b1054",
+          "name": "LongCat Flash Lite",
+          "provider": "LongCat"
+        },
+        "metric": "outputSpeedTokensPerSecond",
+        "metricLabel": "Output speed",
+        "previousRank": 127,
+        "currentRank": 456,
+        "rankDelta": -329,
         "direction": "down"
       },
       {
         "model": {
-          "id": "9f873c2f-2c2d-4ccb-9e1b-71bf61b052be",
-          "name": "Phi-4 Mini Instruct",
-          "provider": "Microsoft"
+          "id": "6056731b-c705-455b-aa0d-43cbf29b1054",
+          "name": "LongCat Flash Lite",
+          "provider": "LongCat"
+        },
+        "metric": "latencySeconds",
+        "metricLabel": "Latency",
+        "previousRank": 469,
+        "currentRank": 157,
+        "rankDelta": 312,
+        "direction": "up"
+      },
+      {
+        "model": {
+          "id": "806032ff-6252-4c22-ba99-a126e411b7a4",
+          "name": "Qwen3 Max Thinking",
+          "provider": "Alibaba"
+        },
+        "metric": "endToEndResponseSeconds",
+        "metricLabel": "End-to-end response",
+        "previousRank": 495,
+        "currentRank": 206,
+        "rankDelta": 289,
+        "direction": "up"
+      },
+      {
+        "model": {
+          "id": "d1122eff-ee85-4fdc-8a9f-23bee6590667",
+          "name": "Gemini 3 Pro Preview (high)",
+          "provider": "Google"
         },
         "metric": "outputSpeedTokensPerSecond",
         "metricLabel": "Output speed",
-        "previousRank": 257,
-        "currentRank": 492,
-        "rankDelta": -235,
+        "previousRank": 112,
+        "currentRank": 379,
+        "rankDelta": -267,
+        "direction": "down"
+      },
+      {
+        "model": {
+          "id": "806032ff-6252-4c22-ba99-a126e411b7a4",
+          "name": "Qwen3 Max Thinking",
+          "provider": "Alibaba"
+        },
+        "metric": "outputSpeedTokensPerSecond",
+        "metricLabel": "Output speed",
+        "previousRank": 251,
+        "currentRank": 505,
+        "rankDelta": -254,
         "direction": "down"
       },
       {
@@ -475,10 +496,75 @@
         },
         "metric": "latencySeconds",
         "metricLabel": "Latency",
-        "previousRank": 249,
-        "currentRank": 476,
-        "rankDelta": -227,
+        "previousRank": 476,
+        "currentRank": 241,
+        "rankDelta": 235,
+        "direction": "up"
+      },
+      {
+        "model": {
+          "id": "6056731b-c705-455b-aa0d-43cbf29b1054",
+          "name": "LongCat Flash Lite",
+          "provider": "LongCat"
+        },
+        "metric": "endToEndResponseSeconds",
+        "metricLabel": "End-to-end response",
+        "previousRank": 383,
+        "currentRank": 157,
+        "rankDelta": 226,
+        "direction": "up"
+      },
+      {
+        "model": {
+          "id": "806032ff-6252-4c22-ba99-a126e411b7a4",
+          "name": "Qwen3 Max Thinking",
+          "provider": "Alibaba"
+        },
+        "metric": "latencySeconds",
+        "metricLabel": "Latency",
+        "previousRank": 415,
+        "currentRank": 206,
+        "rankDelta": 209,
+        "direction": "up"
+      },
+      {
+        "model": {
+          "id": "2cd04201-2b6e-47ef-853e-7601f705f2a8",
+          "name": "Phi-4 Multimodal Instruct",
+          "provider": "Microsoft"
+        },
+        "metric": "latencySeconds",
+        "metricLabel": "Latency",
+        "previousRank": 241,
+        "currentRank": 415,
+        "rankDelta": -174,
         "direction": "down"
+      },
+      {
+        "model": {
+          "id": "0fc6308e-fbd2-42d3-a216-06da3c43e34e",
+          "name": "Kimi K2.6 (Non-reasoning)",
+          "provider": "Kimi"
+        },
+        "metric": "outputSpeedTokensPerSecond",
+        "metricLabel": "Output speed",
+        "previousRank": 115,
+        "currentRank": 276,
+        "rankDelta": -161,
+        "direction": "down"
+      },
+      {
+        "model": {
+          "id": "1d81aa1c-64c8-442a-9c41-81b37e407b91",
+          "name": "Gemini 2.5 Flash-Lite (Non-reasoning)",
+          "provider": "Google"
+        },
+        "metric": "endToEndResponseSeconds",
+        "metricLabel": "End-to-end response",
+        "previousRank": 389,
+        "currentRank": 236,
+        "rankDelta": 153,
+        "direction": "up"
       },
       {
         "model": {
@@ -488,22 +574,22 @@
         },
         "metric": "outputSpeedTokensPerSecond",
         "metricLabel": "Output speed",
-        "previousRank": 32,
-        "currentRank": 192,
-        "rankDelta": -160,
-        "direction": "down"
+        "previousRank": 192,
+        "currentRank": 41,
+        "rankDelta": 151,
+        "direction": "up"
       },
       {
         "model": {
-          "id": "1d81aa1c-64c8-442a-9c41-81b37e407b91",
-          "name": "Gemini 2.5 Flash-Lite (Non-reasoning)",
-          "provider": "Google"
+          "id": "0de67206-4d36-4d10-b8f6-cf37fa747a03",
+          "name": "Kimi K2.6",
+          "provider": "Kimi"
         },
-        "metric": "endToEndResponseSeconds",
-        "metricLabel": "End-to-end response",
-        "previousRank": 242,
-        "currentRank": 389,
-        "rankDelta": -147,
+        "metric": "outputSpeedTokensPerSecond",
+        "metricLabel": "Output speed",
+        "previousRank": 126,
+        "currentRank": 271,
+        "rankDelta": -145,
         "direction": "down"
       },
       {
@@ -514,173 +600,69 @@
         },
         "metric": "outputSpeedTokensPerSecond",
         "metricLabel": "Output speed",
-        "previousRank": 26,
-        "currentRank": 165,
-        "rankDelta": -139,
-        "direction": "down"
-      },
-      {
-        "model": {
-          "id": "fc92f822-04b7-420d-9c07-a21af5e9aac7",
-          "name": "Qwen3 Coder Next",
-          "provider": "Alibaba"
-        },
-        "metric": "outputSpeedTokensPerSecond",
-        "metricLabel": "Output speed",
-        "previousRank": 167,
-        "currentRank": 42,
-        "rankDelta": 125,
-        "direction": "up"
-      },
-      {
-        "model": {
-          "id": "0de67206-4d36-4d10-b8f6-cf37fa747a03",
-          "name": "Kimi K2.6",
-          "provider": "Kimi"
-        },
-        "metric": "outputSpeedTokensPerSecond",
-        "metricLabel": "Output speed",
-        "previousRank": 248,
-        "currentRank": 126,
-        "rankDelta": 122,
-        "direction": "up"
-      },
-      {
-        "model": {
-          "id": "6e2a2572-ed8d-4616-8d7d-68d125fc8ee7",
-          "name": "DeepSeek V4 Pro (Non-reasoning)",
-          "provider": "DeepSeek"
-        },
-        "metric": "priceUsdPerMillionTokens",
-        "metricLabel": "Blended price",
-        "previousRank": 419,
-        "currentRank": 316,
-        "rankDelta": 103,
-        "direction": "up"
-      },
-      {
-        "model": {
-          "id": "5da3c0e2-65d2-4bff-a410-cb2132ddafb6",
-          "name": "DeepSeek V4 Pro (Reasoning, High Effort)",
-          "provider": "DeepSeek"
-        },
-        "metric": "priceUsdPerMillionTokens",
-        "metricLabel": "Blended price",
-        "previousRank": 420,
-        "currentRank": 317,
-        "rankDelta": 103,
-        "direction": "up"
-      },
-      {
-        "model": {
-          "id": "bf220674-68bd-43cc-a1b8-ce5ed4d2f18d",
-          "name": "DeepSeek V4 Pro (Reasoning, Max Effort)",
-          "provider": "DeepSeek"
-        },
-        "metric": "priceUsdPerMillionTokens",
-        "metricLabel": "Blended price",
-        "previousRank": 421,
-        "currentRank": 318,
-        "rankDelta": 103,
-        "direction": "up"
-      },
-      {
-        "model": {
-          "id": "523125f4-a1da-4990-9abd-dd08a069100e",
-          "name": "Grok 4.20 0309 (Non-reasoning)",
-          "provider": "xAI"
-        },
-        "metric": "outputSpeedTokensPerSecond",
-        "metricLabel": "Output speed",
-        "previousRank": 192,
-        "currentRank": 97,
-        "rankDelta": 95,
-        "direction": "up"
-      },
-      {
-        "model": {
-          "id": "c72cb85a-18a4-4235-b455-77dff2f16c50",
-          "name": "Grok 4.20 0309 v2 (Reasoning)",
-          "provider": "xAI"
-        },
-        "metric": "outputSpeedTokensPerSecond",
-        "metricLabel": "Output speed",
-        "previousRank": 172,
-        "currentRank": 80,
-        "rankDelta": 92,
-        "direction": "up"
-      },
-      {
-        "model": {
-          "id": "04787c2b-0751-4269-8029-075b727d7aed",
-          "name": "Grok 4.20 0309 (Reasoning)",
-          "provider": "xAI"
-        },
-        "metric": "outputSpeedTokensPerSecond",
-        "metricLabel": "Output speed",
         "previousRank": 165,
-        "currentRank": 82,
-        "rankDelta": 83,
+        "currentRank": 26,
+        "rankDelta": 139,
         "direction": "up"
       },
       {
         "model": {
-          "id": "b58b8272-cd3f-44b9-9b68-612f40779ce2",
-          "name": "Hy3-preview (Non-reasoning)",
-          "provider": "Tencent"
-        },
-        "metric": "outputSpeedTokensPerSecond",
-        "metricLabel": "Output speed",
-        "previousRank": 81,
-        "currentRank": 162,
-        "rankDelta": -81,
-        "direction": "down"
-      },
-      {
-        "model": {
-          "id": "fc92f822-04b7-420d-9c07-a21af5e9aac7",
-          "name": "Qwen3 Coder Next",
+          "id": "2d28a13a-096e-475a-beb8-26bbd1c7d51c",
+          "name": "Qwen3.5 9B (Reasoning)",
           "provider": "Alibaba"
         },
         "metric": "latencySeconds",
         "metricLabel": "Latency",
-        "previousRank": 413,
-        "currentRank": 336,
-        "rankDelta": 77,
+        "previousRank": 238,
+        "currentRank": 374,
+        "rankDelta": -136,
+        "direction": "down"
+      },
+      {
+        "model": {
+          "id": "272ff333-442f-4169-a804-ac9177bc99d7",
+          "name": "MiniMax-M2.1",
+          "provider": "MiniMax"
+        },
+        "metric": "outputSpeedTokensPerSecond",
+        "metricLabel": "Output speed",
+        "previousRank": 168,
+        "currentRank": 38,
+        "rankDelta": 130,
         "direction": "up"
       },
       {
         "model": {
-          "id": "64312f37-3701-4243-a4c9-7c07a58cd6b9",
-          "name": "Grok 4.20 0309 v2 (Non-reasoning)",
-          "provider": "xAI"
+          "id": "c8673741-5e1a-46a1-9e4f-710a5c920982",
+          "name": "GLM-4.7-Flash (Non-reasoning)",
+          "provider": "Z AI"
         },
         "metric": "outputSpeedTokensPerSecond",
         "metricLabel": "Output speed",
-        "previousRank": 177,
-        "currentRank": 101,
-        "rankDelta": 76,
-        "direction": "up"
+        "previousRank": 31,
+        "currentRank": 156,
+        "rankDelta": -125,
+        "direction": "down"
       },
       {
         "model": {
-          "id": "df8d14e0-3997-4e4d-b4ad-9c047acc9c69",
-          "name": "Claude Sonnet 4.6 (Adaptive Reasoning, Max Effort)",
-          "provider": "Anthropic"
+          "id": "2cd04201-2b6e-47ef-853e-7601f705f2a8",
+          "name": "Phi-4 Multimodal Instruct",
+          "provider": "Microsoft"
         },
-        "metric": "outputSpeedTokensPerSecond",
-        "metricLabel": "Output speed",
-        "previousRank": 170,
-        "currentRank": 242,
-        "rankDelta": -72,
+        "metric": "endToEndResponseSeconds",
+        "metricLabel": "End-to-end response",
+        "previousRank": 235,
+        "currentRank": 355,
+        "rankDelta": -120,
         "direction": "down"
       }
     ],
     "summary": [
-      "This refresh has 523 models, +7 compared with the previous snapshot.",
-      "New models include Command A+, Gemini 3.5 Flash (high), Gemini 3.5 Flash (minimal), Grok 4.3 (low), Grok 4.3 (medium).",
-      "Largest metric move: Mercury 2 on Output speed, from 864.4 tok/s to 718.8 tok/s.",
-      "Largest rank move: Reka Flash 3 climbed 350 places on Output speed."
+      "This refresh has 527 models, +4 compared with the previous snapshot.",
+      "New models include Claude Opus 4.8 (Adaptive Reasoning, Max Effort), Gemini 3.5 Flash (medium), GPT-5.5 Instant (May 2026), MiniCPM5-1B (Non-reasoning).",
+      "Largest metric move: Mercury 2 on Output speed, from 718.8 tok/s to 1,004.6 tok/s.",
+      "Largest rank move: Gemini 3 Pro Preview (high) climbed 431 places on Latency."
     ]
   },
   "analysisIdeas": [
@@ -726,8 +708,8 @@
     }
   ],
   "summary": {
-    "modelCount": 523,
-    "modelsWithIntelligence": 514,
+    "modelCount": 527,
+    "modelsWithIntelligence": 518,
     "evidenceMetrics": [
       "mmlu_pro",
       "gpqa",
@@ -742,14 +724,14 @@
       "aime",
       "aime_25"
     ],
-    "graphEdgeCount": 30391,
-    "checkedWeakerToStrongerPairs": 131503,
-    "reachablePairs": 123945,
-    "unreachablePairs": 7558,
-    "reachableRate": 0.942526,
-    "unreachableRate": 0.057474,
-    "directUpsetEdgeCount": 10485,
-    "directWeakToStrongTriples": 122210
+    "graphEdgeCount": 30608,
+    "checkedWeakerToStrongerPairs": 133564,
+    "reachablePairs": 125946,
+    "unreachablePairs": 7618,
+    "reachableRate": 0.942964,
+    "unreachableRate": 0.057036,
+    "directUpsetEdgeCount": 10589,
+    "directWeakToStrongTriples": 123674
   },
   "benchmarkCoverage": [
     {
@@ -757,7 +739,7 @@
       "label": "MMLU-Pro",
       "category": "Intelligence",
       "modelCount": 345,
-      "coverageRate": 0.659656,
+      "coverageRate": 0.654649,
       "min": 0.055,
       "max": 0.898,
       "average": 0.696229
@@ -766,58 +748,58 @@
       "metric": "gpqa",
       "label": "GPQA",
       "category": "Intelligence",
-      "modelCount": 492,
-      "coverageRate": 0.940727,
+      "modelCount": 496,
+      "coverageRate": 0.941176,
       "min": 0.098,
       "max": 0.941,
-      "average": 0.62187
+      "average": 0.622815
     },
     {
       "metric": "hle",
       "label": "Humanity's Last Exam",
       "category": "Intelligence",
-      "modelCount": 488,
-      "coverageRate": 0.933078,
+      "modelCount": 492,
+      "coverageRate": 0.933586,
       "min": 0.012,
-      "max": 0.447,
-      "average": 0.104348
+      "max": 0.457,
+      "average": 0.105746
     },
     {
       "metric": "ifbench",
       "label": "IFBench",
       "category": "Intelligence",
-      "modelCount": 420,
-      "coverageRate": 0.803059,
+      "modelCount": 424,
+      "coverageRate": 0.804554,
       "min": 0.121088,
       "max": 0.833333,
-      "average": 0.468349
+      "average": 0.469673
     },
     {
       "metric": "lcr",
       "label": "LCR",
       "category": "Intelligence",
-      "modelCount": 356,
-      "coverageRate": 0.680688,
+      "modelCount": 360,
+      "coverageRate": 0.683112,
       "min": 0.003333,
       "max": 0.756667,
-      "average": 0.411038
+      "average": 0.411999
     },
     {
       "metric": "tau2",
       "label": "TAU2",
       "category": "Intelligence",
-      "modelCount": 389,
-      "coverageRate": 0.743786,
+      "modelCount": 393,
+      "coverageRate": 0.745731,
       "min": 0.040936,
       "max": 0.991228,
-      "average": 0.522633
+      "average": 0.525505
     },
     {
       "metric": "livecodebench",
       "label": "LiveCodeBench",
       "category": "Coding",
       "modelCount": 343,
-      "coverageRate": 0.655832,
+      "coverageRate": 0.650854,
       "min": 0.002,
       "max": 0.917,
       "average": 0.445265
@@ -826,28 +808,28 @@
       "metric": "scicode",
       "label": "SciCode",
       "category": "Coding",
-      "modelCount": 483,
-      "coverageRate": 0.923518,
+      "modelCount": 487,
+      "coverageRate": 0.924099,
       "min": 0.007,
       "max": 0.589,
-      "average": 0.297975
+      "average": 0.298776
     },
     {
       "metric": "terminalbench_hard",
       "label": "Terminal-Bench Hard",
       "category": "Coding",
-      "modelCount": 360,
-      "coverageRate": 0.688337,
+      "modelCount": 363,
+      "coverageRate": 0.688805,
       "min": 0.007576,
       "max": 0.606061,
-      "average": 0.191568
+      "average": 0.193846
     },
     {
       "metric": "math_500",
       "label": "MATH-500",
       "category": "Math",
       "modelCount": 201,
-      "coverageRate": 0.384321,
+      "coverageRate": 0.381404,
       "min": 0.058667,
       "max": 0.994,
       "average": 0.763781
@@ -857,7 +839,7 @@
       "label": "AIME",
       "category": "Math",
       "modelCount": 180,
-      "coverageRate": 0.344168,
+      "coverageRate": 0.341556,
       "min": 0.003333,
       "max": 0.956667,
       "average": 0.361685
@@ -867,7 +849,7 @@
       "label": "AIME 2025",
       "category": "Math",
       "modelCount": 265,
-      "coverageRate": 0.506692,
+      "coverageRate": 0.502846,
       "min": 0.003333,
       "max": 0.99,
       "average": 0.512853
@@ -906,8 +888,8 @@
       "metric": "ifbench",
       "label": "IFBench",
       "category": "Intelligence",
-      "sampleSize": 418,
-      "correlation": 0.820929
+      "sampleSize": 422,
+      "correlation": 0.821206
     },
     {
       "metric": "livecodebench",
@@ -920,43 +902,43 @@
       "metric": "tau2",
       "label": "TAU2",
       "category": "Intelligence",
-      "sampleSize": 388,
-      "correlation": 0.84969
+      "sampleSize": 392,
+      "correlation": 0.845554
     },
     {
       "metric": "scicode",
       "label": "SciCode",
       "category": "Coding",
-      "sampleSize": 481,
-      "correlation": 0.858415
+      "sampleSize": 485,
+      "correlation": 0.858337
     },
     {
       "metric": "lcr",
       "label": "LCR",
       "category": "Intelligence",
-      "sampleSize": 354,
-      "correlation": 0.862505
+      "sampleSize": 358,
+      "correlation": 0.861975
     },
     {
       "metric": "hle",
       "label": "Humanity's Last Exam",
       "category": "Intelligence",
-      "sampleSize": 486,
-      "correlation": 0.868395
+      "sampleSize": 490,
+      "correlation": 0.871595
     },
     {
       "metric": "gpqa",
       "label": "GPQA",
       "category": "Intelligence",
-      "sampleSize": 490,
-      "correlation": 0.877638
+      "sampleSize": 494,
+      "correlation": 0.876625
     },
     {
       "metric": "terminalbench_hard",
       "label": "Terminal-Bench Hard",
       "category": "Coding",
-      "sampleSize": 358,
-      "correlation": 0.944206
+      "sampleSize": 361,
+      "correlation": 0.944867
     }
   ],
   "directUpsetsByBenchmark": [
@@ -964,37 +946,37 @@
       "metric": "gpqa",
       "label": "GPQA",
       "category": "Intelligence",
-      "count": 1229
+      "count": 1234
     },
     {
       "metric": "scicode",
       "label": "SciCode",
       "category": "Coding",
-      "count": 1200
+      "count": 1213
     },
     {
       "metric": "hle",
       "label": "Humanity's Last Exam",
       "category": "Intelligence",
-      "count": 1160
+      "count": 1178
     },
     {
       "metric": "ifbench",
       "label": "IFBench",
       "category": "Intelligence",
-      "count": 1116
+      "count": 1119
     },
     {
       "metric": "tau2",
       "label": "TAU2",
       "category": "Intelligence",
-      "count": 1073
+      "count": 1100
     },
     {
       "metric": "lcr",
       "label": "LCR",
       "category": "Intelligence",
-      "count": 914
+      "count": 937
     },
     {
       "metric": "livecodebench",
@@ -1018,7 +1000,7 @@
       "metric": "terminalbench_hard",
       "label": "Terminal-Bench Hard",
       "category": "Coding",
-      "count": 556
+      "count": 571
     },
     {
       "metric": "math_500",
@@ -1036,23 +1018,23 @@
   "pathLengths": [
     {
       "hops": 1,
-      "count": 9459
+      "count": 9541
     },
     {
       "hops": 2,
-      "count": 79880
+      "count": 80958
     },
     {
       "hops": 3,
-      "count": 33402
+      "count": 34160
     },
     {
       "hops": 4,
-      "count": 1203
+      "count": 1285
     },
     {
       "hops": 5,
-      "count": 1
+      "count": 2
     }
   ],
   "pathBenchmarkUsage": [
@@ -1060,73 +1042,73 @@
       "metric": "mmlu_pro",
       "label": "MMLU-Pro",
       "category": "Intelligence",
-      "count": 50043
+      "count": 50496
     },
     {
       "metric": "gpqa",
       "label": "GPQA",
       "category": "Intelligence",
-      "count": 38808
-    },
-    {
-      "metric": "hle",
-      "label": "Humanity's Last Exam",
-      "category": "Intelligence",
-      "count": 34427
+      "count": 40096
     },
     {
       "metric": "tau2",
       "label": "TAU2",
       "category": "Intelligence",
-      "count": 33237
+      "count": 34928
+    },
+    {
+      "metric": "hle",
+      "label": "Humanity's Last Exam",
+      "category": "Intelligence",
+      "count": 34659
     },
     {
       "metric": "ifbench",
       "label": "IFBench",
       "category": "Intelligence",
-      "count": 31431
+      "count": 31849
     },
     {
       "metric": "scicode",
       "label": "SciCode",
       "category": "Coding",
-      "count": 23310
+      "count": 23543
     },
     {
       "metric": "lcr",
       "label": "LCR",
       "category": "Intelligence",
-      "count": 20489
+      "count": 20919
     },
     {
       "metric": "livecodebench",
       "label": "LiveCodeBench",
       "category": "Coding",
-      "count": 11441
+      "count": 11482
     },
     {
       "metric": "terminalbench_hard",
       "label": "Terminal-Bench Hard",
       "category": "Coding",
-      "count": 10911
+      "count": 10874
     },
     {
       "metric": "aime_25",
       "label": "AIME 2025",
       "category": "Math",
-      "count": 8420
+      "count": 8492
     },
     {
       "metric": "math_500",
       "label": "MATH-500",
       "category": "Math",
-      "count": 7632
+      "count": 7642
     },
     {
       "metric": "aime",
       "label": "AIME",
       "category": "Math",
-      "count": 4093
+      "count": 4107
     }
   ],
   "shortestPathAnalysis": {
@@ -1134,35 +1116,35 @@
     "distribution": [
       {
         "hops": 1,
-        "count": 9459,
-        "share": 0.076316
+        "count": 9541,
+        "share": 0.075755
       },
       {
         "hops": 2,
-        "count": 79880,
-        "share": 0.644479
+        "count": 80958,
+        "share": 0.642799
       },
       {
         "hops": 3,
-        "count": 33402,
-        "share": 0.26949
+        "count": 34160,
+        "share": 0.271227
       },
       {
         "hops": 4,
-        "count": 1203,
-        "share": 0.009706
+        "count": 1285,
+        "share": 0.010203
       },
       {
         "hops": 5,
-        "count": 1,
-        "share": 0.000008
+        "count": 2,
+        "share": 0.000016
       }
     ],
-    "meanHops": 2.21261,
+    "meanHops": 2.215926,
     "medianHops": 2,
     "p90Hops": 3,
-    "oneHopShare": 0.076316,
-    "twoOrThreeHopShare": 0.913969,
+    "oneHopShare": 0.075755,
+    "twoOrThreeHopShare": 0.914026,
     "interpretation": "Many 2-3 hop paths imply a small-world ability graph: models are not linearly ordered, and bridge models connect different benchmark skill islands."
   },
   "topWeakToStrongTriples": [
@@ -1235,7 +1217,7 @@
       "target": {
         "id": "598190f8-dc9c-4fea-a7ea-4b81c402ab18",
         "slug": "gemini-3-1-flash-lite-preview",
-        "name": "Gemini 3.1 Flash-Lite Preview",
+        "name": "Gemini 3.1 Flash-Lite",
         "provider": "Google",
         "intelligence": 33.5
       },
@@ -1252,6 +1234,35 @@
       "benchmarkMargin": 0.564327,
       "benchmarkMarginFormatted": "56.4 pp",
       "surpriseScore": 1173.80117
+    },
+    {
+      "source": {
+        "id": "433e410e-5170-4f03-b92f-7927c220b2fe",
+        "slug": "minicpm-v4-6-1-3b",
+        "name": "MiniCPM-V 4.6 1.3B",
+        "provider": "OpenBMB",
+        "intelligence": 12.7
+      },
+      "target": {
+        "id": "e34ffffb-d8e1-4f5c-a2c7-3ca19c235eeb",
+        "slug": "gpt-5-5-instant-05-26",
+        "name": "GPT-5.5 Instant (May 2026)",
+        "provider": "OpenAI",
+        "intelligence": 41.8
+      },
+      "metric": "tau2",
+      "metricLabel": "TAU2",
+      "category": "Intelligence",
+      "sourceIntelligence": 12.7,
+      "targetIntelligence": 41.8,
+      "intelligenceGap": 29.1,
+      "sourceValue": 0.877193,
+      "targetValue": 0.494152,
+      "sourceFormatted": "87.7%",
+      "targetFormatted": "49.4%",
+      "benchmarkMargin": 0.383041,
+      "benchmarkMarginFormatted": "38.3 pp",
+      "surpriseScore": 1114.649123
     },
     {
       "source": {
@@ -1574,6 +1585,35 @@
     },
     {
       "source": {
+        "id": "60cff809-05fb-4439-afe7-8b1476439f49",
+        "slug": "tri-21b-think-preview",
+        "name": "Tri-21B-think Preview",
+        "provider": "Trillion Labs",
+        "intelligence": 20
+      },
+      "target": {
+        "id": "e34ffffb-d8e1-4f5c-a2c7-3ca19c235eeb",
+        "slug": "gpt-5-5-instant-05-26",
+        "name": "GPT-5.5 Instant (May 2026)",
+        "provider": "OpenAI",
+        "intelligence": 41.8
+      },
+      "metric": "tau2",
+      "metricLabel": "TAU2",
+      "category": "Intelligence",
+      "sourceIntelligence": 20,
+      "targetIntelligence": 41.8,
+      "intelligenceGap": 21.8,
+      "sourceValue": 0.932749,
+      "targetValue": 0.494152,
+      "sourceFormatted": "93.3%",
+      "targetFormatted": "49.4%",
+      "benchmarkMargin": 0.438596,
+      "benchmarkMarginFormatted": "43.9 pp",
+      "surpriseScore": 956.140351
+    },
+    {
+      "source": {
         "id": "39b64e04-7a69-4aa2-9e2e-fe38c24681ec",
         "slug": "olmo-3-1-32b-think",
         "name": "Olmo 3.1 32B Think",
@@ -1612,7 +1652,7 @@
       "target": {
         "id": "598190f8-dc9c-4fea-a7ea-4b81c402ab18",
         "slug": "gemini-3-1-flash-lite-preview",
-        "name": "Gemini 3.1 Flash-Lite Preview",
+        "name": "Gemini 3.1 Flash-Lite",
         "provider": "Google",
         "intelligence": 33.5
       },
@@ -1774,6 +1814,35 @@
       "benchmarkMargin": 0.43,
       "benchmarkMarginFormatted": "43.0 pp",
       "surpriseScore": 915.9
+    },
+    {
+      "source": {
+        "id": "d306cccd-0085-4b2f-8aa0-ffcdbb434695",
+        "slug": "minicpm5-1b-non-reasoning",
+        "name": "MiniCPM5-1B (Non-reasoning)",
+        "provider": "OpenBMB",
+        "intelligence": 17.9
+      },
+      "target": {
+        "id": "392063ba-c3b5-47e8-ba67-a7b0b34f6824",
+        "slug": "gpt-5-4-mini-medium",
+        "name": "GPT-5.4 mini (medium)",
+        "provider": "OpenAI",
+        "intelligence": 37.7
+      },
+      "metric": "tau2",
+      "metricLabel": "TAU2",
+      "category": "Intelligence",
+      "sourceIntelligence": 17.9,
+      "targetIntelligence": 37.7,
+      "intelligenceGap": 19.8,
+      "sourceValue": 0.824561,
+      "targetValue": 0.365497,
+      "sourceFormatted": "82.5%",
+      "targetFormatted": "36.5%",
+      "benchmarkMargin": 0.459064,
+      "benchmarkMarginFormatted": "45.9 pp",
+      "surpriseScore": 908.947368
     },
     {
       "source": {
@@ -1948,93 +2017,6 @@
       "benchmarkMargin": 0.43,
       "benchmarkMarginFormatted": "43.0 pp",
       "surpriseScore": 877.2
-    },
-    {
-      "source": {
-        "id": "44b19b51-5367-4ef9-a2ff-2f90b89a0867",
-        "slug": "exaone-4-0-32b-reasoning",
-        "name": "EXAONE 4.0 32B (Reasoning)",
-        "provider": "LG AI Research",
-        "intelligence": 16.7
-      },
-      "target": {
-        "id": "d925845d-39ad-4de3-8495-f176b79828c0",
-        "slug": "claude-3-7-sonnet",
-        "name": "Claude 3.7 Sonnet (Non-reasoning)",
-        "provider": "Anthropic",
-        "intelligence": 30.8
-      },
-      "metric": "aime",
-      "metricLabel": "AIME",
-      "category": "Math",
-      "sourceIntelligence": 16.7,
-      "targetIntelligence": 30.8,
-      "intelligenceGap": 14.1,
-      "sourceValue": 0.843333,
-      "targetValue": 0.223333,
-      "sourceFormatted": "84.3%",
-      "targetFormatted": "22.3%",
-      "benchmarkMargin": 0.62,
-      "benchmarkMarginFormatted": "62.0 pp",
-      "surpriseScore": 874.2
-    },
-    {
-      "source": {
-        "id": "47b7df55-5804-40de-ba11-317de786710a",
-        "slug": "ring-flash-2-0",
-        "name": "Ring-flash-2.0",
-        "provider": "InclusionAI",
-        "intelligence": 14
-      },
-      "target": {
-        "id": "d034dafe-463d-4c50-956f-84fca657b26f",
-        "slug": "claude-4-sonnet",
-        "name": "Claude 4 Sonnet (Non-reasoning)",
-        "provider": "Anthropic",
-        "intelligence": 33
-      },
-      "metric": "aime_25",
-      "metricLabel": "AIME 2025",
-      "category": "Math",
-      "sourceIntelligence": 14,
-      "targetIntelligence": 33,
-      "intelligenceGap": 19,
-      "sourceValue": 0.836667,
-      "targetValue": 0.38,
-      "sourceFormatted": "83.7%",
-      "targetFormatted": "38.0%",
-      "benchmarkMargin": 0.456667,
-      "benchmarkMarginFormatted": "45.7 pp",
-      "surpriseScore": 867.666667
-    },
-    {
-      "source": {
-        "id": "0985ada8-2ed8-404d-bd8b-7357666ce40f",
-        "slug": "qwen3-5-2b-non-reasoning",
-        "name": "Qwen3.5 2B (Non-reasoning)",
-        "provider": "Alibaba",
-        "intelligence": 14.7
-      },
-      "target": {
-        "id": "af134350-8ba3-4629-b56b-00bd6dcf60c4",
-        "slug": "deepseek-v3-2-reasoning-0925",
-        "name": "DeepSeek V3.2 Exp (Reasoning)",
-        "provider": "DeepSeek",
-        "intelligence": 32.9
-      },
-      "metric": "tau2",
-      "metricLabel": "TAU2",
-      "category": "Intelligence",
-      "sourceIntelligence": 14.7,
-      "targetIntelligence": 32.9,
-      "intelligenceGap": 18.2,
-      "sourceValue": 0.815789,
-      "targetValue": 0.339181,
-      "sourceFormatted": "81.6%",
-      "targetFormatted": "33.9%",
-      "benchmarkMargin": 0.476608,
-      "benchmarkMarginFormatted": "47.7 pp",
-      "surpriseScore": 867.426901
     }
   ],
   "benchmarkReversalScores": [
@@ -2042,37 +2024,37 @@
       "metric": "hle",
       "label": "Humanity's Last Exam",
       "category": "Intelligence",
-      "coverageRate": 0.933078,
-      "correlation": 0.868395,
-      "comparableWeakStrongPairs": 117570,
-      "reversalTriples": 23046,
-      "reversalRate": 0.196019,
-      "averageIntelligenceGap": 5.815443,
-      "averageBenchmarkMargin": 1.860922,
-      "averageSurprise": 9.663762,
-      "usefulReversalScore": 0.088086,
+      "coverageRate": 0.933586,
+      "correlation": 0.871595,
+      "comparableWeakStrongPairs": 119520,
+      "reversalTriples": 23193,
+      "reversalRate": 0.194051,
+      "averageIntelligenceGap": 5.812499,
+      "averageBenchmarkMargin": 1.859466,
+      "averageSurprise": 9.641946,
+      "usefulReversalScore": 0.086669,
       "interpretation": "Mixed reversal signal"
     },
     {
       "metric": "ifbench",
       "label": "IFBench",
       "category": "Intelligence",
-      "coverageRate": 0.803059,
-      "correlation": 0.820929,
-      "comparableWeakStrongPairs": 86970,
-      "reversalTriples": 15113,
-      "reversalRate": 0.173773,
-      "averageIntelligenceGap": 7.118752,
-      "averageBenchmarkMargin": 9.178398,
-      "averageSurprise": 61.296244,
-      "usefulReversalScore": 0.073832,
+      "coverageRate": 0.804554,
+      "correlation": 0.821206,
+      "comparableWeakStrongPairs": 88648,
+      "reversalTriples": 15348,
+      "reversalRate": 0.173134,
+      "averageIntelligenceGap": 7.184219,
+      "averageBenchmarkMargin": 9.15882,
+      "averageSurprise": 61.713764,
+      "usefulReversalScore": 0.073659,
       "interpretation": "Strong independent-skill signal"
     },
     {
       "metric": "aime_25",
       "label": "AIME 2025",
       "category": "Math",
-      "coverageRate": 0.506692,
+      "coverageRate": 0.502846,
       "correlation": 0.726055,
       "comparableWeakStrongPairs": 34362,
       "reversalTriples": 7471,
@@ -2080,44 +2062,44 @@
       "averageIntelligenceGap": 6.356686,
       "averageBenchmarkMargin": 20.377687,
       "averageSurprise": 116.525928,
-      "usefulReversalScore": 0.068737,
+      "usefulReversalScore": 0.068215,
       "interpretation": "High reversal signal, but coverage is limited"
     },
     {
       "metric": "tau2",
       "label": "TAU2",
       "category": "Intelligence",
-      "coverageRate": 0.743786,
-      "correlation": 0.84969,
-      "comparableWeakStrongPairs": 74916,
-      "reversalTriples": 11980,
-      "reversalRate": 0.159912,
-      "averageIntelligenceGap": 6.510309,
-      "averageBenchmarkMargin": 13.950857,
-      "averageSurprise": 82.604653,
-      "usefulReversalScore": 0.059507,
+      "coverageRate": 0.745731,
+      "correlation": 0.845554,
+      "comparableWeakStrongPairs": 76474,
+      "reversalTriples": 12308,
+      "reversalRate": 0.160944,
+      "averageIntelligenceGap": 6.615331,
+      "averageBenchmarkMargin": 14.270347,
+      "averageSurprise": 86.062751,
+      "usefulReversalScore": 0.060544,
       "interpretation": "High reversal signal, but coverage is limited"
     },
     {
       "metric": "scicode",
       "label": "SciCode",
       "category": "Coding",
-      "coverageRate": 0.923518,
-      "correlation": 0.858415,
-      "comparableWeakStrongPairs": 115168,
-      "reversalTriples": 14129,
-      "reversalRate": 0.122682,
-      "averageIntelligenceGap": 5.051851,
-      "averageBenchmarkMargin": 5.252962,
-      "averageSurprise": 25.261173,
-      "usefulReversalScore": 0.055696,
+      "coverageRate": 0.924099,
+      "correlation": 0.858337,
+      "comparableWeakStrongPairs": 117098,
+      "reversalTriples": 14395,
+      "reversalRate": 0.122931,
+      "averageIntelligenceGap": 5.062862,
+      "averageBenchmarkMargin": 5.425432,
+      "averageSurprise": 25.989132,
+      "usefulReversalScore": 0.055853,
       "interpretation": "Mixed reversal signal"
     },
     {
       "metric": "livecodebench",
       "label": "LiveCodeBench",
       "category": "Coding",
-      "coverageRate": 0.655832,
+      "coverageRate": 0.650854,
       "correlation": 0.825157,
       "comparableWeakStrongPairs": 57789,
       "reversalTriples": 9007,
@@ -2125,14 +2107,29 @@
       "averageIntelligenceGap": 5.09577,
       "averageBenchmarkMargin": 12.867292,
       "averageSurprise": 58.012308,
-      "usefulReversalScore": 0.053648,
+      "usefulReversalScore": 0.053241,
+      "interpretation": "High reversal signal, but coverage is limited"
+    },
+    {
+      "metric": "lcr",
+      "label": "LCR",
+      "category": "Intelligence",
+      "coverageRate": 0.683112,
+      "correlation": 0.861975,
+      "comparableWeakStrongPairs": 63773,
+      "reversalTriples": 9418,
+      "reversalRate": 0.14768,
+      "averageIntelligenceGap": 5.724676,
+      "averageBenchmarkMargin": 9.948222,
+      "averageSurprise": 50.660491,
+      "usefulReversalScore": 0.049233,
       "interpretation": "High reversal signal, but coverage is limited"
     },
     {
       "metric": "math_500",
       "label": "MATH-500",
       "category": "Math",
-      "coverageRate": 0.384321,
+      "coverageRate": 0.381404,
       "correlation": 0.63988,
       "comparableWeakStrongPairs": 20004,
       "reversalTriples": 3635,
@@ -2140,29 +2137,14 @@
       "averageIntelligenceGap": 3.702641,
       "averageBenchmarkMargin": 11.487299,
       "averageSurprise": 31.96727,
-      "usefulReversalScore": 0.049592,
-      "interpretation": "High reversal signal, but coverage is limited"
-    },
-    {
-      "metric": "lcr",
-      "label": "LCR",
-      "category": "Intelligence",
-      "coverageRate": 0.680688,
-      "correlation": 0.862505,
-      "comparableWeakStrongPairs": 62351,
-      "reversalTriples": 9231,
-      "reversalRate": 0.148049,
-      "averageIntelligenceGap": 5.704398,
-      "averageBenchmarkMargin": 9.987371,
-      "averageSurprise": 50.915428,
-      "usefulReversalScore": 0.049127,
+      "usefulReversalScore": 0.049216,
       "interpretation": "High reversal signal, but coverage is limited"
     },
     {
       "metric": "mmlu_pro",
       "label": "MMLU-Pro",
       "category": "Intelligence",
-      "coverageRate": 0.659656,
+      "coverageRate": 0.654649,
       "correlation": 0.738454,
       "comparableWeakStrongPairs": 58471,
       "reversalTriples": 6778,
@@ -2170,29 +2152,29 @@
       "averageIntelligenceGap": 3.789672,
       "averageBenchmarkMargin": 4.669829,
       "averageSurprise": 12.354166,
-      "usefulReversalScore": 0.046764,
+      "usefulReversalScore": 0.046409,
       "interpretation": "High reversal signal, but coverage is limited"
     },
     {
       "metric": "gpqa",
       "label": "GPQA",
       "category": "Intelligence",
-      "coverageRate": 0.940727,
-      "correlation": 0.877638,
-      "comparableWeakStrongPairs": 119517,
-      "reversalTriples": 12217,
-      "reversalRate": 0.10222,
-      "averageIntelligenceGap": 4.242539,
-      "averageBenchmarkMargin": 6.593231,
-      "averageSurprise": 23.652953,
-      "usefulReversalScore": 0.045423,
+      "coverageRate": 0.941176,
+      "correlation": 0.876625,
+      "comparableWeakStrongPairs": 121482,
+      "reversalTriples": 12445,
+      "reversalRate": 0.102443,
+      "averageIntelligenceGap": 4.261085,
+      "averageBenchmarkMargin": 6.77636,
+      "averageSurprise": 24.440966,
+      "usefulReversalScore": 0.045641,
       "interpretation": "Mixed reversal signal"
     },
     {
       "metric": "aime",
       "label": "AIME",
       "category": "Math",
-      "coverageRate": 0.344168,
+      "coverageRate": 0.341556,
       "correlation": 0.723657,
       "comparableWeakStrongPairs": 16040,
       "reversalTriples": 3329,
@@ -2200,22 +2182,22 @@
       "averageIntelligenceGap": 4.328807,
       "averageBenchmarkMargin": 18.922399,
       "averageSurprise": 76.346561,
-      "usefulReversalScore": 0.04474,
+      "usefulReversalScore": 0.0444,
       "interpretation": "High reversal signal, but coverage is limited"
     },
     {
       "metric": "terminalbench_hard",
       "label": "Terminal-Bench Hard",
       "category": "Coding",
-      "coverageRate": 0.688337,
-      "correlation": 0.944206,
-      "comparableWeakStrongPairs": 63766,
-      "reversalTriples": 6274,
-      "reversalRate": 0.098391,
-      "averageIntelligenceGap": 3.768744,
-      "averageBenchmarkMargin": 4.31896,
-      "averageSurprise": 14.537485,
-      "usefulReversalScore": 0.027483,
+      "coverageRate": 0.688805,
+      "correlation": 0.944867,
+      "comparableWeakStrongPairs": 64843,
+      "reversalTriples": 6347,
+      "reversalRate": 0.097883,
+      "averageIntelligenceGap": 3.782827,
+      "averageBenchmarkMargin": 4.337282,
+      "averageSurprise": 14.663195,
+      "usefulReversalScore": 0.027315,
       "interpretation": "Mixed reversal signal"
     }
   ],
@@ -2224,92 +2206,92 @@
       "metric": "hle",
       "label": "Humanity's Last Exam",
       "category": "Intelligence",
-      "coverageRate": 0.933078,
-      "correlation": 0.868395,
-      "comparableWeakStrongPairs": 117570,
-      "reversalTriples": 23046,
-      "reversalRate": 0.196019,
-      "averageIntelligenceGap": 5.815443,
-      "averageBenchmarkMargin": 1.860922,
-      "averageSurprise": 9.663762,
-      "usefulReversalScore": 0.088086,
+      "coverageRate": 0.933586,
+      "correlation": 0.871595,
+      "comparableWeakStrongPairs": 119520,
+      "reversalTriples": 23193,
+      "reversalRate": 0.194051,
+      "averageIntelligenceGap": 5.812499,
+      "averageBenchmarkMargin": 1.859466,
+      "averageSurprise": 9.641946,
+      "usefulReversalScore": 0.086669,
       "interpretation": "Mixed reversal signal",
-      "compositeUsefulness": 0.3119,
+      "compositeUsefulness": 0.310198,
       "rationale": "Good candidate: frequent reversals with broad coverage."
     },
     {
       "metric": "scicode",
       "label": "SciCode",
       "category": "Coding",
-      "coverageRate": 0.923518,
-      "correlation": 0.858415,
-      "comparableWeakStrongPairs": 115168,
-      "reversalTriples": 14129,
-      "reversalRate": 0.122682,
-      "averageIntelligenceGap": 5.051851,
-      "averageBenchmarkMargin": 5.252962,
-      "averageSurprise": 25.261173,
-      "usefulReversalScore": 0.055696,
+      "coverageRate": 0.924099,
+      "correlation": 0.858337,
+      "comparableWeakStrongPairs": 117098,
+      "reversalTriples": 14395,
+      "reversalRate": 0.122931,
+      "averageIntelligenceGap": 5.062862,
+      "averageBenchmarkMargin": 5.425432,
+      "averageSurprise": 25.989132,
+      "usefulReversalScore": 0.055853,
       "interpretation": "Mixed reversal signal",
-      "compositeUsefulness": 0.281453,
+      "compositeUsefulness": 0.281759,
       "rationale": "Good candidate: frequent reversals with broad coverage."
     },
     {
       "metric": "ifbench",
       "label": "IFBench",
       "category": "Intelligence",
-      "coverageRate": 0.803059,
-      "correlation": 0.820929,
-      "comparableWeakStrongPairs": 86970,
-      "reversalTriples": 15113,
-      "reversalRate": 0.173773,
-      "averageIntelligenceGap": 7.118752,
-      "averageBenchmarkMargin": 9.178398,
-      "averageSurprise": 61.296244,
-      "usefulReversalScore": 0.073832,
+      "coverageRate": 0.804554,
+      "correlation": 0.821206,
+      "comparableWeakStrongPairs": 88648,
+      "reversalTriples": 15348,
+      "reversalRate": 0.173134,
+      "averageIntelligenceGap": 7.184219,
+      "averageBenchmarkMargin": 9.15882,
+      "averageSurprise": 61.713764,
+      "usefulReversalScore": 0.073659,
       "interpretation": "Strong independent-skill signal",
-      "compositeUsefulness": 0.273741,
+      "compositeUsefulness": 0.273941,
       "rationale": "Good candidate: frequent reversals with broad coverage."
     },
     {
       "metric": "gpqa",
       "label": "GPQA",
       "category": "Intelligence",
-      "coverageRate": 0.940727,
-      "correlation": 0.877638,
-      "comparableWeakStrongPairs": 119517,
-      "reversalTriples": 12217,
-      "reversalRate": 0.10222,
-      "averageIntelligenceGap": 4.242539,
-      "averageBenchmarkMargin": 6.593231,
-      "averageSurprise": 23.652953,
-      "usefulReversalScore": 0.045423,
+      "coverageRate": 0.941176,
+      "correlation": 0.876625,
+      "comparableWeakStrongPairs": 121482,
+      "reversalTriples": 12445,
+      "reversalRate": 0.102443,
+      "averageIntelligenceGap": 4.261085,
+      "averageBenchmarkMargin": 6.77636,
+      "averageSurprise": 24.440966,
+      "usefulReversalScore": 0.045641,
       "interpretation": "Mixed reversal signal",
-      "compositeUsefulness": 0.271706,
+      "compositeUsefulness": 0.272264,
       "rationale": "Good candidate: frequent reversals with broad coverage."
     },
     {
       "metric": "tau2",
       "label": "TAU2",
       "category": "Intelligence",
-      "coverageRate": 0.743786,
-      "correlation": 0.84969,
-      "comparableWeakStrongPairs": 74916,
-      "reversalTriples": 11980,
-      "reversalRate": 0.159912,
-      "averageIntelligenceGap": 6.510309,
-      "averageBenchmarkMargin": 13.950857,
-      "averageSurprise": 82.604653,
-      "usefulReversalScore": 0.059507,
+      "coverageRate": 0.745731,
+      "correlation": 0.845554,
+      "comparableWeakStrongPairs": 76474,
+      "reversalTriples": 12308,
+      "reversalRate": 0.160944,
+      "averageIntelligenceGap": 6.615331,
+      "averageBenchmarkMargin": 14.270347,
+      "averageSurprise": 86.062751,
+      "usefulReversalScore": 0.060544,
       "interpretation": "High reversal signal, but coverage is limited",
-      "compositeUsefulness": 0.24141,
+      "compositeUsefulness": 0.243467,
       "rationale": "Interesting but coverage should be checked before using it in a composite score."
     },
     {
       "metric": "mmlu_pro",
       "label": "MMLU-Pro",
       "category": "Intelligence",
-      "coverageRate": 0.659656,
+      "coverageRate": 0.654649,
       "correlation": 0.738454,
       "comparableWeakStrongPairs": 58471,
       "reversalTriples": 6778,
@@ -2317,16 +2299,16 @@
       "averageIntelligenceGap": 3.789672,
       "averageBenchmarkMargin": 4.669829,
       "averageSurprise": 12.354166,
-      "usefulReversalScore": 0.046764,
+      "usefulReversalScore": 0.046409,
       "interpretation": "High reversal signal, but coverage is limited",
-      "compositeUsefulness": 0.226727,
+      "compositeUsefulness": 0.225006,
       "rationale": "Interesting but coverage should be checked before using it in a composite score."
     },
     {
       "metric": "livecodebench",
       "label": "LiveCodeBench",
       "category": "Coding",
-      "coverageRate": 0.655832,
+      "coverageRate": 0.650854,
       "correlation": 0.825157,
       "comparableWeakStrongPairs": 57789,
       "reversalTriples": 9007,
@@ -2334,33 +2316,33 @@
       "averageIntelligenceGap": 5.09577,
       "averageBenchmarkMargin": 12.867292,
       "averageSurprise": 58.012308,
-      "usefulReversalScore": 0.053648,
+      "usefulReversalScore": 0.053241,
       "interpretation": "High reversal signal, but coverage is limited",
-      "compositeUsefulness": 0.217298,
+      "compositeUsefulness": 0.215649,
       "rationale": "Interesting but coverage should be checked before using it in a composite score."
     },
     {
       "metric": "lcr",
       "label": "LCR",
       "category": "Intelligence",
-      "coverageRate": 0.680688,
-      "correlation": 0.862505,
-      "comparableWeakStrongPairs": 62351,
-      "reversalTriples": 9231,
-      "reversalRate": 0.148049,
-      "averageIntelligenceGap": 5.704398,
-      "averageBenchmarkMargin": 9.987371,
-      "averageSurprise": 50.915428,
-      "usefulReversalScore": 0.049127,
+      "coverageRate": 0.683112,
+      "correlation": 0.861975,
+      "comparableWeakStrongPairs": 63773,
+      "reversalTriples": 9418,
+      "reversalRate": 0.14768,
+      "averageIntelligenceGap": 5.724676,
+      "averageBenchmarkMargin": 9.948222,
+      "averageSurprise": 50.660491,
+      "usefulReversalScore": 0.049233,
       "interpretation": "High reversal signal, but coverage is limited",
-      "compositeUsefulness": 0.214243,
+      "compositeUsefulness": 0.21502,
       "rationale": "Interesting but coverage should be checked before using it in a composite score."
     },
     {
       "metric": "aime_25",
       "label": "AIME 2025",
       "category": "Math",
-      "coverageRate": 0.506692,
+      "coverageRate": 0.502846,
       "correlation": 0.726055,
       "comparableWeakStrongPairs": 34362,
       "reversalTriples": 7471,
@@ -2368,33 +2350,33 @@
       "averageIntelligenceGap": 6.356686,
       "averageBenchmarkMargin": 20.377687,
       "averageSurprise": 116.525928,
-      "usefulReversalScore": 0.068737,
+      "usefulReversalScore": 0.068215,
       "interpretation": "High reversal signal, but coverage is limited",
-      "compositeUsefulness": 0.199495,
+      "compositeUsefulness": 0.19798,
       "rationale": "Interesting but coverage should be checked before using it in a composite score."
     },
     {
       "metric": "terminalbench_hard",
       "label": "Terminal-Bench Hard",
       "category": "Coding",
-      "coverageRate": 0.688337,
-      "correlation": 0.944206,
-      "comparableWeakStrongPairs": 63766,
-      "reversalTriples": 6274,
-      "reversalRate": 0.098391,
-      "averageIntelligenceGap": 3.768744,
-      "averageBenchmarkMargin": 4.31896,
-      "averageSurprise": 14.537485,
-      "usefulReversalScore": 0.027483,
+      "coverageRate": 0.688805,
+      "correlation": 0.944867,
+      "comparableWeakStrongPairs": 64843,
+      "reversalTriples": 6347,
+      "reversalRate": 0.097883,
+      "averageIntelligenceGap": 3.782827,
+      "averageBenchmarkMargin": 4.337282,
+      "averageSurprise": 14.663195,
+      "usefulReversalScore": 0.027315,
       "interpretation": "Mixed reversal signal",
-      "compositeUsefulness": 0.181586,
+      "compositeUsefulness": 0.181393,
       "rationale": "More useful as a stabilizer than as an extreme-skill detector."
     },
     {
       "metric": "math_500",
       "label": "MATH-500",
       "category": "Math",
-      "coverageRate": 0.384321,
+      "coverageRate": 0.381404,
       "correlation": 0.63988,
       "comparableWeakStrongPairs": 20004,
       "reversalTriples": 3635,
@@ -2402,16 +2384,16 @@
       "averageIntelligenceGap": 3.702641,
       "averageBenchmarkMargin": 11.487299,
       "averageSurprise": 31.96727,
-      "usefulReversalScore": 0.049592,
+      "usefulReversalScore": 0.049216,
       "interpretation": "High reversal signal, but coverage is limited",
-      "compositeUsefulness": 0.156731,
+      "compositeUsefulness": 0.155542,
       "rationale": "Interesting but coverage should be checked before using it in a composite score."
     },
     {
       "metric": "aime",
       "label": "AIME",
       "category": "Math",
-      "coverageRate": 0.344168,
+      "coverageRate": 0.341556,
       "correlation": 0.723657,
       "comparableWeakStrongPairs": 16040,
       "reversalTriples": 3329,
@@ -2419,13 +2401,60 @@
       "averageIntelligenceGap": 4.328807,
       "averageBenchmarkMargin": 18.922399,
       "averageSurprise": 76.346561,
-      "usefulReversalScore": 0.04474,
+      "usefulReversalScore": 0.0444,
       "interpretation": "High reversal signal, but coverage is limited",
-      "compositeUsefulness": 0.134265,
+      "compositeUsefulness": 0.133246,
       "rationale": "Interesting but coverage should be checked before using it in a composite score."
     }
   ],
   "modelAbilityFingerprints": [
+    {
+      "model": {
+        "id": "527e943a-adc6-4e69-93af-d1608e1b5fed",
+        "slug": "deepseek-v3-2-speciale",
+        "name": "DeepSeek V3.2 Speciale",
+        "provider": "DeepSeek",
+        "intelligence": 29.4
+      },
+      "role": "bridge model",
+      "upsetPower": {
+        "count": 743,
+        "surprise": 42750.266852
+      },
+      "vulnerability": {
+        "count": 14,
+        "surprise": 207.102947
+      },
+      "bridgeCount": 1526,
+      "missesAsSource": 1,
+      "missesAsTarget": 14,
+      "benchmarkCoverage": 9,
+      "strongResiduals": [
+        {
+          "metric": "aime_25",
+          "label": "AIME 2025",
+          "actual": "96.7%",
+          "expected": "67.2%",
+          "residual": 29.510346
+        },
+        {
+          "metric": "livecodebench",
+          "label": "LiveCodeBench",
+          "actual": "89.6%",
+          "expected": "63.9%",
+          "residual": 25.748658
+        },
+        {
+          "metric": "gpqa",
+          "label": "GPQA",
+          "actual": "87.1%",
+          "expected": "68.9%",
+          "residual": 18.193156
+        }
+      ],
+      "weakResiduals": [],
+      "roleScore": 2283
+    },
     {
       "model": {
         "id": "d925845d-39ad-4de3-8495-f176b79828c0",
@@ -2436,14 +2465,14 @@
       },
       "role": "bridge model",
       "upsetPower": {
-        "count": 86,
-        "surprise": 1601.410697
+        "count": 87,
+        "surprise": 1607.843446
       },
       "vulnerability": {
-        "count": 960,
-        "surprise": 132602.646516
+        "count": 961,
+        "surprise": 133021.330727
       },
-      "bridgeCount": 1208,
+      "bridgeCount": 1180,
       "missesAsSource": 1,
       "missesAsTarget": 14,
       "benchmarkCoverage": 12,
@@ -2452,15 +2481,15 @@
           "metric": "lcr",
           "label": "LCR",
           "actual": "48.3%",
-          "expected": "44.5%",
-          "residual": 3.8504
+          "expected": "44.3%",
+          "residual": 4.02763
         },
         {
           "metric": "scicode",
           "label": "SciCode",
           "actual": "37.6%",
-          "expected": "35.2%",
-          "residual": 2.442208
+          "expected": "35.1%",
+          "residual": 2.498004
         }
       ],
       "weakResiduals": [
@@ -2486,54 +2515,69 @@
           "residual": -27.243382
         }
       ],
-      "roleScore": 2254
+      "roleScore": 2228
     },
     {
       "model": {
-        "id": "527e943a-adc6-4e69-93af-d1608e1b5fed",
-        "slug": "deepseek-v3-2-speciale",
-        "name": "DeepSeek V3.2 Speciale",
-        "provider": "DeepSeek",
-        "intelligence": 29.4
+        "id": "c8673741-5e1a-46a1-9e4f-710a5c920982",
+        "slug": "glm-4-7-flash-non-reasoning",
+        "name": "GLM-4.7-Flash (Non-reasoning)",
+        "provider": "Z AI",
+        "intelligence": 22.1
       },
       "role": "bridge model",
       "upsetPower": {
-        "count": 739,
-        "surprise": 42549.635287
+        "count": 257,
+        "surprise": 38956.780101
       },
       "vulnerability": {
-        "count": 14,
-        "surprise": 207.102947
+        "count": 514,
+        "surprise": 19124.278403
       },
-      "bridgeCount": 1449,
-      "missesAsSource": 1,
-      "missesAsTarget": 14,
-      "benchmarkCoverage": 9,
+      "bridgeCount": 1303,
+      "missesAsSource": 2,
+      "missesAsTarget": 13,
+      "benchmarkCoverage": 7,
       "strongResiduals": [
         {
-          "metric": "aime_25",
-          "label": "AIME 2025",
-          "actual": "96.7%",
-          "expected": "67.2%",
-          "residual": 29.510346
+          "metric": "tau2",
+          "label": "TAU2",
+          "actual": "91.8%",
+          "expected": "43.3%",
+          "residual": 48.475719
         },
         {
-          "metric": "livecodebench",
-          "label": "LiveCodeBench",
-          "actual": "89.6%",
-          "expected": "63.9%",
-          "residual": 25.748658
+          "metric": "ifbench",
+          "label": "IFBench",
+          "actual": "46.3%",
+          "expected": "43.0%",
+          "residual": 3.23091
+        }
+      ],
+      "weakResiduals": [
+        {
+          "metric": "lcr",
+          "label": "LCR",
+          "actual": "14.7%",
+          "expected": "31.9%",
+          "residual": -17.220499
         },
         {
           "metric": "gpqa",
           "label": "GPQA",
-          "actual": "87.1%",
-          "expected": "69.1%",
-          "residual": 18.035071
+          "actual": "45.2%",
+          "expected": "59.6%",
+          "residual": -14.389685
+        },
+        {
+          "metric": "terminalbench_hard",
+          "label": "Terminal-Bench Hard",
+          "actual": "3.8%",
+          "expected": "12.1%",
+          "residual": -8.316344
         }
       ],
-      "weakResiduals": [],
-      "roleScore": 2202
+      "roleScore": 2074
     },
     {
       "model": {
@@ -2545,14 +2589,14 @@
       },
       "role": "bridge model",
       "upsetPower": {
-        "count": 169,
-        "surprise": 5000.778458
+        "count": 172,
+        "surprise": 5159.248633
       },
       "vulnerability": {
-        "count": 590,
-        "surprise": 44284.802199
+        "count": 591,
+        "surprise": 44818.135532
       },
-      "bridgeCount": 1333,
+      "bridgeCount": 1275,
       "missesAsSource": 0,
       "missesAsTarget": 15,
       "benchmarkCoverage": 10,
@@ -2561,15 +2605,15 @@
           "metric": "lcr",
           "label": "LCR",
           "actual": "70.3%",
-          "expected": "53.5%",
-          "residual": 16.7842
+          "expected": "53.3%",
+          "residual": 17.034896
         },
         {
           "metric": "scicode",
           "label": "SciCode",
           "actual": "43.3%",
           "expected": "40.3%",
-          "residual": 2.989584
+          "residual": 3.048471
         },
         {
           "metric": "aime_25",
@@ -2591,8 +2635,8 @@
           "metric": "tau2",
           "label": "TAU2",
           "actual": "54.7%",
-          "expected": "71.6%",
-          "residual": -16.891503
+          "expected": "71.3%",
+          "residual": -16.583671
         },
         {
           "metric": "mmlu_pro",
@@ -2602,69 +2646,7 @@
           "residual": -14.410887
         }
       ],
-      "roleScore": 2092
-    },
-    {
-      "model": {
-        "id": "c8673741-5e1a-46a1-9e4f-710a5c920982",
-        "slug": "glm-4-7-flash-non-reasoning",
-        "name": "GLM-4.7-Flash (Non-reasoning)",
-        "provider": "Z AI",
-        "intelligence": 22.1
-      },
-      "role": "bridge model",
-      "upsetPower": {
-        "count": 256,
-        "surprise": 38121.546183
-      },
-      "vulnerability": {
-        "count": 514,
-        "surprise": 19124.278403
-      },
-      "bridgeCount": 1163,
-      "missesAsSource": 2,
-      "missesAsTarget": 13,
-      "benchmarkCoverage": 7,
-      "strongResiduals": [
-        {
-          "metric": "tau2",
-          "label": "TAU2",
-          "actual": "91.8%",
-          "expected": "43.2%",
-          "residual": 48.565505
-        },
-        {
-          "metric": "ifbench",
-          "label": "IFBench",
-          "actual": "46.3%",
-          "expected": "43.0%",
-          "residual": 3.219311
-        }
-      ],
-      "weakResiduals": [
-        {
-          "metric": "lcr",
-          "label": "LCR",
-          "actual": "14.7%",
-          "expected": "32.0%",
-          "residual": -17.296276
-        },
-        {
-          "metric": "gpqa",
-          "label": "GPQA",
-          "actual": "45.2%",
-          "expected": "59.7%",
-          "residual": -14.484147
-        },
-        {
-          "metric": "terminalbench_hard",
-          "label": "Terminal-Bench Hard",
-          "actual": "3.8%",
-          "expected": "12.1%",
-          "residual": -8.306455
-        }
-      ],
-      "roleScore": 1933
+      "roleScore": 2038
     },
     {
       "model": {
@@ -2676,14 +2658,14 @@
       },
       "role": "bridge model",
       "upsetPower": {
-        "count": 308,
-        "surprise": 53356.118991
+        "count": 309,
+        "surprise": 54312.259342
       },
       "vulnerability": {
         "count": 433,
         "surprise": 11670.596735
       },
-      "bridgeCount": 1120,
+      "bridgeCount": 1229,
       "missesAsSource": 3,
       "missesAsTarget": 11,
       "benchmarkCoverage": 7,
@@ -2692,15 +2674,15 @@
           "metric": "tau2",
           "label": "TAU2",
           "actual": "93.3%",
-          "expected": "39.3%",
-          "residual": 53.992643
+          "expected": "39.4%",
+          "residual": 53.847192
         },
         {
           "metric": "ifbench",
           "label": "IFBench",
           "actual": "47.1%",
           "expected": "40.9%",
-          "residual": 6.240029
+          "residual": 6.235318
         }
       ],
       "weakResiduals": [
@@ -2709,24 +2691,86 @@
           "label": "LCR",
           "actual": "14.7%",
           "expected": "28.9%",
-          "residual": -14.274209
+          "residual": -14.222921
         },
         {
           "metric": "scicode",
           "label": "SciCode",
           "actual": "17.8%",
           "expected": "26.3%",
-          "residual": -8.524723
+          "residual": -8.474226
         },
         {
           "metric": "terminalbench_hard",
           "label": "Terminal-Bench Hard",
           "actual": "2.3%",
           "expected": "9.8%",
-          "residual": -7.477441
+          "residual": -7.489155
         }
       ],
-      "roleScore": 1861
+      "roleScore": 1971
+    },
+    {
+      "model": {
+        "id": "d034dafe-463d-4c50-956f-84fca657b26f",
+        "slug": "claude-4-sonnet",
+        "name": "Claude 4 Sonnet (Non-reasoning)",
+        "provider": "Anthropic",
+        "intelligence": 33
+      },
+      "role": "vulnerable target",
+      "upsetPower": {
+        "count": 74,
+        "surprise": 1047.817266
+      },
+      "vulnerability": {
+        "count": 962,
+        "surprise": 106531.698142
+      },
+      "bridgeCount": 838,
+      "missesAsSource": 1,
+      "missesAsTarget": 14,
+      "benchmarkCoverage": 12,
+      "strongResiduals": [
+        {
+          "metric": "terminalbench_hard",
+          "label": "Terminal-Bench Hard",
+          "actual": "27.3%",
+          "expected": "24.3%",
+          "residual": 3.010645
+        },
+        {
+          "metric": "scicode",
+          "label": "SciCode",
+          "actual": "37.3%",
+          "expected": "36.9%",
+          "residual": 0.399754
+        }
+      ],
+      "weakResiduals": [
+        {
+          "metric": "aime",
+          "label": "AIME",
+          "actual": "40.7%",
+          "expected": "80.9%",
+          "residual": -40.228921
+        },
+        {
+          "metric": "aime_25",
+          "label": "AIME 2025",
+          "actual": "38.0%",
+          "expected": "74.6%",
+          "residual": -36.614967
+        },
+        {
+          "metric": "livecodebench",
+          "label": "LiveCodeBench",
+          "actual": "44.9%",
+          "expected": "71.0%",
+          "residual": -26.130875
+        }
+      ],
+      "roleScore": 1874
     },
     {
       "model": {
@@ -2738,14 +2782,14 @@
       },
       "role": "bridge model",
       "upsetPower": {
-        "count": 687,
-        "surprise": 58144.449064
+        "count": 692,
+        "surprise": 58337.967635
       },
       "vulnerability": {
         "count": 173,
         "surprise": 2232.54651
       },
-      "bridgeCount": 983,
+      "bridgeCount": 989,
       "missesAsSource": 4,
       "missesAsTarget": 11,
       "benchmarkCoverage": 10,
@@ -2768,8 +2812,8 @@
           "metric": "ifbench",
           "label": "IFBench",
           "actual": "54.4%",
-          "expected": "36.6%",
-          "residual": 17.791671
+          "expected": "36.7%",
+          "residual": 17.754337
         }
       ],
       "weakResiduals": [
@@ -2778,24 +2822,93 @@
           "label": "LCR",
           "actual": "8.7%",
           "expected": "22.9%",
-          "residual": -14.230076
+          "residual": -14.227765
         },
         {
           "metric": "tau2",
           "label": "TAU2",
           "actual": "27.8%",
-          "expected": "31.4%",
-          "residual": -3.574131
+          "expected": "31.6%",
+          "residual": -3.830916
         },
         {
           "metric": "terminalbench_hard",
           "label": "Terminal-Bench Hard",
           "actual": "2.3%",
           "expected": "5.1%",
-          "residual": -2.78911
+          "residual": -2.804475
         }
       ],
-      "roleScore": 1843
+      "roleScore": 1854
+    },
+    {
+      "model": {
+        "id": "f78138d6-2e04-4a84-919a-20d177cb6ff1",
+        "slug": "jamba-reasoning-3b",
+        "name": "Jamba Reasoning 3B",
+        "provider": "AI21 Labs",
+        "intelligence": 9.6
+      },
+      "role": "bridge model",
+      "upsetPower": {
+        "count": 458,
+        "surprise": 30551.640932
+      },
+      "vulnerability": {
+        "count": 138,
+        "surprise": 938.883429
+      },
+      "bridgeCount": 1248,
+      "missesAsSource": 8,
+      "missesAsTarget": 7,
+      "benchmarkCoverage": 10,
+      "strongResiduals": [
+        {
+          "metric": "ifbench",
+          "label": "IFBench",
+          "actual": "52.4%",
+          "expected": "30.4%",
+          "residual": 22.040754
+        },
+        {
+          "metric": "hle",
+          "label": "Humanity's Last Exam",
+          "actual": "4.6%",
+          "expected": "1.9%",
+          "residual": 2.652127
+        },
+        {
+          "metric": "terminalbench_hard",
+          "label": "Terminal-Bench Hard",
+          "actual": "0.8%",
+          "expected": "-1.8%",
+          "residual": 2.595853
+        }
+      ],
+      "weakResiduals": [
+        {
+          "metric": "aime_25",
+          "label": "AIME 2025",
+          "actual": "10.7%",
+          "expected": "26.1%",
+          "residual": -15.467096
+        },
+        {
+          "metric": "scicode",
+          "label": "SciCode",
+          "actual": "5.9%",
+          "expected": "17.8%",
+          "residual": -11.87341
+        },
+        {
+          "metric": "gpqa",
+          "label": "GPQA",
+          "actual": "33.3%",
+          "expected": "43.6%",
+          "residual": -10.335645
+        }
+      ],
+      "roleScore": 1844
     },
     {
       "model": {
@@ -2807,14 +2920,14 @@
       },
       "role": "bridge model",
       "upsetPower": {
-        "count": 221,
-        "surprise": 9938.66857
+        "count": 222,
+        "surprise": 10021.335237
       },
       "vulnerability": {
-        "count": 626,
-        "surprise": 45525.4071
+        "count": 627,
+        "surprise": 45822.600082
       },
-      "bridgeCount": 987,
+      "bridgeCount": 981,
       "missesAsSource": 1,
       "missesAsTarget": 14,
       "benchmarkCoverage": 12,
@@ -2823,15 +2936,15 @@
           "metric": "lcr",
           "label": "LCR",
           "actual": "61.0%",
-          "expected": "38.0%",
-          "residual": 22.992924
+          "expected": "37.9%",
+          "residual": 23.117678
         },
         {
           "metric": "scicode",
           "label": "SciCode",
           "actual": "38.1%",
-          "expected": "31.5%",
-          "residual": 6.622654
+          "expected": "31.4%",
+          "residual": 6.676241
         },
         {
           "metric": "mmlu_pro",
@@ -2864,7 +2977,7 @@
           "residual": -11.968966
         }
       ],
-      "roleScore": 1834
+      "roleScore": 1830
     },
     {
       "model": {
@@ -2874,16 +2987,16 @@
         "provider": "Baidu",
         "intelligence": 15
       },
-      "role": "bridge model",
+      "role": "mixed profile",
       "upsetPower": {
-        "count": 639,
-        "surprise": 31034.906456
+        "count": 642,
+        "surprise": 31290.818633
       },
       "vulnerability": {
         "count": 268,
         "surprise": 3548.032798
       },
-      "bridgeCount": 907,
+      "bridgeCount": 896,
       "missesAsSource": 4,
       "missesAsTarget": 11,
       "benchmarkCoverage": 11,
@@ -2892,8 +3005,8 @@
           "metric": "gpqa",
           "label": "GPQA",
           "actual": "81.1%",
-          "expected": "50.6%",
-          "residual": 30.539627
+          "expected": "50.5%",
+          "residual": 30.57221
         },
         {
           "metric": "math_500",
@@ -2915,149 +3028,18 @@
           "metric": "lcr",
           "label": "LCR",
           "actual": "2.3%",
-          "expected": "21.7%",
-          "residual": -19.412146
+          "expected": "21.8%",
+          "residual": -19.419164
         },
         {
           "metric": "hle",
           "label": "Humanity's Last Exam",
           "actual": "3.5%",
-          "expected": "5.2%",
-          "residual": -1.676557
+          "expected": "5.1%",
+          "residual": -1.635319
         }
       ],
-      "roleScore": 1814
-    },
-    {
-      "model": {
-        "id": "f78138d6-2e04-4a84-919a-20d177cb6ff1",
-        "slug": "jamba-reasoning-3b",
-        "name": "Jamba Reasoning 3B",
-        "provider": "AI21 Labs",
-        "intelligence": 9.6
-      },
-      "role": "bridge model",
-      "upsetPower": {
-        "count": 454,
-        "surprise": 30298.389299
-      },
-      "vulnerability": {
-        "count": 138,
-        "surprise": 938.883429
-      },
-      "bridgeCount": 1219,
-      "missesAsSource": 8,
-      "missesAsTarget": 7,
-      "benchmarkCoverage": 10,
-      "strongResiduals": [
-        {
-          "metric": "ifbench",
-          "label": "IFBench",
-          "actual": "52.4%",
-          "expected": "30.3%",
-          "residual": 22.126245
-        },
-        {
-          "metric": "terminalbench_hard",
-          "label": "Terminal-Bench Hard",
-          "actual": "0.8%",
-          "expected": "-1.9%",
-          "residual": 2.616608
-        },
-        {
-          "metric": "hle",
-          "label": "Humanity's Last Exam",
-          "actual": "4.6%",
-          "expected": "2.0%",
-          "residual": 2.559869
-        }
-      ],
-      "weakResiduals": [
-        {
-          "metric": "aime_25",
-          "label": "AIME 2025",
-          "actual": "10.7%",
-          "expected": "26.1%",
-          "residual": -15.467096
-        },
-        {
-          "metric": "scicode",
-          "label": "SciCode",
-          "actual": "5.9%",
-          "expected": "17.8%",
-          "residual": -11.918804
-        },
-        {
-          "metric": "gpqa",
-          "label": "GPQA",
-          "actual": "33.3%",
-          "expected": "43.6%",
-          "residual": -10.321164
-        }
-      ],
-      "roleScore": 1811
-    },
-    {
-      "model": {
-        "id": "d034dafe-463d-4c50-956f-84fca657b26f",
-        "slug": "claude-4-sonnet",
-        "name": "Claude 4 Sonnet (Non-reasoning)",
-        "provider": "Anthropic",
-        "intelligence": 33
-      },
-      "role": "vulnerable target",
-      "upsetPower": {
-        "count": 73,
-        "surprise": 1022.086272
-      },
-      "vulnerability": {
-        "count": 960,
-        "surprise": 106067.87206
-      },
-      "bridgeCount": 736,
-      "missesAsSource": 1,
-      "missesAsTarget": 14,
-      "benchmarkCoverage": 12,
-      "strongResiduals": [
-        {
-          "metric": "terminalbench_hard",
-          "label": "Terminal-Bench Hard",
-          "actual": "27.3%",
-          "expected": "24.3%",
-          "residual": 3.011058
-        },
-        {
-          "metric": "scicode",
-          "label": "SciCode",
-          "actual": "37.3%",
-          "expected": "37.0%",
-          "residual": 0.342879
-        }
-      ],
-      "weakResiduals": [
-        {
-          "metric": "aime",
-          "label": "AIME",
-          "actual": "40.7%",
-          "expected": "80.9%",
-          "residual": -40.228921
-        },
-        {
-          "metric": "aime_25",
-          "label": "AIME 2025",
-          "actual": "38.0%",
-          "expected": "74.6%",
-          "residual": -36.614967
-        },
-        {
-          "metric": "livecodebench",
-          "label": "LiveCodeBench",
-          "actual": "44.9%",
-          "expected": "71.0%",
-          "residual": -26.130875
-        }
-      ],
-      "roleScore": 1769
+      "roleScore": 1806
     },
     {
       "model": {
@@ -3069,14 +3051,14 @@
       },
       "role": "bridge model",
       "upsetPower": {
-        "count": 308,
-        "surprise": 11512.236317
+        "count": 309,
+        "surprise": 11826.271405
       },
       "vulnerability": {
-        "count": 453,
-        "surprise": 32752.952366
+        "count": 454,
+        "surprise": 32845.934822
       },
-      "bridgeCount": 988,
+      "bridgeCount": 1001,
       "missesAsSource": 2,
       "missesAsTarget": 13,
       "benchmarkCoverage": 12,
@@ -3085,15 +3067,15 @@
           "metric": "tau2",
           "label": "TAU2",
           "actual": "67.0%",
-          "expected": "46.6%",
-          "residual": 20.313003
+          "expected": "46.7%",
+          "residual": 20.270931
         },
         {
           "metric": "scicode",
           "label": "SciCode",
           "actual": "38.8%",
           "expected": "29.5%",
-          "residual": 9.285558
+          "residual": 9.337968
         },
         {
           "metric": "mmlu_pro",
@@ -3122,80 +3104,11 @@
           "metric": "lcr",
           "label": "LCR",
           "actual": "25.0%",
-          "expected": "34.6%",
-          "residual": -9.553286
+          "expected": "34.5%",
+          "residual": -9.456518
         }
       ],
-      "roleScore": 1749
-    },
-    {
-      "model": {
-        "id": "9f7c7566-a704-49a2-a383-cb3181da33a4",
-        "slug": "gpt-4-1-mini",
-        "name": "GPT-4.1 mini",
-        "provider": "OpenAI",
-        "intelligence": 22.9
-      },
-      "role": "bridge model",
-      "upsetPower": {
-        "count": 306,
-        "surprise": 10922.818471
-      },
-      "vulnerability": {
-        "count": 496,
-        "surprise": 22144.10191
-      },
-      "bridgeCount": 929,
-      "missesAsSource": 2,
-      "missesAsTarget": 13,
-      "benchmarkCoverage": 12,
-      "strongResiduals": [
-        {
-          "metric": "scicode",
-          "label": "SciCode",
-          "actual": "40.4%",
-          "expected": "28.7%",
-          "residual": 11.703435
-        },
-        {
-          "metric": "lcr",
-          "label": "LCR",
-          "actual": "42.3%",
-          "expected": "33.1%",
-          "residual": 9.219127
-        },
-        {
-          "metric": "tau2",
-          "label": "TAU2",
-          "actual": "52.9%",
-          "expected": "44.8%",
-          "residual": 8.166082
-        }
-      ],
-      "weakResiduals": [
-        {
-          "metric": "aime",
-          "label": "AIME",
-          "actual": "43.0%",
-          "expected": "53.0%",
-          "residual": -9.991054
-        },
-        {
-          "metric": "aime_25",
-          "label": "AIME 2025",
-          "actual": "46.3%",
-          "expected": "53.7%",
-          "residual": -7.355986
-        },
-        {
-          "metric": "ifbench",
-          "label": "IFBench",
-          "actual": "38.3%",
-          "expected": "43.9%",
-          "residual": -5.553726
-        }
-      ],
-      "roleScore": 1731
+      "roleScore": 1764
     },
     {
       "model": {
@@ -3207,14 +3120,14 @@
       },
       "role": "specialist",
       "upsetPower": {
-        "count": 863,
-        "surprise": 46130.298904
+        "count": 868,
+        "surprise": 46386.542509
       },
       "vulnerability": {
         "count": 173,
         "surprise": 3753.841277
       },
-      "bridgeCount": 689,
+      "bridgeCount": 707,
       "missesAsSource": 4,
       "missesAsTarget": 11,
       "benchmarkCoverage": 12,
@@ -3246,232 +3159,25 @@
           "metric": "tau2",
           "label": "TAU2",
           "actual": "11.4%",
-          "expected": "29.8%",
-          "residual": -18.437867
+          "expected": "30.1%",
+          "residual": -18.715858
         },
         {
           "metric": "lcr",
           "label": "LCR",
           "actual": "7.3%",
-          "expected": "21.7%",
-          "residual": -14.412146
+          "expected": "21.8%",
+          "residual": -14.419164
         },
         {
           "metric": "terminalbench_hard",
           "label": "Terminal-Bench Hard",
           "actual": "2.3%",
           "expected": "4.2%",
-          "residual": -1.896095
+          "residual": -1.912155
         }
       ],
-      "roleScore": 1725
-    },
-    {
-      "model": {
-        "id": "aba82268-2bb7-4a0f-80be-9b7722e2145b",
-        "slug": "devstral-medium",
-        "name": "Devstral Medium",
-        "provider": "Mistral",
-        "intelligence": 18.7
-      },
-      "role": "vulnerable target",
-      "upsetPower": {
-        "count": 105,
-        "surprise": 2508.341449
-      },
-      "vulnerability": {
-        "count": 924,
-        "surprise": 44235.235543
-      },
-      "bridgeCount": 686,
-      "missesAsSource": 4,
-      "missesAsTarget": 11,
-      "benchmarkCoverage": 12,
-      "strongResiduals": [
-        {
-          "metric": "scicode",
-          "label": "SciCode",
-          "actual": "29.4%",
-          "expected": "25.3%",
-          "residual": 4.138517
-        },
-        {
-          "metric": "mmlu_pro",
-          "label": "MMLU-Pro",
-          "actual": "70.8%",
-          "expected": "68.4%",
-          "residual": 2.354439
-        },
-        {
-          "metric": "lcr",
-          "label": "LCR",
-          "actual": "28.7%",
-          "expected": "27.1%",
-          "residual": 1.596594
-        }
-      ],
-      "weakResiduals": [
-        {
-          "metric": "aime_25",
-          "label": "AIME 2025",
-          "actual": "4.7%",
-          "expected": "45.0%",
-          "residual": -40.320898
-        },
-        {
-          "metric": "aime",
-          "label": "AIME",
-          "actual": "6.7%",
-          "expected": "41.4%",
-          "residual": -34.720522
-        },
-        {
-          "metric": "tau2",
-          "label": "TAU2",
-          "actual": "19.9%",
-          "expected": "36.8%",
-          "residual": -16.944552
-        }
-      ],
-      "roleScore": 1715
-    },
-    {
-      "model": {
-        "id": "66938aab-78fa-49d7-8461-b48b6833e837",
-        "slug": "qwen3-6-35b-a3b-non-reasoning",
-        "name": "Qwen3.6 35B A3B (Non-reasoning)",
-        "provider": "Alibaba",
-        "intelligence": 31.5
-      },
-      "role": "bridge model",
-      "upsetPower": {
-        "count": 198,
-        "surprise": 8602.738497
-      },
-      "vulnerability": {
-        "count": 535,
-        "surprise": 108680.443852
-      },
-      "bridgeCount": 974,
-      "missesAsSource": 1,
-      "missesAsTarget": 14,
-      "benchmarkCoverage": 7,
-      "strongResiduals": [
-        {
-          "metric": "tau2",
-          "label": "TAU2",
-          "actual": "85.1%",
-          "expected": "61.0%",
-          "residual": 24.091589
-        },
-        {
-          "metric": "lcr",
-          "label": "LCR",
-          "actual": "56.7%",
-          "expected": "45.5%",
-          "residual": 11.176378
-        },
-        {
-          "metric": "gpqa",
-          "label": "GPQA",
-          "actual": "81.7%",
-          "expected": "71.8%",
-          "residual": 9.93649
-        }
-      ],
-      "weakResiduals": [
-        {
-          "metric": "scicode",
-          "label": "SciCode",
-          "actual": "1.3%",
-          "expected": "35.7%",
-          "residual": -34.430306
-        },
-        {
-          "metric": "ifbench",
-          "label": "IFBench",
-          "actual": "36.2%",
-          "expected": "52.6%",
-          "residual": -16.411493
-        },
-        {
-          "metric": "hle",
-          "label": "Humanity's Last Exam",
-          "actual": "12.5%",
-          "expected": "14.8%",
-          "residual": -2.26008
-        }
-      ],
-      "roleScore": 1707
-    },
-    {
-      "model": {
-        "id": "da9fe224-8af3-46d7-a8c4-6220779c3f35",
-        "slug": "qwen3-coder-30b-a3b-instruct",
-        "name": "Qwen3 Coder 30B A3B Instruct",
-        "provider": "Alibaba",
-        "intelligence": 20
-      },
-      "role": "vulnerable target",
-      "upsetPower": {
-        "count": 129,
-        "surprise": 3561.400694
-      },
-      "vulnerability": {
-        "count": 738,
-        "surprise": 27847.814501
-      },
-      "bridgeCount": 835,
-      "missesAsSource": 3,
-      "missesAsTarget": 11,
-      "benchmarkCoverage": 12,
-      "strongResiduals": [
-        {
-          "metric": "math_500",
-          "label": "MATH-500",
-          "actual": "89.3%",
-          "expected": "83.3%",
-          "residual": 6.045684
-        },
-        {
-          "metric": "terminalbench_hard",
-          "label": "Terminal-Bench Hard",
-          "actual": "15.2%",
-          "expected": "9.8%",
-          "residual": 5.401347
-        },
-        {
-          "metric": "scicode",
-          "label": "SciCode",
-          "actual": "27.8%",
-          "expected": "26.3%",
-          "residual": 1.475277
-        }
-      ],
-      "weakResiduals": [
-        {
-          "metric": "aime_25",
-          "label": "AIME 2025",
-          "actual": "29.0%",
-          "expected": "47.7%",
-          "residual": -18.680965
-        },
-        {
-          "metric": "aime",
-          "label": "AIME",
-          "actual": "29.7%",
-          "expected": "45.0%",
-          "residual": -15.312194
-        },
-        {
-          "metric": "ifbench",
-          "label": "IFBench",
-          "actual": "32.7%",
-          "expected": "40.9%",
-          "residual": -8.249767
-        }
-      ],
-      "roleScore": 1702
+      "roleScore": 1748
     },
     {
       "model": {
@@ -3487,10 +3193,10 @@
         "surprise": 3499.808105
       },
       "vulnerability": {
-        "count": 799,
-        "surprise": 29258.811186
+        "count": 802,
+        "surprise": 29263.669371
       },
-      "bridgeCount": 741,
+      "bridgeCount": 798,
       "missesAsSource": 4,
       "missesAsTarget": 11,
       "benchmarkCoverage": 11,
@@ -3499,15 +3205,15 @@
           "metric": "tau2",
           "label": "TAU2",
           "actual": "38.0%",
-          "expected": "35.5%",
-          "residual": 2.505819
+          "expected": "35.7%",
+          "residual": 2.307352
         },
         {
           "metric": "lcr",
           "label": "LCR",
           "actual": "26.7%",
-          "expected": "26.1%",
-          "residual": 0.603949
+          "expected": "26.0%",
+          "residual": 0.631915
         }
       ],
       "weakResiduals": [
@@ -3533,7 +3239,76 @@
           "residual": -11.356458
         }
       ],
-      "roleScore": 1668
+      "roleScore": 1728
+    },
+    {
+      "model": {
+        "id": "aba82268-2bb7-4a0f-80be-9b7722e2145b",
+        "slug": "devstral-medium",
+        "name": "Devstral Medium",
+        "provider": "Mistral",
+        "intelligence": 18.7
+      },
+      "role": "vulnerable target",
+      "upsetPower": {
+        "count": 105,
+        "surprise": 2508.341449
+      },
+      "vulnerability": {
+        "count": 927,
+        "surprise": 44290.124499
+      },
+      "bridgeCount": 692,
+      "missesAsSource": 4,
+      "missesAsTarget": 11,
+      "benchmarkCoverage": 12,
+      "strongResiduals": [
+        {
+          "metric": "scicode",
+          "label": "SciCode",
+          "actual": "29.4%",
+          "expected": "25.2%",
+          "residual": 4.188376
+        },
+        {
+          "metric": "mmlu_pro",
+          "label": "MMLU-Pro",
+          "actual": "70.8%",
+          "expected": "68.4%",
+          "residual": 2.354439
+        },
+        {
+          "metric": "lcr",
+          "label": "LCR",
+          "actual": "28.7%",
+          "expected": "27.0%",
+          "residual": 1.632722
+        }
+      ],
+      "weakResiduals": [
+        {
+          "metric": "aime_25",
+          "label": "AIME 2025",
+          "actual": "4.7%",
+          "expected": "45.0%",
+          "residual": -40.320898
+        },
+        {
+          "metric": "aime",
+          "label": "AIME",
+          "actual": "6.7%",
+          "expected": "41.4%",
+          "residual": -34.720522
+        },
+        {
+          "metric": "tau2",
+          "label": "TAU2",
+          "actual": "19.9%",
+          "expected": "37.0%",
+          "residual": -17.124464
+        }
+      ],
+      "roleScore": 1724
     },
     {
       "model": {
@@ -3545,14 +3320,14 @@
       },
       "role": "vulnerable target",
       "upsetPower": {
-        "count": 152,
-        "surprise": 9372.114443
+        "count": 153,
+        "surprise": 9712.114443
       },
       "vulnerability": {
         "count": 733,
         "surprise": 59934.812889
       },
-      "bridgeCount": 776,
+      "bridgeCount": 825,
       "missesAsSource": 1,
       "missesAsTarget": 14,
       "benchmarkCoverage": 10,
@@ -3561,15 +3336,15 @@
           "metric": "tau2",
           "label": "TAU2",
           "actual": "94.2%",
-          "expected": "66.1%",
-          "residual": 28.057866
+          "expected": "65.9%",
+          "residual": 28.288824
         },
         {
           "metric": "terminalbench_hard",
           "label": "Terminal-Bench Hard",
           "actual": "30.3%",
           "expected": "25.6%",
-          "residual": 4.701838
+          "residual": 4.702468
         }
       ],
       "weakResiduals": [
@@ -3591,11 +3366,11 @@
           "metric": "lcr",
           "label": "LCR",
           "actual": "36.3%",
-          "expected": "49.4%",
-          "residual": -13.04247
+          "expected": "49.2%",
+          "residual": -12.825592
         }
       ],
-      "roleScore": 1661
+      "roleScore": 1711
     },
     {
       "model": {
@@ -3607,14 +3382,14 @@
       },
       "role": "bridge model",
       "upsetPower": {
-        "count": 357,
-        "surprise": 89515.91505
+        "count": 363,
+        "surprise": 90690.519261
       },
       "vulnerability": {
         "count": 270,
         "surprise": 5285.053745
       },
-      "bridgeCount": 1019,
+      "bridgeCount": 1073,
       "missesAsSource": 5,
       "missesAsTarget": 10,
       "benchmarkCoverage": 6,
@@ -3623,15 +3398,15 @@
           "metric": "tau2",
           "label": "TAU2",
           "actual": "87.7%",
-          "expected": "25.5%",
-          "residual": 62.220707
+          "expected": "25.8%",
+          "residual": 61.881748
         },
         {
           "metric": "hle",
           "label": "Humanity's Last Exam",
           "actual": "4.9%",
           "expected": "3.8%",
-          "residual": 1.059329
+          "residual": 1.122297
         }
       ],
       "weakResiduals": [
@@ -3639,527 +3414,163 @@
           "metric": "scicode",
           "label": "SciCode",
           "actual": "2.1%",
-          "expected": "20.4%",
-          "residual": -18.254222
+          "expected": "20.3%",
+          "residual": -18.207307
         },
         {
           "metric": "gpqa",
           "label": "GPQA",
           "actual": "30.5%",
           "expected": "47.6%",
-          "residual": -17.104784
+          "residual": -17.092247
         },
         {
           "metric": "lcr",
           "label": "LCR",
           "actual": "6.3%",
-          "expected": "18.4%",
-          "residual": -12.102263
+          "expected": "18.5%",
+          "residual": -12.136102
         }
       ],
-      "roleScore": 1646
+      "roleScore": 1706
     },
     {
       "model": {
-        "id": "5fb47ff6-a30e-4c2c-96f2-55e95a13390f",
-        "slug": "llama-3-2-instruct-11b-vision",
-        "name": "Llama 3.2 Instruct 11B (Vision)",
-        "provider": "Meta",
-        "intelligence": 8.7
-      },
-      "role": "bridge model",
-      "upsetPower": {
-        "count": 327,
-        "surprise": 3775.904528
-      },
-      "vulnerability": {
-        "count": 153,
-        "surprise": 1358.488937
-      },
-      "bridgeCount": 1075,
-      "missesAsSource": 11,
-      "missesAsTarget": 4,
-      "benchmarkCoverage": 12,
-      "strongResiduals": [
-        {
-          "metric": "hle",
-          "label": "Humanity's Last Exam",
-          "actual": "5.2%",
-          "expected": "1.5%",
-          "residual": 3.682607
-        },
-        {
-          "metric": "terminalbench_hard",
-          "label": "Terminal-Bench Hard",
-          "actual": "0.8%",
-          "expected": "-2.9%",
-          "residual": 3.62125
-        },
-        {
-          "metric": "ifbench",
-          "label": "IFBench",
-          "actual": "30.4%",
-          "expected": "29.4%",
-          "residual": 1.001014
-        }
-      ],
-      "weakResiduals": [
-        {
-          "metric": "aime_25",
-          "label": "AIME 2025",
-          "actual": "1.7%",
-          "expected": "24.3%",
-          "residual": -22.602434
-        },
-        {
-          "metric": "gpqa",
-          "label": "GPQA",
-          "actual": "22.1%",
-          "expected": "42.5%",
-          "residual": -20.364629
-        },
-        {
-          "metric": "math_500",
-          "label": "MATH-500",
-          "actual": "51.6%",
-          "expected": "63.3%",
-          "residual": -11.736418
-        }
-      ],
-      "roleScore": 1555
-    },
-    {
-      "model": {
-        "id": "fb112343-c82c-4b43-afea-996bd5101d62",
-        "slug": "kat-coder-pro-v1",
-        "name": "KAT-Coder-Pro V1",
-        "provider": "KwaiKAT",
-        "intelligence": 36
+        "id": "9f7c7566-a704-49a2-a383-cb3181da33a4",
+        "slug": "gpt-4-1-mini",
+        "name": "GPT-4.1 mini",
+        "provider": "OpenAI",
+        "intelligence": 22.9
       },
       "role": "mixed profile",
       "upsetPower": {
-        "count": 334,
-        "surprise": 20937.492822
+        "count": 307,
+        "surprise": 10989.13426
       },
       "vulnerability": {
-        "count": 332,
-        "surprise": 10702.409888
+        "count": 497,
+        "surprise": 22291.762729
       },
-      "bridgeCount": 889,
-      "missesAsSource": 0,
-      "missesAsTarget": 14,
-      "benchmarkCoverage": 10,
+      "bridgeCount": 880,
+      "missesAsSource": 2,
+      "missesAsTarget": 13,
+      "benchmarkCoverage": 12,
       "strongResiduals": [
+        {
+          "metric": "scicode",
+          "label": "SciCode",
+          "actual": "40.4%",
+          "expected": "28.6%",
+          "residual": 11.755354
+        },
         {
           "metric": "lcr",
           "label": "LCR",
-          "actual": "74.0%",
-          "expected": "52.0%",
-          "residual": 22.033854
+          "actual": "42.3%",
+          "expected": "33.0%",
+          "residual": 9.304233
         },
         {
           "metric": "tau2",
           "label": "TAU2",
-          "actual": "88.6%",
-          "expected": "69.5%",
-          "residual": 19.10361
-        },
-        {
-          "metric": "hle",
-          "label": "Humanity's Last Exam",
-          "actual": "33.4%",
-          "expected": "17.4%",
-          "residual": 16.026232
-        }
-      ],
-      "weakResiduals": [
-        {
-          "metric": "terminalbench_hard",
-          "label": "Terminal-Bench Hard",
-          "actual": "9.1%",
-          "expected": "27.6%",
-          "residual": -18.519568
-        },
-        {
-          "metric": "mmlu_pro",
-          "label": "MMLU-Pro",
-          "actual": "81.3%",
-          "expected": "89.1%",
-          "residual": -7.797742
-        },
-        {
-          "metric": "scicode",
-          "label": "SciCode",
-          "actual": "36.6%",
-          "expected": "39.4%",
-          "residual": -2.810751
-        }
-      ],
-      "roleScore": 1555
-    },
-    {
-      "model": {
-        "id": "033e4aa9-a556-4224-87b0-341ed1070257",
-        "slug": "claude-3-5-haiku",
-        "name": "Claude 3.5 Haiku",
-        "provider": "Anthropic",
-        "intelligence": 18.7
-      },
-      "role": "vulnerable target",
-      "upsetPower": {
-        "count": 91,
-        "surprise": 2333.93404
-      },
-      "vulnerability": {
-        "count": 902,
-        "surprise": 34869.590285
-      },
-      "bridgeCount": 553,
-      "missesAsSource": 4,
-      "missesAsTarget": 11,
-      "benchmarkCoverage": 11,
-      "strongResiduals": [
-        {
-          "metric": "ifbench",
-          "label": "IFBench",
-          "actual": "42.8%",
-          "expected": "39.6%",
-          "residual": 3.2088
-        },
-        {
-          "metric": "scicode",
-          "label": "SciCode",
-          "actual": "27.4%",
-          "expected": "25.3%",
-          "residual": 2.138517
+          "actual": "52.9%",
+          "expected": "44.8%",
+          "residual": 8.097503
         }
       ],
       "weakResiduals": [
         {
           "metric": "aime",
           "label": "AIME",
-          "actual": "3.3%",
-          "expected": "41.4%",
-          "residual": -38.053855
+          "actual": "43.0%",
+          "expected": "53.0%",
+          "residual": -9.991054
         },
         {
-          "metric": "gpqa",
-          "label": "GPQA",
-          "actual": "40.8%",
-          "expected": "55.3%",
-          "residual": -14.515015
-        },
-        {
-          "metric": "tau2",
-          "label": "TAU2",
-          "actual": "24.6%",
-          "expected": "36.8%",
-          "residual": -12.26619
-        }
-      ],
-      "roleScore": 1546
-    },
-    {
-      "model": {
-        "id": "339a92c1-8a42-417f-8d1f-cdbc605acd9e",
-        "slug": "hyperclova-x-seed-think-32b",
-        "name": "HyperCLOVA X SEED Think (32B)",
-        "provider": "Naver",
-        "intelligence": 23.7
-      },
-      "role": "mixed profile",
-      "upsetPower": {
-        "count": 243,
-        "surprise": 26359.242143
-      },
-      "vulnerability": {
-        "count": 523,
-        "surprise": 19753.963647
-      },
-      "bridgeCount": 768,
-      "missesAsSource": 2,
-      "missesAsTarget": 13,
-      "benchmarkCoverage": 10,
-      "strongResiduals": [
-        {
-          "metric": "tau2",
-          "label": "TAU2",
-          "actual": "87.4%",
-          "expected": "46.3%",
-          "residual": 41.158472
-        },
-        {
-          "metric": "livecodebench",
-          "label": "LiveCodeBench",
-          "actual": "62.9%",
-          "expected": "52.5%",
-          "residual": 10.416252
-        },
-        {
-          "metric": "mmlu_pro",
-          "label": "MMLU-Pro",
-          "actual": "78.5%",
-          "expected": "74.4%",
-          "residual": 4.0856
-        }
-      ],
-      "weakResiduals": [
-        {
-          "metric": "lcr",
-          "label": "LCR",
-          "actual": "11.7%",
-          "expected": "34.3%",
-          "residual": -22.598803
+          "metric": "aime_25",
+          "label": "AIME 2025",
+          "actual": "46.3%",
+          "expected": "53.7%",
+          "residual": -7.355986
         },
         {
           "metric": "ifbench",
           "label": "IFBench",
-          "actual": "37.9%",
-          "expected": "44.7%",
-          "residual": -6.775743
-        },
-        {
-          "metric": "hle",
-          "label": "Humanity's Last Exam",
-          "actual": "5.5%",
-          "expected": "10.2%",
-          "residual": -4.729687
+          "actual": "38.3%",
+          "expected": "43.8%",
+          "residual": -5.535913
         }
       ],
-      "roleScore": 1534
+      "roleScore": 1684
     },
     {
       "model": {
-        "id": "946e7aab-db1c-4c3f-b0b3-7720d0cff187",
-        "slug": "glm-4-6",
-        "name": "GLM-4.6 (Non-reasoning)",
-        "provider": "Z AI",
-        "intelligence": 30.2
+        "id": "da9fe224-8af3-46d7-a8c4-6220779c3f35",
+        "slug": "qwen3-coder-30b-a3b-instruct",
+        "name": "Qwen3 Coder 30B A3B Instruct",
+        "provider": "Alibaba",
+        "intelligence": 20
       },
       "role": "vulnerable target",
       "upsetPower": {
-        "count": 117,
-        "surprise": 4904.869173
+        "count": 129,
+        "surprise": 3561.400694
       },
       "vulnerability": {
-        "count": 800,
-        "surprise": 58130.601641
+        "count": 741,
+        "surprise": 27955.061969
       },
-      "bridgeCount": 608,
-      "missesAsSource": 1,
-      "missesAsTarget": 14,
-      "benchmarkCoverage": 10,
-      "strongResiduals": [
-        {
-          "metric": "tau2",
-          "label": "TAU2",
-          "actual": "76.9%",
-          "expected": "58.5%",
-          "residual": 18.359072
-        },
-        {
-          "metric": "terminalbench_hard",
-          "label": "Terminal-Bench Hard",
-          "actual": "28.8%",
-          "expected": "21.1%",
-          "residual": 7.651764
-        }
-      ],
-      "weakResiduals": [
-        {
-          "metric": "aime_25",
-          "label": "AIME 2025",
-          "actual": "44.3%",
-          "expected": "68.8%",
-          "residual": -24.480464
-        },
-        {
-          "metric": "lcr",
-          "label": "LCR",
-          "actual": "26.3%",
-          "expected": "43.6%",
-          "residual": -17.286153
-        },
-        {
-          "metric": "ifbench",
-          "label": "IFBench",
-          "actual": "36.7%",
-          "expected": "51.3%",
-          "residual": -14.544764
-        }
-      ],
-      "roleScore": 1525
-    },
-    {
-      "model": {
-        "id": "338216fb-62c2-48f1-898a-9166d12fb35e",
-        "slug": "olmo-3-7b-think",
-        "name": "Olmo 3 7B Think",
-        "provider": "Allen Institute for AI",
-        "intelligence": 9.4
-      },
-      "role": "specialist",
-      "upsetPower": {
-        "count": 832,
-        "surprise": 74633.99048
-      },
-      "vulnerability": {
-        "count": 16,
-        "surprise": 23.952394
-      },
-      "bridgeCount": 669,
-      "missesAsSource": 8,
-      "missesAsTarget": 7,
-      "benchmarkCoverage": 8,
-      "strongResiduals": [
-        {
-          "metric": "aime_25",
-          "label": "AIME 2025",
-          "actual": "70.7%",
-          "expected": "25.7%",
-          "residual": 44.947274
-        },
-        {
-          "metric": "livecodebench",
-          "label": "LiveCodeBench",
-          "actual": "61.7%",
-          "expected": "24.0%",
-          "residual": 37.734951
-        },
-        {
-          "metric": "ifbench",
-          "label": "IFBench",
-          "actual": "41.5%",
-          "expected": "30.1%",
-          "residual": 11.377328
-        }
-      ],
-      "weakResiduals": [],
-      "roleScore": 1517
-    },
-    {
-      "model": {
-        "id": "222fb320-6e55-4672-846a-b6d5a24a45f4",
-        "slug": "gemma-3-4b",
-        "name": "Gemma 3 4B Instruct",
-        "provider": "Google",
-        "intelligence": 6.3
-      },
-      "role": "bridge model",
-      "upsetPower": {
-        "count": 479,
-        "surprise": 10502.171804
-      },
-      "vulnerability": {
-        "count": 11,
-        "surprise": 30.82697
-      },
-      "bridgeCount": 1025,
-      "missesAsSource": 15,
-      "missesAsTarget": 0,
+      "bridgeCount": 810,
+      "missesAsSource": 3,
+      "missesAsTarget": 11,
       "benchmarkCoverage": 12,
       "strongResiduals": [
         {
           "metric": "math_500",
           "label": "MATH-500",
-          "actual": "76.6%",
-          "expected": "59.1%",
-          "residual": 17.501011
+          "actual": "89.3%",
+          "expected": "83.3%",
+          "residual": 6.045684
         },
         {
           "metric": "terminalbench_hard",
           "label": "Terminal-Bench Hard",
-          "actual": "0.8%",
-          "expected": "-5.5%",
-          "residual": 6.300296
+          "actual": "15.2%",
+          "expected": "9.8%",
+          "residual": 5.389633
         },
         {
-          "metric": "hle",
-          "label": "Humanity's Last Exam",
-          "actual": "5.2%",
-          "expected": "0.1%",
-          "residual": 5.076574
-        }
-      ],
-      "weakResiduals": [
-        {
-          "metric": "mmlu_pro",
-          "label": "MMLU-Pro",
-          "actual": "41.7%",
-          "expected": "53.6%",
-          "residual": -11.942842
-        },
-        {
-          "metric": "gpqa",
-          "label": "GPQA",
-          "actual": "29.1%",
-          "expected": "39.4%",
-          "residual": -10.280537
-        },
-        {
-          "metric": "tau2",
-          "label": "TAU2",
-          "actual": "5.0%",
-          "expected": "13.4%",
-          "residual": -8.443563
-        }
-      ],
-      "roleScore": 1515
-    },
-    {
-      "model": {
-        "id": "c2b1e769-7aee-4669-8076-73918bdebf6c",
-        "slug": "claude-4-5-haiku",
-        "name": "Claude 4.5 Haiku (Non-reasoning)",
-        "provider": "Anthropic",
-        "intelligence": 31
-      },
-      "role": "vulnerable target",
-      "upsetPower": {
-        "count": 60,
-        "surprise": 1063.646029
-      },
-      "vulnerability": {
-        "count": 886,
-        "surprise": 74045.327161
-      },
-      "bridgeCount": 552,
-      "missesAsSource": 1,
-      "missesAsTarget": 14,
-      "benchmarkCoverage": 10,
-      "strongResiduals": [
-        {
-          "metric": "terminalbench_hard",
-          "label": "Terminal-Bench Hard",
-          "actual": "27.3%",
-          "expected": "22.0%",
-          "residual": 5.243597
+          "metric": "scicode",
+          "label": "SciCode",
+          "actual": "27.8%",
+          "expected": "26.3%",
+          "residual": 1.525774
         }
       ],
       "weakResiduals": [
         {
           "metric": "aime_25",
           "label": "AIME 2025",
-          "actual": "39.0%",
-          "expected": "70.5%",
-          "residual": -31.471275
+          "actual": "29.0%",
+          "expected": "47.7%",
+          "residual": -18.680965
         },
         {
-          "metric": "tau2",
-          "label": "TAU2",
-          "actual": "32.5%",
-          "expected": "60.1%",
-          "residual": -27.595906
+          "metric": "aime",
+          "label": "AIME",
+          "actual": "29.7%",
+          "expected": "45.0%",
+          "residual": -15.312194
         },
         {
-          "metric": "livecodebench",
-          "label": "LiveCodeBench",
-          "actual": "51.1%",
-          "expected": "67.0%",
-          "residual": -15.942245
+          "metric": "ifbench",
+          "label": "IFBench",
+          "actual": "32.7%",
+          "expected": "40.9%",
+          "residual": -8.254478
         }
       ],
-      "roleScore": 1498
+      "roleScore": 1680
     },
     {
       "model": {
@@ -4175,10 +3586,10 @@
         "surprise": 5236.968959
       },
       "vulnerability": {
-        "count": 594,
-        "surprise": 30822.127688
+        "count": 596,
+        "surprise": 31091.841021
       },
-      "bridgeCount": 711,
+      "bridgeCount": 892,
       "missesAsSource": 2,
       "missesAsTarget": 13,
       "benchmarkCoverage": 12,
@@ -4187,22 +3598,22 @@
           "metric": "lcr",
           "label": "LCR",
           "actual": "42.3%",
-          "expected": "35.8%",
-          "residual": 6.484876
+          "expected": "35.7%",
+          "residual": 6.592139
         },
         {
           "metric": "scicode",
           "label": "SciCode",
           "actual": "35.9%",
-          "expected": "30.3%",
-          "residual": 5.649469
+          "expected": "30.2%",
+          "residual": 5.70232
         },
         {
           "metric": "terminalbench_hard",
           "label": "Terminal-Bench Hard",
           "actual": "18.9%",
           "expected": "15.1%",
-          "residual": 3.831133
+          "residual": 3.823592
         }
       ],
       "weakResiduals": [
@@ -4225,10 +3636,560 @@
           "label": "Humanity's Last Exam",
           "actual": "4.4%",
           "expected": "10.9%",
-          "residual": -6.468588
+          "residual": -6.519943
         }
       ],
-      "roleScore": 1483
+      "roleScore": 1666
+    },
+    {
+      "model": {
+        "id": "66938aab-78fa-49d7-8461-b48b6833e837",
+        "slug": "qwen3-6-35b-a3b-non-reasoning",
+        "name": "Qwen3.6 35B A3B (Non-reasoning)",
+        "provider": "Alibaba",
+        "intelligence": 31.5
+      },
+      "role": "bridge model",
+      "upsetPower": {
+        "count": 200,
+        "surprise": 8980.465398
+      },
+      "vulnerability": {
+        "count": 536,
+        "surprise": 108681.803852
+      },
+      "bridgeCount": 907,
+      "missesAsSource": 1,
+      "missesAsTarget": 14,
+      "benchmarkCoverage": 7,
+      "strongResiduals": [
+        {
+          "metric": "tau2",
+          "label": "TAU2",
+          "actual": "85.1%",
+          "expected": "60.8%",
+          "residual": 24.250977
+        },
+        {
+          "metric": "lcr",
+          "label": "LCR",
+          "actual": "56.7%",
+          "expected": "45.3%",
+          "residual": 11.361771
+        },
+        {
+          "metric": "gpqa",
+          "label": "GPQA",
+          "actual": "81.7%",
+          "expected": "71.6%",
+          "residual": 10.112877
+        }
+      ],
+      "weakResiduals": [
+        {
+          "metric": "scicode",
+          "label": "SciCode",
+          "actual": "1.3%",
+          "expected": "35.7%",
+          "residual": -34.374167
+        },
+        {
+          "metric": "ifbench",
+          "label": "IFBench",
+          "actual": "36.2%",
+          "expected": "52.5%",
+          "residual": -16.326881
+        },
+        {
+          "metric": "hle",
+          "label": "Humanity's Last Exam",
+          "actual": "12.5%",
+          "expected": "14.9%",
+          "residual": -2.374737
+        }
+      ],
+      "roleScore": 1643
+    },
+    {
+      "model": {
+        "id": "fb112343-c82c-4b43-afea-996bd5101d62",
+        "slug": "kat-coder-pro-v1",
+        "name": "KAT-Coder-Pro V1",
+        "provider": "KwaiKAT",
+        "intelligence": 36
+      },
+      "role": "bridge model",
+      "upsetPower": {
+        "count": 340,
+        "surprise": 21719.834488
+      },
+      "vulnerability": {
+        "count": 332,
+        "surprise": 10702.409888
+      },
+      "bridgeCount": 944,
+      "missesAsSource": 0,
+      "missesAsTarget": 14,
+      "benchmarkCoverage": 10,
+      "strongResiduals": [
+        {
+          "metric": "lcr",
+          "label": "LCR",
+          "actual": "74.0%",
+          "expected": "51.7%",
+          "residual": 22.271722
+        },
+        {
+          "metric": "tau2",
+          "label": "TAU2",
+          "actual": "88.6%",
+          "expected": "69.2%",
+          "residual": 19.382282
+        },
+        {
+          "metric": "hle",
+          "label": "Humanity's Last Exam",
+          "actual": "33.4%",
+          "expected": "17.5%",
+          "residual": 15.869058
+        }
+      ],
+      "weakResiduals": [
+        {
+          "metric": "terminalbench_hard",
+          "label": "Terminal-Bench Hard",
+          "actual": "9.1%",
+          "expected": "27.6%",
+          "residual": -18.517373
+        },
+        {
+          "metric": "mmlu_pro",
+          "label": "MMLU-Pro",
+          "actual": "81.3%",
+          "expected": "89.1%",
+          "residual": -7.797742
+        },
+        {
+          "metric": "scicode",
+          "label": "SciCode",
+          "actual": "36.6%",
+          "expected": "39.4%",
+          "residual": -2.752404
+        }
+      ],
+      "roleScore": 1616
+    },
+    {
+      "model": {
+        "id": "d306cccd-0085-4b2f-8aa0-ffcdbb434695",
+        "slug": "minicpm5-1b-non-reasoning",
+        "name": "MiniCPM5-1B (Non-reasoning)",
+        "provider": "OpenBMB",
+        "intelligence": 17.9
+      },
+      "role": "mixed profile",
+      "upsetPower": {
+        "count": 196,
+        "surprise": 38600.449024
+      },
+      "vulnerability": {
+        "count": 612,
+        "surprise": 35968.478354
+      },
+      "bridgeCount": 804,
+      "missesAsSource": 4,
+      "missesAsTarget": 11,
+      "benchmarkCoverage": 6,
+      "strongResiduals": [
+        {
+          "metric": "tau2",
+          "label": "TAU2",
+          "actual": "82.5%",
+          "expected": "35.5%",
+          "residual": 46.937962
+        }
+      ],
+      "weakResiduals": [
+        {
+          "metric": "gpqa",
+          "label": "GPQA",
+          "actual": "26.9%",
+          "expected": "54.2%",
+          "residual": -27.329127
+        },
+        {
+          "metric": "scicode",
+          "label": "SciCode",
+          "actual": "1.4%",
+          "expected": "24.6%",
+          "residual": -23.157715
+        },
+        {
+          "metric": "lcr",
+          "label": "LCR",
+          "actual": "4.7%",
+          "expected": "25.9%",
+          "residual": -21.225343
+        }
+      ],
+      "roleScore": 1612
+    },
+    {
+      "model": {
+        "id": "946e7aab-db1c-4c3f-b0b3-7720d0cff187",
+        "slug": "glm-4-6",
+        "name": "GLM-4.6 (Non-reasoning)",
+        "provider": "Z AI",
+        "intelligence": 30.2
+      },
+      "role": "vulnerable target",
+      "upsetPower": {
+        "count": 118,
+        "surprise": 5223.699582
+      },
+      "vulnerability": {
+        "count": 801,
+        "surprise": 58198.934974
+      },
+      "bridgeCount": 685,
+      "missesAsSource": 1,
+      "missesAsTarget": 14,
+      "benchmarkCoverage": 10,
+      "strongResiduals": [
+        {
+          "metric": "tau2",
+          "label": "TAU2",
+          "actual": "76.9%",
+          "expected": "58.4%",
+          "residual": 18.483999
+        },
+        {
+          "metric": "terminalbench_hard",
+          "label": "Terminal-Bench Hard",
+          "actual": "28.8%",
+          "expected": "21.1%",
+          "residual": 7.648916
+        }
+      ],
+      "weakResiduals": [
+        {
+          "metric": "aime_25",
+          "label": "AIME 2025",
+          "actual": "44.3%",
+          "expected": "68.8%",
+          "residual": -24.480464
+        },
+        {
+          "metric": "lcr",
+          "label": "LCR",
+          "actual": "26.3%",
+          "expected": "43.4%",
+          "residual": -17.115919
+        },
+        {
+          "metric": "ifbench",
+          "label": "IFBench",
+          "actual": "36.7%",
+          "expected": "51.2%",
+          "residual": -14.470249
+        }
+      ],
+      "roleScore": 1604
+    },
+    {
+      "model": {
+        "id": "16149b9c-a1e9-4669-a5cb-ff3c00d78f89",
+        "slug": "gpt-oss-20b-low",
+        "name": "gpt-oss-20B (low)",
+        "provider": "OpenAI",
+        "intelligence": 20.8
+      },
+      "role": "mixed profile",
+      "upsetPower": {
+        "count": 352,
+        "surprise": 26214.38846
+      },
+      "vulnerability": {
+        "count": 347,
+        "surprise": 7023.910242
+      },
+      "bridgeCount": 888,
+      "missesAsSource": 3,
+      "missesAsTarget": 12,
+      "benchmarkCoverage": 10,
+      "strongResiduals": [
+        {
+          "metric": "livecodebench",
+          "label": "LiveCodeBench",
+          "actual": "65.2%",
+          "expected": "46.7%",
+          "residual": 18.499764
+        },
+        {
+          "metric": "ifbench",
+          "label": "IFBench",
+          "actual": "57.8%",
+          "expected": "41.7%",
+          "residual": 16.10795
+        },
+        {
+          "metric": "aime_25",
+          "label": "AIME 2025",
+          "actual": "62.3%",
+          "expected": "49.3%",
+          "residual": 12.994892
+        }
+      ],
+      "weakResiduals": [
+        {
+          "metric": "terminalbench_hard",
+          "label": "Terminal-Bench Hard",
+          "actual": "4.5%",
+          "expected": "10.7%",
+          "residual": -6.108748
+        },
+        {
+          "metric": "hle",
+          "label": "Humanity's Last Exam",
+          "actual": "5.1%",
+          "expected": "8.6%",
+          "residual": -3.458872
+        }
+      ],
+      "roleScore": 1587
+    },
+    {
+      "model": {
+        "id": "033e4aa9-a556-4224-87b0-341ed1070257",
+        "slug": "claude-3-5-haiku",
+        "name": "Claude 3.5 Haiku",
+        "provider": "Anthropic",
+        "intelligence": 18.7
+      },
+      "role": "vulnerable target",
+      "upsetPower": {
+        "count": 91,
+        "surprise": 2333.93404
+      },
+      "vulnerability": {
+        "count": 904,
+        "surprise": 34916.786074
+      },
+      "bridgeCount": 571,
+      "missesAsSource": 4,
+      "missesAsTarget": 11,
+      "benchmarkCoverage": 11,
+      "strongResiduals": [
+        {
+          "metric": "ifbench",
+          "label": "IFBench",
+          "actual": "42.8%",
+          "expected": "39.6%",
+          "residual": 3.193991
+        },
+        {
+          "metric": "scicode",
+          "label": "SciCode",
+          "actual": "27.4%",
+          "expected": "25.2%",
+          "residual": 2.188376
+        }
+      ],
+      "weakResiduals": [
+        {
+          "metric": "aime",
+          "label": "AIME",
+          "actual": "3.3%",
+          "expected": "41.4%",
+          "residual": -38.053855
+        },
+        {
+          "metric": "gpqa",
+          "label": "GPQA",
+          "actual": "40.8%",
+          "expected": "55.3%",
+          "residual": -14.450186
+        },
+        {
+          "metric": "tau2",
+          "label": "TAU2",
+          "actual": "24.6%",
+          "expected": "37.0%",
+          "residual": -12.446102
+        }
+      ],
+      "roleScore": 1566
+    },
+    {
+      "model": {
+        "id": "5fb47ff6-a30e-4c2c-96f2-55e95a13390f",
+        "slug": "llama-3-2-instruct-11b-vision",
+        "name": "Llama 3.2 Instruct 11B (Vision)",
+        "provider": "Meta",
+        "intelligence": 8.7
+      },
+      "role": "bridge model",
+      "upsetPower": {
+        "count": 330,
+        "surprise": 3935.984528
+      },
+      "vulnerability": {
+        "count": 153,
+        "surprise": 1358.488937
+      },
+      "bridgeCount": 1060,
+      "missesAsSource": 11,
+      "missesAsTarget": 4,
+      "benchmarkCoverage": 12,
+      "strongResiduals": [
+        {
+          "metric": "hle",
+          "label": "Humanity's Last Exam",
+          "actual": "5.2%",
+          "expected": "1.4%",
+          "residual": 3.783368
+        },
+        {
+          "metric": "terminalbench_hard",
+          "label": "Terminal-Bench Hard",
+          "actual": "0.8%",
+          "expected": "-2.8%",
+          "residual": 3.599713
+        },
+        {
+          "metric": "ifbench",
+          "label": "IFBench",
+          "actual": "30.4%",
+          "expected": "29.5%",
+          "residual": 0.908532
+        }
+      ],
+      "weakResiduals": [
+        {
+          "metric": "aime_25",
+          "label": "AIME 2025",
+          "actual": "1.7%",
+          "expected": "24.3%",
+          "residual": -22.602434
+        },
+        {
+          "metric": "gpqa",
+          "label": "GPQA",
+          "actual": "22.1%",
+          "expected": "42.5%",
+          "residual": -20.386954
+        },
+        {
+          "metric": "math_500",
+          "label": "MATH-500",
+          "actual": "51.6%",
+          "expected": "63.3%",
+          "residual": -11.736418
+        }
+      ],
+      "roleScore": 1543
+    },
+    {
+      "model": {
+        "id": "c2b1e769-7aee-4669-8076-73918bdebf6c",
+        "slug": "claude-4-5-haiku",
+        "name": "Claude 4.5 Haiku (Non-reasoning)",
+        "provider": "Anthropic",
+        "intelligence": 31
+      },
+      "role": "vulnerable target",
+      "upsetPower": {
+        "count": 60,
+        "surprise": 1063.646029
+      },
+      "vulnerability": {
+        "count": 888,
+        "surprise": 74704.257161
+      },
+      "bridgeCount": 567,
+      "missesAsSource": 1,
+      "missesAsTarget": 14,
+      "benchmarkCoverage": 10,
+      "strongResiduals": [
+        {
+          "metric": "terminalbench_hard",
+          "label": "Terminal-Bench Hard",
+          "actual": "27.3%",
+          "expected": "22.0%",
+          "residual": 5.241445
+        }
+      ],
+      "weakResiduals": [
+        {
+          "metric": "aime_25",
+          "label": "AIME 2025",
+          "actual": "39.0%",
+          "expected": "70.5%",
+          "residual": -31.471275
+        },
+        {
+          "metric": "tau2",
+          "label": "TAU2",
+          "actual": "32.5%",
+          "expected": "59.9%",
+          "residual": -27.449773
+        },
+        {
+          "metric": "livecodebench",
+          "label": "LiveCodeBench",
+          "actual": "51.1%",
+          "expected": "67.0%",
+          "residual": -15.942245
+        }
+      ],
+      "roleScore": 1515
+    },
+    {
+      "model": {
+        "id": "338216fb-62c2-48f1-898a-9166d12fb35e",
+        "slug": "olmo-3-7b-think",
+        "name": "Olmo 3 7B Think",
+        "provider": "Allen Institute for AI",
+        "intelligence": 9.4
+      },
+      "role": "specialist",
+      "upsetPower": {
+        "count": 836,
+        "surprise": 75075.36599
+      },
+      "vulnerability": {
+        "count": 16,
+        "surprise": 23.952394
+      },
+      "bridgeCount": 660,
+      "missesAsSource": 8,
+      "missesAsTarget": 7,
+      "benchmarkCoverage": 8,
+      "strongResiduals": [
+        {
+          "metric": "aime_25",
+          "label": "AIME 2025",
+          "actual": "70.7%",
+          "expected": "25.7%",
+          "residual": 44.947274
+        },
+        {
+          "metric": "livecodebench",
+          "label": "LiveCodeBench",
+          "actual": "61.7%",
+          "expected": "24.0%",
+          "residual": 37.734951
+        },
+        {
+          "metric": "ifbench",
+          "label": "IFBench",
+          "actual": "41.5%",
+          "expected": "30.2%",
+          "residual": 11.290283
+        }
+      ],
+      "weakResiduals": [],
+      "roleScore": 1512
     },
     {
       "model": {
@@ -4240,14 +4201,14 @@
       },
       "role": "specialist",
       "upsetPower": {
-        "count": 746,
-        "surprise": 43020.867073
+        "count": 749,
+        "surprise": 43137.687073
       },
       "vulnerability": {
         "count": 35,
         "surprise": 89.58653
       },
-      "bridgeCount": 686,
+      "bridgeCount": 718,
       "missesAsSource": 13,
       "missesAsTarget": 2,
       "benchmarkCoverage": 10,
@@ -4280,93 +4241,86 @@
           "label": "SciCode",
           "actual": "4.3%",
           "expected": "16.5%",
-          "residual": -12.210201
+          "residual": -12.165592
         },
         {
           "metric": "gpqa",
           "label": "GPQA",
           "actual": "35.6%",
           "expected": "41.6%",
-          "residual": -5.965102
+          "residual": -5.993528
         },
         {
           "metric": "ifbench",
           "label": "IFBench",
           "actual": "26.9%",
-          "expected": "28.7%",
-          "residual": -1.824279
+          "expected": "28.8%",
+          "residual": -1.922198
         }
       ],
-      "roleScore": 1467
+      "roleScore": 1502
     },
     {
       "model": {
-        "id": "6000145b-0e3d-4fef-a55f-bcaac84803b2",
-        "slug": "deepseek-r1-qwen3-8b",
-        "name": "DeepSeek R1 0528 Qwen3 8B",
-        "provider": "DeepSeek",
-        "intelligence": 16.4
+        "id": "82b36b4d-84dd-4bc0-ad32-e3aee9442789",
+        "slug": "mimo-v2-flash",
+        "name": "MiMo-V2-Flash (Non-reasoning)",
+        "provider": "Xiaomi",
+        "intelligence": 30.3
       },
-      "role": "mixed profile",
+      "role": "vulnerable target",
       "upsetPower": {
-        "count": 297,
-        "surprise": 17100.836666
+        "count": 126,
+        "surprise": 7875.164917
       },
       "vulnerability": {
-        "count": 437,
-        "surprise": 9290.60381
+        "count": 804,
+        "surprise": 55874.683587
       },
-      "bridgeCount": 727,
-      "missesAsSource": 4,
-      "missesAsTarget": 11,
-      "benchmarkCoverage": 11,
+      "bridgeCount": 569,
+      "missesAsSource": 1,
+      "missesAsTarget": 14,
+      "benchmarkCoverage": 10,
       "strongResiduals": [
         {
-          "metric": "aime",
-          "label": "AIME",
-          "actual": "65.0%",
-          "expected": "35.0%",
-          "residual": 29.96731
-        },
-        {
-          "metric": "aime_25",
-          "label": "AIME 2025",
-          "actual": "63.7%",
-          "expected": "40.2%",
-          "residual": 23.444349
-        },
-        {
-          "metric": "math_500",
-          "label": "MATH-500",
-          "actual": "93.2%",
-          "expected": "76.9%",
-          "residual": 16.268495
-        }
-      ],
-      "weakResiduals": [
-        {
-          "metric": "ifbench",
-          "label": "IFBench",
-          "actual": "19.9%",
-          "expected": "37.2%",
-          "residual": -17.376542
-        },
-        {
-          "metric": "lcr",
-          "label": "LCR",
-          "actual": "13.0%",
-          "expected": "23.8%",
-          "residual": -10.76019
+          "metric": "tau2",
+          "label": "TAU2",
+          "actual": "83.9%",
+          "expected": "58.6%",
+          "residual": 25.315377
         },
         {
           "metric": "terminalbench_hard",
           "label": "Terminal-Bench Hard",
-          "actual": "1.5%",
-          "expected": "5.7%",
-          "residual": -4.216448
+          "actual": "25.8%",
+          "expected": "21.3%",
+          "residual": 4.507073
         }
       ],
-      "roleScore": 1461
+      "weakResiduals": [
+        {
+          "metric": "livecodebench",
+          "label": "LiveCodeBench",
+          "actual": "40.2%",
+          "expected": "65.6%",
+          "residual": -25.446225
+        },
+        {
+          "metric": "lcr",
+          "label": "LCR",
+          "actual": "31.3%",
+          "expected": "43.6%",
+          "residual": -12.258661
+        },
+        {
+          "metric": "ifbench",
+          "label": "IFBench",
+          "actual": "39.9%",
+          "expected": "51.3%",
+          "residual": -11.373925
+        }
+      ],
+      "roleScore": 1499
     }
   ],
   "topBridgeModels": [
@@ -4378,37 +4332,7 @@
         "provider": "DeepSeek",
         "intelligence": 29.4
       },
-      "count": 1449
-    },
-    {
-      "model": {
-        "id": "a6340098-d7ae-462d-b372-0a0a67fc44b4",
-        "slug": "claude-4-5-haiku-reasoning",
-        "name": "Claude 4.5 Haiku (Reasoning)",
-        "provider": "Anthropic",
-        "intelligence": 37.1
-      },
-      "count": 1333
-    },
-    {
-      "model": {
-        "id": "f78138d6-2e04-4a84-919a-20d177cb6ff1",
-        "slug": "jamba-reasoning-3b",
-        "name": "Jamba Reasoning 3B",
-        "provider": "AI21 Labs",
-        "intelligence": 9.6
-      },
-      "count": 1219
-    },
-    {
-      "model": {
-        "id": "d925845d-39ad-4de3-8495-f176b79828c0",
-        "slug": "claude-3-7-sonnet",
-        "name": "Claude 3.7 Sonnet (Non-reasoning)",
-        "provider": "Anthropic",
-        "intelligence": 30.8
-      },
-      "count": 1208
+      "count": 1526
     },
     {
       "model": {
@@ -4418,7 +4342,27 @@
         "provider": "Z AI",
         "intelligence": 22.1
       },
-      "count": 1163
+      "count": 1303
+    },
+    {
+      "model": {
+        "id": "a6340098-d7ae-462d-b372-0a0a67fc44b4",
+        "slug": "claude-4-5-haiku-reasoning",
+        "name": "Claude 4.5 Haiku (Reasoning)",
+        "provider": "Anthropic",
+        "intelligence": 37.1
+      },
+      "count": 1275
+    },
+    {
+      "model": {
+        "id": "f78138d6-2e04-4a84-919a-20d177cb6ff1",
+        "slug": "jamba-reasoning-3b",
+        "name": "Jamba Reasoning 3B",
+        "provider": "AI21 Labs",
+        "intelligence": 9.6
+      },
+      "count": 1248
     },
     {
       "model": {
@@ -4428,27 +4372,17 @@
         "provider": "Trillion Labs",
         "intelligence": 20
       },
-      "count": 1120
+      "count": 1229
     },
     {
       "model": {
-        "id": "5fb47ff6-a30e-4c2c-96f2-55e95a13390f",
-        "slug": "llama-3-2-instruct-11b-vision",
-        "name": "Llama 3.2 Instruct 11B (Vision)",
-        "provider": "Meta",
-        "intelligence": 8.7
+        "id": "d925845d-39ad-4de3-8495-f176b79828c0",
+        "slug": "claude-3-7-sonnet",
+        "name": "Claude 3.7 Sonnet (Non-reasoning)",
+        "provider": "Anthropic",
+        "intelligence": 30.8
       },
-      "count": 1075
-    },
-    {
-      "model": {
-        "id": "222fb320-6e55-4672-846a-b6d5a24a45f4",
-        "slug": "gemma-3-4b",
-        "name": "Gemma 3 4B Instruct",
-        "provider": "Google",
-        "intelligence": 6.3
-      },
-      "count": 1025
+      "count": 1180
     },
     {
       "model": {
@@ -4458,7 +4392,17 @@
         "provider": "OpenBMB",
         "intelligence": 12.7
       },
-      "count": 1019
+      "count": 1073
+    },
+    {
+      "model": {
+        "id": "5fb47ff6-a30e-4c2c-96f2-55e95a13390f",
+        "slug": "llama-3-2-instruct-11b-vision",
+        "name": "Llama 3.2 Instruct 11B (Vision)",
+        "provider": "Meta",
+        "intelligence": 8.7
+      },
+      "count": 1060
     },
     {
       "model": {
@@ -4468,17 +4412,7 @@
         "provider": "OpenAI",
         "intelligence": 23.9
       },
-      "count": 988
-    },
-    {
-      "model": {
-        "id": "3b608b70-6434-4baa-99ad-45d499703c67",
-        "slug": "gpt-4-1",
-        "name": "GPT-4.1",
-        "provider": "OpenAI",
-        "intelligence": 26.3
-      },
-      "count": 987
+      "count": 1001
     },
     {
       "model": {
@@ -4488,37 +4422,27 @@
         "provider": "TII UAE",
         "intelligence": 15.8
       },
-      "count": 983
+      "count": 989
     },
     {
       "model": {
-        "id": "66938aab-78fa-49d7-8461-b48b6833e837",
-        "slug": "qwen3-6-35b-a3b-non-reasoning",
-        "name": "Qwen3.6 35B A3B (Non-reasoning)",
-        "provider": "Alibaba",
-        "intelligence": 31.5
-      },
-      "count": 974
-    },
-    {
-      "model": {
-        "id": "9f7c7566-a704-49a2-a383-cb3181da33a4",
-        "slug": "gpt-4-1-mini",
-        "name": "GPT-4.1 mini",
+        "id": "3b608b70-6434-4baa-99ad-45d499703c67",
+        "slug": "gpt-4-1",
+        "name": "GPT-4.1",
         "provider": "OpenAI",
-        "intelligence": 22.9
+        "intelligence": 26.3
       },
-      "count": 929
+      "count": 981
     },
     {
       "model": {
-        "id": "ae4fe623-80ab-4ea3-8921-70a18ea0fc7e",
-        "slug": "ernie-4-5-300b-a47b",
-        "name": "ERNIE 4.5 300B A47B",
-        "provider": "Baidu",
-        "intelligence": 15
+        "id": "222fb320-6e55-4672-846a-b6d5a24a45f4",
+        "slug": "gemma-3-4b",
+        "name": "Gemma 3 4B Instruct",
+        "provider": "Google",
+        "intelligence": 6.3
       },
-      "count": 907
+      "count": 946
     },
     {
       "model": {
@@ -4528,37 +4452,67 @@
         "provider": "KwaiKAT",
         "intelligence": 36
       },
-      "count": 889
+      "count": 944
     },
     {
       "model": {
-        "id": "f818a7bb-6f23-4b24-8d52-6b9c1a5ca628",
-        "slug": "olmo-2-7b",
-        "name": "OLMo 2 7B",
-        "provider": "Allen Institute for AI",
-        "intelligence": 9.3
-      },
-      "count": 848
-    },
-    {
-      "model": {
-        "id": "da9fe224-8af3-46d7-a8c4-6220779c3f35",
-        "slug": "qwen3-coder-30b-a3b-instruct",
-        "name": "Qwen3 Coder 30B A3B Instruct",
+        "id": "66938aab-78fa-49d7-8461-b48b6833e837",
+        "slug": "qwen3-6-35b-a3b-non-reasoning",
+        "name": "Qwen3.6 35B A3B (Non-reasoning)",
         "provider": "Alibaba",
-        "intelligence": 20
+        "intelligence": 31.5
       },
-      "count": 835
+      "count": 907
     },
     {
       "model": {
-        "id": "30c9ba61-d0a1-4794-938e-35865f379d15",
-        "slug": "qwen3-5-4b-non-reasoning",
-        "name": "Qwen3.5 4B (Non-reasoning)",
-        "provider": "Alibaba",
-        "intelligence": 22.6
+        "id": "ae4fe623-80ab-4ea3-8921-70a18ea0fc7e",
+        "slug": "ernie-4-5-300b-a47b",
+        "name": "ERNIE 4.5 300B A47B",
+        "provider": "Baidu",
+        "intelligence": 15
       },
-      "count": 802
+      "count": 896
+    },
+    {
+      "model": {
+        "id": "093883ed-f5fc-443b-8e18-afbfb166699e",
+        "slug": "qwen3-coder-480b-a35b-instruct",
+        "name": "Qwen3 Coder 480B A35B Instruct",
+        "provider": "Alibaba",
+        "intelligence": 24.8
+      },
+      "count": 892
+    },
+    {
+      "model": {
+        "id": "16149b9c-a1e9-4669-a5cb-ff3c00d78f89",
+        "slug": "gpt-oss-20b-low",
+        "name": "gpt-oss-20B (low)",
+        "provider": "OpenAI",
+        "intelligence": 20.8
+      },
+      "count": 888
+    },
+    {
+      "model": {
+        "id": "9f7c7566-a704-49a2-a383-cb3181da33a4",
+        "slug": "gpt-4-1-mini",
+        "name": "GPT-4.1 mini",
+        "provider": "OpenAI",
+        "intelligence": 22.9
+      },
+      "count": 880
+    },
+    {
+      "model": {
+        "id": "d034dafe-463d-4c50-956f-84fca657b26f",
+        "slug": "claude-4-sonnet",
+        "name": "Claude 4 Sonnet (Non-reasoning)",
+        "provider": "Anthropic",
+        "intelligence": 33
+      },
+      "count": 838
     },
     {
       "model": {
@@ -4568,7 +4522,7 @@
         "provider": "Z AI",
         "intelligence": 34.2
       },
-      "count": 776
+      "count": 825
     }
   ],
   "worstSources": [
@@ -4580,7 +4534,7 @@
         "provider": "Meta",
         "intelligence": 7.4
       },
-      "count": 490
+      "count": 494
     },
     {
       "model": {
@@ -4590,7 +4544,7 @@
         "provider": "Alibaba",
         "intelligence": 7.4
       },
-      "count": 490
+      "count": 494
     },
     {
       "model": {
@@ -4600,7 +4554,7 @@
         "provider": "DeepSeek",
         "intelligence": 8.4
       },
-      "count": 466
+      "count": 470
     },
     {
       "model": {
@@ -4610,7 +4564,7 @@
         "provider": "Google",
         "intelligence": 8.6
       },
-      "count": 462
+      "count": 466
     },
     {
       "model": {
@@ -4620,7 +4574,7 @@
         "provider": "Snowflake",
         "intelligence": 8.8
       },
-      "count": 457
+      "count": 461
     },
     {
       "model": {
@@ -4630,7 +4584,7 @@
         "provider": "Alibaba",
         "intelligence": 8.8
       },
-      "count": 457
+      "count": 461
     },
     {
       "model": {
@@ -4640,7 +4594,7 @@
         "provider": "DeepSeek",
         "intelligence": 9.1
       },
-      "count": 450
+      "count": 454
     },
     {
       "model": {
@@ -4650,7 +4604,7 @@
         "provider": "Google",
         "intelligence": 10.1
       },
-      "count": 430
+      "count": 434
     },
     {
       "model": {
@@ -4660,7 +4614,7 @@
         "provider": "xAI",
         "intelligence": 11.7
       },
-      "count": 407
+      "count": 411
     },
     {
       "model": {
@@ -4670,7 +4624,7 @@
         "provider": "DeepSeek",
         "intelligence": 12.3
       },
-      "count": 391
+      "count": 395
     },
     {
       "model": {
@@ -4680,7 +4634,7 @@
         "provider": "OpenAI",
         "intelligence": 12.8
       },
-      "count": 377
+      "count": 381
     },
     {
       "model": {
@@ -4690,7 +4644,7 @@
         "provider": "OpenAI",
         "intelligence": 20
       },
-      "count": 248
+      "count": 251
     },
     {
       "model": {
@@ -4700,7 +4654,7 @@
         "provider": "xAI",
         "intelligence": 21.6
       },
-      "count": 236
+      "count": 239
     },
     {
       "model": {
@@ -4710,7 +4664,7 @@
         "provider": "OpenAI",
         "intelligence": 25.8
       },
-      "count": 194
+      "count": 197
     },
     {
       "model": {
@@ -4720,17 +4674,7 @@
         "provider": "Anthropic",
         "intelligence": 36
       },
-      "count": 108
-    },
-    {
-      "model": {
-        "id": "686ab020-ee58-4a70-a9ac-24d675a73506",
-        "slug": "lfm2-8b-a1b",
-        "name": "LFM2 8B A1B",
-        "provider": "Liquid AI",
-        "intelligence": 7
-      },
-      "count": 15
+      "count": 111
     },
     {
       "model": {
@@ -4739,6 +4683,16 @@
         "name": "LFM2.5-VL-1.6B",
         "provider": "Liquid AI",
         "intelligence": 6.2
+      },
+      "count": 15
+    },
+    {
+      "model": {
+        "id": "686ab020-ee58-4a70-a9ac-24d675a73506",
+        "slug": "lfm2-8b-a1b",
+        "name": "LFM2 8B A1B",
+        "provider": "Liquid AI",
+        "intelligence": 7
       },
       "count": 15
     },
@@ -4764,11 +4718,11 @@
     },
     {
       "model": {
-        "id": "a2c8e7b2-57bf-4d1e-96ea-7944d786d94d",
-        "slug": "granite-4-0-nano-1b",
-        "name": "Granite 4.0 1B",
+        "id": "a68afa0b-7fe2-4e9d-bf3e-741cce3c6aeb",
+        "slug": "granite-4-0-h-350m",
+        "name": "Granite 4.0 H 350M",
         "provider": "IBM",
-        "intelligence": 7.3
+        "intelligence": 5.4
       },
       "count": 15
     }
@@ -4782,7 +4736,7 @@
         "provider": "Anthropic",
         "intelligence": 36
       },
-      "count": 403
+      "count": 404
     },
     {
       "model": {
@@ -4792,7 +4746,7 @@
         "provider": "OpenAI",
         "intelligence": 25.8
       },
-      "count": 319
+      "count": 320
     },
     {
       "model": {
@@ -4802,7 +4756,7 @@
         "provider": "xAI",
         "intelligence": 21.6
       },
-      "count": 276
+      "count": 277
     },
     {
       "model": {
@@ -4812,7 +4766,7 @@
         "provider": "OpenAI",
         "intelligence": 20
       },
-      "count": 263
+      "count": 264
     },
     {
       "model": {
@@ -4926,11 +4880,31 @@
     },
     {
       "model": {
-        "id": "ba242e40-83b7-4cd3-a0e0-b56237984914",
-        "slug": "gpt-5-4-mini",
-        "name": "GPT-5.4 mini (xhigh)",
+        "id": "6b79f899-e3c0-45f6-923c-243faccdb2fc",
+        "slug": "gpt-5-5-medium",
+        "name": "GPT-5.5 (medium)",
         "provider": "OpenAI",
-        "intelligence": 48.9
+        "intelligence": 56.7
+      },
+      "count": 15
+    },
+    {
+      "model": {
+        "id": "6f1a7562-6e96-46ac-af4f-6ba5a7a3da96",
+        "slug": "gpt-5-5-non-reasoning",
+        "name": "GPT-5.5 (Non-reasoning)",
+        "provider": "OpenAI",
+        "intelligence": 40.9
+      },
+      "count": 15
+    },
+    {
+      "model": {
+        "id": "8869f28a-a6ff-487f-8d32-93fe335fdda5",
+        "slug": "gpt-5-4-nano-medium",
+        "name": "GPT-5.4 nano (medium)",
+        "provider": "OpenAI",
+        "intelligence": 38.1
       },
       "count": 15
     },
@@ -4946,31 +4920,11 @@
     },
     {
       "model": {
-        "id": "d4fc3f33-f2b0-4da1-88ee-f1f82bd4de31",
-        "slug": "gpt-5-4-nano",
-        "name": "GPT-5.4 nano (xhigh)",
-        "provider": "OpenAI",
-        "intelligence": 44
-      },
-      "count": 15
-    },
-    {
-      "model": {
         "id": "b13c1257-d746-4027-8fc8-4892dc14701c",
         "slug": "gpt-5-5-high",
         "name": "GPT-5.5 (high)",
         "provider": "OpenAI",
         "intelligence": 58.9
-      },
-      "count": 15
-    },
-    {
-      "model": {
-        "id": "8869f28a-a6ff-487f-8d32-93fe335fdda5",
-        "slug": "gpt-5-4-nano-medium",
-        "name": "GPT-5.4 nano (medium)",
-        "provider": "OpenAI",
-        "intelligence": 38.1
       },
       "count": 15
     }
@@ -5610,9 +5564,9 @@
   "unreachableExamples": [
     {
       "source": {
-        "id": "c99f3bde-7c08-4de8-bd5c-8ee9123ebffa",
-        "slug": "gpt-oss-120b-low",
-        "name": "gpt-oss-120b (low)",
+        "id": "36f73aaf-d38a-4b56-a2b3-d04d17186910",
+        "slug": "gpt-oss-20b",
+        "name": "gpt-oss-20B (high)",
         "provider": "OpenAI",
         "intelligence": 24.5
       },
@@ -5627,9 +5581,9 @@
     },
     {
       "source": {
-        "id": "c99f3bde-7c08-4de8-bd5c-8ee9123ebffa",
-        "slug": "gpt-oss-120b-low",
-        "name": "gpt-oss-120b (low)",
+        "id": "36f73aaf-d38a-4b56-a2b3-d04d17186910",
+        "slug": "gpt-oss-20b",
+        "name": "gpt-oss-20B (high)",
         "provider": "OpenAI",
         "intelligence": 24.5
       },
@@ -5661,60 +5615,9 @@
     },
     {
       "source": {
-        "id": "16149b9c-a1e9-4669-a5cb-ff3c00d78f89",
-        "slug": "gpt-oss-20b-low",
-        "name": "gpt-oss-20B (low)",
-        "provider": "OpenAI",
-        "intelligence": 20.8
-      },
-      "target": {
-        "id": "e8d4100e-165b-4c5d-ac11-ac553590a334",
-        "slug": "o1-pro",
-        "name": "o1-pro",
-        "provider": "OpenAI",
-        "intelligence": 25.8
-      },
-      "intelligenceGap": 5
-    },
-    {
-      "source": {
-        "id": "16149b9c-a1e9-4669-a5cb-ff3c00d78f89",
-        "slug": "gpt-oss-20b-low",
-        "name": "gpt-oss-20B (low)",
-        "provider": "OpenAI",
-        "intelligence": 20.8
-      },
-      "target": {
-        "id": "f2f60e3a-e5f5-4471-acd2-9f2f29c76007",
-        "slug": "claude-4-1-opus",
-        "name": "Claude 4.1 Opus (Non-reasoning)",
-        "provider": "Anthropic",
-        "intelligence": 36
-      },
-      "intelligenceGap": 15.2
-    },
-    {
-      "source": {
-        "id": "16149b9c-a1e9-4669-a5cb-ff3c00d78f89",
-        "slug": "gpt-oss-20b-low",
-        "name": "gpt-oss-20B (low)",
-        "provider": "OpenAI",
-        "intelligence": 20.8
-      },
-      "target": {
-        "id": "ec3b22e6-48ac-416a-b4ae-55565a4f3046",
-        "slug": "grok-3-reasoning",
-        "name": "Grok 3 Reasoning Beta",
-        "provider": "xAI",
-        "intelligence": 21.6
-      },
-      "intelligenceGap": 0.8
-    },
-    {
-      "source": {
-        "id": "36f73aaf-d38a-4b56-a2b3-d04d17186910",
-        "slug": "gpt-oss-20b",
-        "name": "gpt-oss-20B (high)",
+        "id": "c99f3bde-7c08-4de8-bd5c-8ee9123ebffa",
+        "slug": "gpt-oss-120b-low",
+        "name": "gpt-oss-120b (low)",
         "provider": "OpenAI",
         "intelligence": 24.5
       },
@@ -5729,9 +5632,9 @@
     },
     {
       "source": {
-        "id": "36f73aaf-d38a-4b56-a2b3-d04d17186910",
-        "slug": "gpt-oss-20b",
-        "name": "gpt-oss-20B (high)",
+        "id": "c99f3bde-7c08-4de8-bd5c-8ee9123ebffa",
+        "slug": "gpt-oss-120b-low",
+        "name": "gpt-oss-120b (low)",
         "provider": "OpenAI",
         "intelligence": 24.5
       },
@@ -5746,6 +5649,40 @@
     },
     {
       "source": {
+        "id": "ae447455-940d-4d30-9139-a664fa896eaf",
+        "slug": "gpt-5-4-mini-non-reasoning",
+        "name": "GPT-5.4 mini (Non-Reasoning)",
+        "provider": "OpenAI",
+        "intelligence": 23.3
+      },
+      "target": {
+        "id": "e8d4100e-165b-4c5d-ac11-ac553590a334",
+        "slug": "o1-pro",
+        "name": "o1-pro",
+        "provider": "OpenAI",
+        "intelligence": 25.8
+      },
+      "intelligenceGap": 2.5
+    },
+    {
+      "source": {
+        "id": "ae447455-940d-4d30-9139-a664fa896eaf",
+        "slug": "gpt-5-4-mini-non-reasoning",
+        "name": "GPT-5.4 mini (Non-Reasoning)",
+        "provider": "OpenAI",
+        "intelligence": 23.3
+      },
+      "target": {
+        "id": "f2f60e3a-e5f5-4471-acd2-9f2f29c76007",
+        "slug": "claude-4-1-opus",
+        "name": "Claude 4.1 Opus (Non-reasoning)",
+        "provider": "Anthropic",
+        "intelligence": 36
+      },
+      "intelligenceGap": 12.7
+    },
+    {
+      "source": {
         "id": "4c111fbc-d13a-42b4-858c-1dc17fe3c1d1",
         "slug": "grok-1",
         "name": "Grok-1",
@@ -5753,9 +5690,9 @@
         "intelligence": 11.7
       },
       "target": {
-        "id": "c99f3bde-7c08-4de8-bd5c-8ee9123ebffa",
-        "slug": "gpt-oss-120b-low",
-        "name": "gpt-oss-120b (low)",
+        "id": "36f73aaf-d38a-4b56-a2b3-d04d17186910",
+        "slug": "gpt-oss-20b",
+        "name": "gpt-oss-20B (high)",
         "provider": "OpenAI",
         "intelligence": 24.5
       },
@@ -5787,227 +5724,6 @@
         "intelligence": 11.7
       },
       "target": {
-        "id": "16149b9c-a1e9-4669-a5cb-ff3c00d78f89",
-        "slug": "gpt-oss-20b-low",
-        "name": "gpt-oss-20B (low)",
-        "provider": "OpenAI",
-        "intelligence": 20.8
-      },
-      "intelligenceGap": 9.1
-    },
-    {
-      "source": {
-        "id": "4c111fbc-d13a-42b4-858c-1dc17fe3c1d1",
-        "slug": "grok-1",
-        "name": "Grok-1",
-        "provider": "xAI",
-        "intelligence": 11.7
-      },
-      "target": {
-        "id": "36f73aaf-d38a-4b56-a2b3-d04d17186910",
-        "slug": "gpt-oss-20b",
-        "name": "gpt-oss-20B (high)",
-        "provider": "OpenAI",
-        "intelligence": 24.5
-      },
-      "intelligenceGap": 12.8
-    },
-    {
-      "source": {
-        "id": "4c111fbc-d13a-42b4-858c-1dc17fe3c1d1",
-        "slug": "grok-1",
-        "name": "Grok-1",
-        "provider": "xAI",
-        "intelligence": 11.7
-      },
-      "target": {
-        "id": "ba242e40-83b7-4cd3-a0e0-b56237984914",
-        "slug": "gpt-5-4-mini",
-        "name": "GPT-5.4 mini (xhigh)",
-        "provider": "OpenAI",
-        "intelligence": 48.9
-      },
-      "intelligenceGap": 37.2
-    },
-    {
-      "source": {
-        "id": "4c111fbc-d13a-42b4-858c-1dc17fe3c1d1",
-        "slug": "grok-1",
-        "name": "Grok-1",
-        "provider": "xAI",
-        "intelligence": 11.7
-      },
-      "target": {
-        "id": "16c5b637-8bce-4252-81f2-1b87a36a4e4c",
-        "slug": "o3",
-        "name": "o3",
-        "provider": "OpenAI",
-        "intelligence": 38.4
-      },
-      "intelligenceGap": 26.7
-    },
-    {
-      "source": {
-        "id": "4c111fbc-d13a-42b4-858c-1dc17fe3c1d1",
-        "slug": "grok-1",
-        "name": "Grok-1",
-        "provider": "xAI",
-        "intelligence": 11.7
-      },
-      "target": {
-        "id": "d4fc3f33-f2b0-4da1-88ee-f1f82bd4de31",
-        "slug": "gpt-5-4-nano",
-        "name": "GPT-5.4 nano (xhigh)",
-        "provider": "OpenAI",
-        "intelligence": 44
-      },
-      "intelligenceGap": 32.3
-    },
-    {
-      "source": {
-        "id": "4c111fbc-d13a-42b4-858c-1dc17fe3c1d1",
-        "slug": "grok-1",
-        "name": "Grok-1",
-        "provider": "xAI",
-        "intelligence": 11.7
-      },
-      "target": {
-        "id": "c298d1a8-606c-4971-8613-ccdaaf941043",
-        "slug": "gpt-5-4-nano-non-reasoning",
-        "name": "GPT-5.4 nano (Non-Reasoning)",
-        "provider": "OpenAI",
-        "intelligence": 24.4
-      },
-      "intelligenceGap": 12.7
-    },
-    {
-      "source": {
-        "id": "4c111fbc-d13a-42b4-858c-1dc17fe3c1d1",
-        "slug": "grok-1",
-        "name": "Grok-1",
-        "provider": "xAI",
-        "intelligence": 11.7
-      },
-      "target": {
-        "id": "b13c1257-d746-4027-8fc8-4892dc14701c",
-        "slug": "gpt-5-5-high",
-        "name": "GPT-5.5 (high)",
-        "provider": "OpenAI",
-        "intelligence": 58.9
-      },
-      "intelligenceGap": 47.2
-    },
-    {
-      "source": {
-        "id": "4c111fbc-d13a-42b4-858c-1dc17fe3c1d1",
-        "slug": "grok-1",
-        "name": "Grok-1",
-        "provider": "xAI",
-        "intelligence": 11.7
-      },
-      "target": {
-        "id": "ae447455-940d-4d30-9139-a664fa896eaf",
-        "slug": "gpt-5-4-mini-non-reasoning",
-        "name": "GPT-5.4 mini (Non-Reasoning)",
-        "provider": "OpenAI",
-        "intelligence": 23.3
-      },
-      "intelligenceGap": 11.6
-    },
-    {
-      "source": {
-        "id": "4c111fbc-d13a-42b4-858c-1dc17fe3c1d1",
-        "slug": "grok-1",
-        "name": "Grok-1",
-        "provider": "xAI",
-        "intelligence": 11.7
-      },
-      "target": {
-        "id": "493f6a1e-7717-4e98-9d6f-548b92c4702d",
-        "slug": "gpt-5-4-non-reasoning",
-        "name": "GPT-5.4 (Non-reasoning)",
-        "provider": "OpenAI",
-        "intelligence": 35.4
-      },
-      "intelligenceGap": 23.7
-    },
-    {
-      "source": {
-        "id": "4c111fbc-d13a-42b4-858c-1dc17fe3c1d1",
-        "slug": "grok-1",
-        "name": "Grok-1",
-        "provider": "xAI",
-        "intelligence": 11.7
-      },
-      "target": {
-        "id": "8869f28a-a6ff-487f-8d32-93fe335fdda5",
-        "slug": "gpt-5-4-nano-medium",
-        "name": "GPT-5.4 nano (medium)",
-        "provider": "OpenAI",
-        "intelligence": 38.1
-      },
-      "intelligenceGap": 26.4
-    },
-    {
-      "source": {
-        "id": "4c111fbc-d13a-42b4-858c-1dc17fe3c1d1",
-        "slug": "grok-1",
-        "name": "Grok-1",
-        "provider": "xAI",
-        "intelligence": 11.7
-      },
-      "target": {
-        "id": "392063ba-c3b5-47e8-ba67-a7b0b34f6824",
-        "slug": "gpt-5-4-mini-medium",
-        "name": "GPT-5.4 mini (medium)",
-        "provider": "OpenAI",
-        "intelligence": 37.7
-      },
-      "intelligenceGap": 26
-    },
-    {
-      "source": {
-        "id": "4c111fbc-d13a-42b4-858c-1dc17fe3c1d1",
-        "slug": "grok-1",
-        "name": "Grok-1",
-        "provider": "xAI",
-        "intelligence": 11.7
-      },
-      "target": {
-        "id": "c77cfe51-f4a0-4692-9dee-5061ef667f23",
-        "slug": "gpt-5-5-low",
-        "name": "GPT-5.5 (low)",
-        "provider": "OpenAI",
-        "intelligence": 50.8
-      },
-      "intelligenceGap": 39.1
-    },
-    {
-      "source": {
-        "id": "4c111fbc-d13a-42b4-858c-1dc17fe3c1d1",
-        "slug": "grok-1",
-        "name": "Grok-1",
-        "provider": "xAI",
-        "intelligence": 11.7
-      },
-      "target": {
-        "id": "59b5b14b-5365-4ee7-824a-18a8e6309644",
-        "slug": "gpt-5-3-codex",
-        "name": "GPT-5.3 Codex (xhigh)",
-        "provider": "OpenAI",
-        "intelligence": 53.6
-      },
-      "intelligenceGap": 41.9
-    },
-    {
-      "source": {
-        "id": "4c111fbc-d13a-42b4-858c-1dc17fe3c1d1",
-        "slug": "grok-1",
-        "name": "Grok-1",
-        "provider": "xAI",
-        "intelligence": 11.7
-      },
-      "target": {
         "id": "6b79f899-e3c0-45f6-923c-243faccdb2fc",
         "slug": "gpt-5-5-medium",
         "name": "GPT-5.5 (medium)",
@@ -6015,23 +5731,6 @@
         "intelligence": 56.7
       },
       "intelligenceGap": 45
-    },
-    {
-      "source": {
-        "id": "4c111fbc-d13a-42b4-858c-1dc17fe3c1d1",
-        "slug": "grok-1",
-        "name": "Grok-1",
-        "provider": "xAI",
-        "intelligence": 11.7
-      },
-      "target": {
-        "id": "1f054429-397e-4fdb-9e71-67bc92c1735e",
-        "slug": "gpt-5-5",
-        "name": "GPT-5.5 (xhigh)",
-        "provider": "OpenAI",
-        "intelligence": 60.2
-      },
-      "intelligenceGap": 48.5
     },
     {
       "source": {
@@ -6059,13 +5758,234 @@
         "intelligence": 11.7
       },
       "target": {
-        "id": "538e945c-6c27-4fd3-995d-ded80a36cd10",
-        "slug": "gpt-5-4-low",
-        "name": "GPT-5.4 (low)",
+        "id": "c99f3bde-7c08-4de8-bd5c-8ee9123ebffa",
+        "slug": "gpt-oss-120b-low",
+        "name": "gpt-oss-120b (low)",
         "provider": "OpenAI",
-        "intelligence": 47.9
+        "intelligence": 24.5
       },
-      "intelligenceGap": 36.2
+      "intelligenceGap": 12.8
+    },
+    {
+      "source": {
+        "id": "4c111fbc-d13a-42b4-858c-1dc17fe3c1d1",
+        "slug": "grok-1",
+        "name": "Grok-1",
+        "provider": "xAI",
+        "intelligence": 11.7
+      },
+      "target": {
+        "id": "8869f28a-a6ff-487f-8d32-93fe335fdda5",
+        "slug": "gpt-5-4-nano-medium",
+        "name": "GPT-5.4 nano (medium)",
+        "provider": "OpenAI",
+        "intelligence": 38.1
+      },
+      "intelligenceGap": 26.4
+    },
+    {
+      "source": {
+        "id": "4c111fbc-d13a-42b4-858c-1dc17fe3c1d1",
+        "slug": "grok-1",
+        "name": "Grok-1",
+        "provider": "xAI",
+        "intelligence": 11.7
+      },
+      "target": {
+        "id": "ae447455-940d-4d30-9139-a664fa896eaf",
+        "slug": "gpt-5-4-mini-non-reasoning",
+        "name": "GPT-5.4 mini (Non-Reasoning)",
+        "provider": "OpenAI",
+        "intelligence": 23.3
+      },
+      "intelligenceGap": 11.6
+    },
+    {
+      "source": {
+        "id": "4c111fbc-d13a-42b4-858c-1dc17fe3c1d1",
+        "slug": "grok-1",
+        "name": "Grok-1",
+        "provider": "xAI",
+        "intelligence": 11.7
+      },
+      "target": {
+        "id": "16c5b637-8bce-4252-81f2-1b87a36a4e4c",
+        "slug": "o3",
+        "name": "o3",
+        "provider": "OpenAI",
+        "intelligence": 38.4
+      },
+      "intelligenceGap": 26.7
+    },
+    {
+      "source": {
+        "id": "4c111fbc-d13a-42b4-858c-1dc17fe3c1d1",
+        "slug": "grok-1",
+        "name": "Grok-1",
+        "provider": "xAI",
+        "intelligence": 11.7
+      },
+      "target": {
+        "id": "b13c1257-d746-4027-8fc8-4892dc14701c",
+        "slug": "gpt-5-5-high",
+        "name": "GPT-5.5 (high)",
+        "provider": "OpenAI",
+        "intelligence": 58.9
+      },
+      "intelligenceGap": 47.2
+    },
+    {
+      "source": {
+        "id": "4c111fbc-d13a-42b4-858c-1dc17fe3c1d1",
+        "slug": "grok-1",
+        "name": "Grok-1",
+        "provider": "xAI",
+        "intelligence": 11.7
+      },
+      "target": {
+        "id": "ba242e40-83b7-4cd3-a0e0-b56237984914",
+        "slug": "gpt-5-4-mini",
+        "name": "GPT-5.4 mini (xhigh)",
+        "provider": "OpenAI",
+        "intelligence": 48.9
+      },
+      "intelligenceGap": 37.2
+    },
+    {
+      "source": {
+        "id": "4c111fbc-d13a-42b4-858c-1dc17fe3c1d1",
+        "slug": "grok-1",
+        "name": "Grok-1",
+        "provider": "xAI",
+        "intelligence": 11.7
+      },
+      "target": {
+        "id": "c298d1a8-606c-4971-8613-ccdaaf941043",
+        "slug": "gpt-5-4-nano-non-reasoning",
+        "name": "GPT-5.4 nano (Non-Reasoning)",
+        "provider": "OpenAI",
+        "intelligence": 24.4
+      },
+      "intelligenceGap": 12.7
+    },
+    {
+      "source": {
+        "id": "4c111fbc-d13a-42b4-858c-1dc17fe3c1d1",
+        "slug": "grok-1",
+        "name": "Grok-1",
+        "provider": "xAI",
+        "intelligence": 11.7
+      },
+      "target": {
+        "id": "c77cfe51-f4a0-4692-9dee-5061ef667f23",
+        "slug": "gpt-5-5-low",
+        "name": "GPT-5.5 (low)",
+        "provider": "OpenAI",
+        "intelligence": 50.8
+      },
+      "intelligenceGap": 39.1
+    },
+    {
+      "source": {
+        "id": "4c111fbc-d13a-42b4-858c-1dc17fe3c1d1",
+        "slug": "grok-1",
+        "name": "Grok-1",
+        "provider": "xAI",
+        "intelligence": 11.7
+      },
+      "target": {
+        "id": "16149b9c-a1e9-4669-a5cb-ff3c00d78f89",
+        "slug": "gpt-oss-20b-low",
+        "name": "gpt-oss-20B (low)",
+        "provider": "OpenAI",
+        "intelligence": 20.8
+      },
+      "intelligenceGap": 9.1
+    },
+    {
+      "source": {
+        "id": "4c111fbc-d13a-42b4-858c-1dc17fe3c1d1",
+        "slug": "grok-1",
+        "name": "Grok-1",
+        "provider": "xAI",
+        "intelligence": 11.7
+      },
+      "target": {
+        "id": "d4fc3f33-f2b0-4da1-88ee-f1f82bd4de31",
+        "slug": "gpt-5-4-nano",
+        "name": "GPT-5.4 nano (xhigh)",
+        "provider": "OpenAI",
+        "intelligence": 44
+      },
+      "intelligenceGap": 32.3
+    },
+    {
+      "source": {
+        "id": "4c111fbc-d13a-42b4-858c-1dc17fe3c1d1",
+        "slug": "grok-1",
+        "name": "Grok-1",
+        "provider": "xAI",
+        "intelligence": 11.7
+      },
+      "target": {
+        "id": "e34ffffb-d8e1-4f5c-a2c7-3ca19c235eeb",
+        "slug": "gpt-5-5-instant-05-26",
+        "name": "GPT-5.5 Instant (May 2026)",
+        "provider": "OpenAI",
+        "intelligence": 41.8
+      },
+      "intelligenceGap": 30.1
+    },
+    {
+      "source": {
+        "id": "4c111fbc-d13a-42b4-858c-1dc17fe3c1d1",
+        "slug": "grok-1",
+        "name": "Grok-1",
+        "provider": "xAI",
+        "intelligence": 11.7
+      },
+      "target": {
+        "id": "1f054429-397e-4fdb-9e71-67bc92c1735e",
+        "slug": "gpt-5-5",
+        "name": "GPT-5.5 (xhigh)",
+        "provider": "OpenAI",
+        "intelligence": 60.2
+      },
+      "intelligenceGap": 48.5
+    },
+    {
+      "source": {
+        "id": "4c111fbc-d13a-42b4-858c-1dc17fe3c1d1",
+        "slug": "grok-1",
+        "name": "Grok-1",
+        "provider": "xAI",
+        "intelligence": 11.7
+      },
+      "target": {
+        "id": "392063ba-c3b5-47e8-ba67-a7b0b34f6824",
+        "slug": "gpt-5-4-mini-medium",
+        "name": "GPT-5.4 mini (medium)",
+        "provider": "OpenAI",
+        "intelligence": 37.7
+      },
+      "intelligenceGap": 26
+    },
+    {
+      "source": {
+        "id": "4c111fbc-d13a-42b4-858c-1dc17fe3c1d1",
+        "slug": "grok-1",
+        "name": "Grok-1",
+        "provider": "xAI",
+        "intelligence": 11.7
+      },
+      "target": {
+        "id": "59b5b14b-5365-4ee7-824a-18a8e6309644",
+        "slug": "gpt-5-3-codex",
+        "name": "GPT-5.3 Codex (xhigh)",
+        "provider": "OpenAI",
+        "intelligence": 53.6
+      },
+      "intelligenceGap": 41.9
     },
     {
       "source": {
@@ -6117,6 +6037,40 @@
         "intelligence": 11.9
       },
       "intelligenceGap": 0.2
+    },
+    {
+      "source": {
+        "id": "4c111fbc-d13a-42b4-858c-1dc17fe3c1d1",
+        "slug": "grok-1",
+        "name": "Grok-1",
+        "provider": "xAI",
+        "intelligence": 11.7
+      },
+      "target": {
+        "id": "adf9a85e-abc3-4f28-937b-db6655cc5238",
+        "slug": "llama-4-scout",
+        "name": "Llama 4 Scout",
+        "provider": "Meta",
+        "intelligence": 13.5
+      },
+      "intelligenceGap": 1.8
+    },
+    {
+      "source": {
+        "id": "4c111fbc-d13a-42b4-858c-1dc17fe3c1d1",
+        "slug": "grok-1",
+        "name": "Grok-1",
+        "provider": "xAI",
+        "intelligence": 11.7
+      },
+      "target": {
+        "id": "922c69c7-9037-43c6-8bcf-a1c555e7f3eb",
+        "slug": "llama-4-maverick",
+        "name": "Llama 4 Maverick",
+        "provider": "Meta",
+        "intelligence": 18.4
+      },
+      "intelligenceGap": 6.7
     }
   ],
   "interpretation": [
