@@ -1,37 +1,67 @@
 {
-  "generatedAt": "2026-06-01T08:44:14.036Z",
-  "previousGeneratedAt": "2026-05-25T07:57:43.683Z",
-  "modelCountBefore": 523,
-  "modelCountAfter": 527,
-  "modelCountDelta": 4,
+  "generatedAt": "2026-06-08T08:21:41.731Z",
+  "previousGeneratedAt": "2026-06-01T08:44:14.036Z",
+  "modelCountBefore": 527,
+  "modelCountAfter": 533,
+  "modelCountDelta": 6,
   "addedModels": [
     {
-      "id": "992b7b84-5069-4c6a-9295-834252553d50",
-      "slug": "claude-opus-4-8",
-      "name": "Claude Opus 4.8 (Adaptive Reasoning, Max Effort)",
-      "provider": "Anthropic"
-    },
-    {
-      "id": "5016ea75-7b0e-4737-a7e6-1062c6d90fd4",
-      "slug": "gemini-3-5-flash-medium",
-      "name": "Gemini 3.5 Flash (medium)",
+      "id": "feb02d3b-ff8d-4ed4-b165-13f8d4a7192c",
+      "slug": "gemma-4-12b",
+      "name": "Gemma 4 12B (Reasoning)",
       "provider": "Google"
     },
     {
-      "id": "e34ffffb-d8e1-4f5c-a2c7-3ca19c235eeb",
-      "slug": "gpt-5-5-instant-05-26",
-      "name": "GPT-5.5 Instant (May 2026)",
-      "provider": "OpenAI"
+      "id": "77f5ff8b-1536-474a-a337-e1bfd138d343",
+      "slug": "minicpm5-1b",
+      "name": "MiniCPM5-1B (Reasoning)",
+      "provider": "OpenBMB"
     },
     {
-      "id": "d306cccd-0085-4b2f-8aa0-ffcdbb434695",
-      "slug": "minicpm5-1b-non-reasoning",
-      "name": "MiniCPM5-1B (Non-reasoning)",
-      "provider": "OpenBMB"
+      "id": "277f939a-985b-4b37-859d-b3eabc7c0b26",
+      "slug": "minimax-m3",
+      "name": "MiniMax-M3",
+      "provider": "MiniMax"
+    },
+    {
+      "id": "5b52def2-ac9b-4465-ad80-91ea8079e253",
+      "slug": "nvidia-nemotron-3-ultra-550b-a55b",
+      "name": "Nemotron 3 Ultra 550B A55B (Reasoning)",
+      "provider": "NVIDIA"
+    },
+    {
+      "id": "a87fce42-eea3-4e45-a96d-fe057814f371",
+      "slug": "qwen3-7-plus",
+      "name": "Qwen3.7 Plus",
+      "provider": "Alibaba"
+    },
+    {
+      "id": "6c7b322e-2f35-48ff-9171-fb621a726fc0",
+      "slug": "step-3-7-flash",
+      "name": "Step 3.7 Flash",
+      "provider": "StepFun"
     }
   ],
   "removedModels": [],
   "metricChanges": [
+    {
+      "model": {
+        "id": "6e6e02fd-9cbd-417f-9bfc-673df89c313d",
+        "slug": "nvidia-nemotron-nano-12b-v2-vl-reasoning",
+        "name": "NVIDIA Nemotron Nano 12B v2 VL (Reasoning)",
+        "provider": "NVIDIA"
+      },
+      "metric": "outputSpeedTokensPerSecond",
+      "metricLabel": "Output speed",
+      "previousValue": 0,
+      "currentValue": 293.01,
+      "previousFormatted": "0.0 tok/s",
+      "currentFormatted": "293.0 tok/s",
+      "delta": 293.01,
+      "absoluteDelta": 293.01,
+      "direction": "up",
+      "isImprovement": true
+    },
     {
       "model": {
         "id": "016d330a-2141-4afa-b2fc-62b314423dc1",
@@ -41,32 +71,122 @@
       },
       "metric": "outputSpeedTokensPerSecond",
       "metricLabel": "Output speed",
-      "previousValue": 718.764,
-      "currentValue": 1004.571,
-      "previousFormatted": "718.8 tok/s",
-      "currentFormatted": "1,004.6 tok/s",
-      "delta": 285.807,
-      "absoluteDelta": 285.807,
+      "previousValue": 1004.571,
+      "currentValue": 1272.035,
+      "previousFormatted": "1,004.6 tok/s",
+      "currentFormatted": "1,272.0 tok/s",
+      "delta": 267.464,
+      "absoluteDelta": 267.464,
       "direction": "up",
       "isImprovement": true
     },
     {
       "model": {
-        "id": "5c3dd927-48a3-4f3c-8045-9b135f62dfbb",
-        "slug": "nova-lite",
-        "name": "Nova Lite",
-        "provider": "Amazon"
+        "id": "4ae6c88d-9e4a-4850-89fe-18a1c04a66cc",
+        "slug": "qwen3-0.6b-instruct-reasoning",
+        "name": "Qwen3 0.6B (Reasoning)",
+        "provider": "Alibaba"
       },
       "metric": "outputSpeedTokensPerSecond",
       "metricLabel": "Output speed",
-      "previousValue": 84.87,
-      "currentValue": 218.563,
-      "previousFormatted": "84.9 tok/s",
-      "currentFormatted": "218.6 tok/s",
-      "delta": 133.693,
-      "absoluteDelta": 133.693,
-      "direction": "up",
-      "isImprovement": true
+      "previousValue": 222.48,
+      "currentValue": 0,
+      "previousFormatted": "222.5 tok/s",
+      "currentFormatted": "0.0 tok/s",
+      "delta": -222.48,
+      "absoluteDelta": 222.48,
+      "direction": "down",
+      "isImprovement": false
+    },
+    {
+      "model": {
+        "id": "0e5f6140-1154-4583-a3e0-8c032a338892",
+        "slug": "qwen3-0.6b-instruct",
+        "name": "Qwen3 0.6B (Non-reasoning)",
+        "provider": "Alibaba"
+      },
+      "metric": "outputSpeedTokensPerSecond",
+      "metricLabel": "Output speed",
+      "previousValue": 222.125,
+      "currentValue": 0,
+      "previousFormatted": "222.1 tok/s",
+      "currentFormatted": "0.0 tok/s",
+      "delta": -222.125,
+      "absoluteDelta": 222.125,
+      "direction": "down",
+      "isImprovement": false
+    },
+    {
+      "model": {
+        "id": "34ef2b5c-3df3-437e-b9c5-81346f8c14a8",
+        "slug": "sarvam-m-reasoning",
+        "name": "Sarvam M (Reasoning)",
+        "provider": "Sarvam"
+      },
+      "metric": "outputSpeedTokensPerSecond",
+      "metricLabel": "Output speed",
+      "previousValue": 142.22,
+      "currentValue": 0,
+      "previousFormatted": "142.2 tok/s",
+      "currentFormatted": "0.0 tok/s",
+      "delta": -142.22,
+      "absoluteDelta": 142.22,
+      "direction": "down",
+      "isImprovement": false
+    },
+    {
+      "model": {
+        "id": "2bb84433-f38e-4edc-9b65-4d7b1f473db9",
+        "slug": "qwen3-1.7b-instruct",
+        "name": "Qwen3 1.7B (Non-reasoning)",
+        "provider": "Alibaba"
+      },
+      "metric": "outputSpeedTokensPerSecond",
+      "metricLabel": "Output speed",
+      "previousValue": 138.57,
+      "currentValue": 0,
+      "previousFormatted": "138.6 tok/s",
+      "currentFormatted": "0.0 tok/s",
+      "delta": -138.57,
+      "absoluteDelta": 138.57,
+      "direction": "down",
+      "isImprovement": false
+    },
+    {
+      "model": {
+        "id": "5962d643-0a6f-4630-bb08-ab5720d80056",
+        "slug": "qwen3-1.7b-instruct-reasoning",
+        "name": "Qwen3 1.7B (Reasoning)",
+        "provider": "Alibaba"
+      },
+      "metric": "outputSpeedTokensPerSecond",
+      "metricLabel": "Output speed",
+      "previousValue": 138.536,
+      "currentValue": 0,
+      "previousFormatted": "138.5 tok/s",
+      "currentFormatted": "0.0 tok/s",
+      "delta": -138.536,
+      "absoluteDelta": 138.536,
+      "direction": "down",
+      "isImprovement": false
+    },
+    {
+      "model": {
+        "id": "5dba8d07-9992-483c-81db-dac97cb15ba8",
+        "slug": "granite-4-0-h-small",
+        "name": "Granite 4.0 H Small",
+        "provider": "IBM"
+      },
+      "metric": "outputSpeedTokensPerSecond",
+      "metricLabel": "Output speed",
+      "previousValue": 424.984,
+      "currentValue": 311.867,
+      "previousFormatted": "425.0 tok/s",
+      "currentFormatted": "311.9 tok/s",
+      "delta": -113.117,
+      "absoluteDelta": 113.117,
+      "direction": "down",
+      "isImprovement": false
     },
     {
       "model": {
@@ -77,14 +197,122 @@
       },
       "metric": "outputSpeedTokensPerSecond",
       "metricLabel": "Output speed",
-      "previousValue": 340.253,
-      "currentValue": 468.83,
-      "previousFormatted": "340.3 tok/s",
-      "currentFormatted": "468.8 tok/s",
-      "delta": 128.577,
-      "absoluteDelta": 128.577,
+      "previousValue": 468.83,
+      "currentValue": 360.154,
+      "previousFormatted": "468.8 tok/s",
+      "currentFormatted": "360.2 tok/s",
+      "delta": -108.676,
+      "absoluteDelta": 108.676,
+      "direction": "down",
+      "isImprovement": false
+    },
+    {
+      "model": {
+        "id": "e46198a7-cd29-4afd-933d-cdf180f0f305",
+        "slug": "qwen3-4b-instruct",
+        "name": "Qwen3 4B (Non-reasoning)",
+        "provider": "Alibaba"
+      },
+      "metric": "outputSpeedTokensPerSecond",
+      "metricLabel": "Output speed",
+      "previousValue": 104.979,
+      "currentValue": 0,
+      "previousFormatted": "105.0 tok/s",
+      "currentFormatted": "0.0 tok/s",
+      "delta": -104.979,
+      "absoluteDelta": 104.979,
+      "direction": "down",
+      "isImprovement": false
+    },
+    {
+      "model": {
+        "id": "191a2097-cce3-49cf-881e-0c790892059f",
+        "slug": "qwen3-4b-instruct-reasoning",
+        "name": "Qwen3 4B (Reasoning)",
+        "provider": "Alibaba"
+      },
+      "metric": "outputSpeedTokensPerSecond",
+      "metricLabel": "Output speed",
+      "previousValue": 104.072,
+      "currentValue": 0,
+      "previousFormatted": "104.1 tok/s",
+      "currentFormatted": "0.0 tok/s",
+      "delta": -104.072,
+      "absoluteDelta": 104.072,
+      "direction": "down",
+      "isImprovement": false
+    },
+    {
+      "model": {
+        "id": "9eae4ec4-61b8-48bc-9843-3edd506ae933",
+        "slug": "devstral-small",
+        "name": "Devstral Small (Jul '25)",
+        "provider": "Mistral"
+      },
+      "metric": "outputSpeedTokensPerSecond",
+      "metricLabel": "Output speed",
+      "previousValue": 170.472,
+      "currentValue": 66.432,
+      "previousFormatted": "170.5 tok/s",
+      "currentFormatted": "66.4 tok/s",
+      "delta": -104.04,
+      "absoluteDelta": 104.04,
+      "direction": "down",
+      "isImprovement": false
+    },
+    {
+      "model": {
+        "id": "948892b5-db03-4118-a4a8-ccd51ed871ea",
+        "slug": "grok-4-3",
+        "name": "Grok 4.3 (high)",
+        "provider": "xAI"
+      },
+      "metric": "outputSpeedTokensPerSecond",
+      "metricLabel": "Output speed",
+      "previousValue": 136.941,
+      "currentValue": 237.505,
+      "previousFormatted": "136.9 tok/s",
+      "currentFormatted": "237.5 tok/s",
+      "delta": 100.564,
+      "absoluteDelta": 100.564,
       "direction": "up",
       "isImprovement": true
+    },
+    {
+      "model": {
+        "id": "dd059b25-d82a-4ead-82a4-4adceaaec48b",
+        "slug": "mistral-medium-3-5",
+        "name": "Mistral Medium 3.5",
+        "provider": "Mistral"
+      },
+      "metric": "outputSpeedTokensPerSecond",
+      "metricLabel": "Output speed",
+      "previousValue": 164.516,
+      "currentValue": 68.249,
+      "previousFormatted": "164.5 tok/s",
+      "currentFormatted": "68.2 tok/s",
+      "delta": -96.267,
+      "absoluteDelta": 96.267,
+      "direction": "down",
+      "isImprovement": false
+    },
+    {
+      "model": {
+        "id": "69534bed-2ffd-4235-832b-e20a810333ab",
+        "slug": "qwen3-7-max",
+        "name": "Qwen3.7 Max",
+        "provider": "Alibaba"
+      },
+      "metric": "outputSpeedTokensPerSecond",
+      "metricLabel": "Output speed",
+      "previousValue": 189.664,
+      "currentValue": 101.913,
+      "previousFormatted": "189.7 tok/s",
+      "currentFormatted": "101.9 tok/s",
+      "delta": -87.751,
+      "absoluteDelta": 87.751,
+      "direction": "down",
+      "isImprovement": false
     },
     {
       "model": {
@@ -95,266 +323,14 @@
       },
       "metric": "outputSpeedTokensPerSecond",
       "metricLabel": "Output speed",
-      "previousValue": 67.347,
-      "currentValue": 194.138,
-      "previousFormatted": "67.3 tok/s",
-      "currentFormatted": "194.1 tok/s",
-      "delta": 126.791,
-      "absoluteDelta": 126.791,
-      "direction": "up",
-      "isImprovement": true
-    },
-    {
-      "model": {
-        "id": "d1122eff-ee85-4fdc-8a9f-23bee6590667",
-        "slug": "gemini-3-pro",
-        "name": "Gemini 3 Pro Preview (high)",
-        "provider": "Google"
-      },
-      "metric": "outputSpeedTokensPerSecond",
-      "metricLabel": "Output speed",
-      "previousValue": 122.422,
-      "currentValue": 0,
-      "previousFormatted": "122.4 tok/s",
-      "currentFormatted": "0.0 tok/s",
-      "delta": -122.422,
-      "absoluteDelta": 122.422,
+      "previousValue": 194.138,
+      "currentValue": 110.572,
+      "previousFormatted": "194.1 tok/s",
+      "currentFormatted": "110.6 tok/s",
+      "delta": -83.566,
+      "absoluteDelta": 83.566,
       "direction": "down",
       "isImprovement": false
-    },
-    {
-      "model": {
-        "id": "272ff333-442f-4169-a804-ac9177bc99d7",
-        "slug": "minimax-m2-1",
-        "name": "MiniMax-M2.1",
-        "provider": "MiniMax"
-      },
-      "metric": "outputSpeedTokensPerSecond",
-      "metricLabel": "Output speed",
-      "previousValue": 84.106,
-      "currentValue": 200.088,
-      "previousFormatted": "84.1 tok/s",
-      "currentFormatted": "200.1 tok/s",
-      "delta": 115.982,
-      "absoluteDelta": 115.982,
-      "direction": "up",
-      "isImprovement": true
-    },
-    {
-      "model": {
-        "id": "12adec16-19fe-4d92-aeff-5ef3eb7e780a",
-        "slug": "minimax-m2-5",
-        "name": "MiniMax-M2.5",
-        "provider": "MiniMax"
-      },
-      "metric": "outputSpeedTokensPerSecond",
-      "metricLabel": "Output speed",
-      "previousValue": 92.236,
-      "currentValue": 205.917,
-      "previousFormatted": "92.2 tok/s",
-      "currentFormatted": "205.9 tok/s",
-      "delta": 113.681,
-      "absoluteDelta": 113.681,
-      "direction": "up",
-      "isImprovement": true
-    },
-    {
-      "model": {
-        "id": "6056731b-c705-455b-aa0d-43cbf29b1054",
-        "slug": "longcat-flash-lite",
-        "name": "LongCat Flash Lite",
-        "provider": "LongCat"
-      },
-      "metric": "outputSpeedTokensPerSecond",
-      "metricLabel": "Output speed",
-      "previousValue": 103.045,
-      "currentValue": 0,
-      "previousFormatted": "103.0 tok/s",
-      "currentFormatted": "0.0 tok/s",
-      "delta": -103.045,
-      "absoluteDelta": 103.045,
-      "direction": "down",
-      "isImprovement": false
-    },
-    {
-      "model": {
-        "id": "c8673741-5e1a-46a1-9e4f-710a5c920982",
-        "slug": "glm-4-7-flash-non-reasoning",
-        "name": "GLM-4.7-Flash (Non-reasoning)",
-        "provider": "Z AI"
-      },
-      "metric": "outputSpeedTokensPerSecond",
-      "metricLabel": "Output speed",
-      "previousValue": 195.075,
-      "currentValue": 93.438,
-      "previousFormatted": "195.1 tok/s",
-      "currentFormatted": "93.4 tok/s",
-      "delta": -101.637,
-      "absoluteDelta": 101.637,
-      "direction": "down",
-      "isImprovement": false
-    },
-    {
-      "model": {
-        "id": "04787c2b-0751-4269-8029-075b727d7aed",
-        "slug": "grok-4-20-0309",
-        "name": "Grok 4.20 0309 (Reasoning)",
-        "provider": "xAI"
-      },
-      "metric": "outputSpeedTokensPerSecond",
-      "metricLabel": "Output speed",
-      "previousValue": 141.798,
-      "currentValue": 229.256,
-      "previousFormatted": "141.8 tok/s",
-      "currentFormatted": "229.3 tok/s",
-      "delta": 87.458,
-      "absoluteDelta": 87.458,
-      "direction": "up",
-      "isImprovement": true
-    },
-    {
-      "model": {
-        "id": "0fc6308e-fbd2-42d3-a216-06da3c43e34e",
-        "slug": "kimi-k2-6-non-reasoning",
-        "name": "Kimi K2.6 (Non-reasoning)",
-        "provider": "Kimi"
-      },
-      "metric": "outputSpeedTokensPerSecond",
-      "metricLabel": "Output speed",
-      "previousValue": 118.306,
-      "currentValue": 40.063,
-      "previousFormatted": "118.3 tok/s",
-      "currentFormatted": "40.1 tok/s",
-      "delta": -78.243,
-      "absoluteDelta": 78.243,
-      "direction": "down",
-      "isImprovement": false
-    },
-    {
-      "model": {
-        "id": "c72cb85a-18a4-4235-b455-77dff2f16c50",
-        "slug": "grok-4-20",
-        "name": "Grok 4.20 0309 v2 (Reasoning)",
-        "provider": "xAI"
-      },
-      "metric": "outputSpeedTokensPerSecond",
-      "metricLabel": "Output speed",
-      "previousValue": 143.429,
-      "currentValue": 218.886,
-      "previousFormatted": "143.4 tok/s",
-      "currentFormatted": "218.9 tok/s",
-      "delta": 75.457,
-      "absoluteDelta": 75.457,
-      "direction": "up",
-      "isImprovement": true
-    },
-    {
-      "model": {
-        "id": "523125f4-a1da-4990-9abd-dd08a069100e",
-        "slug": "grok-4-20-0309-non-reasoning",
-        "name": "Grok 4.20 0309 (Non-reasoning)",
-        "provider": "xAI"
-      },
-      "metric": "outputSpeedTokensPerSecond",
-      "metricLabel": "Output speed",
-      "previousValue": 131.392,
-      "currentValue": 202.647,
-      "previousFormatted": "131.4 tok/s",
-      "currentFormatted": "202.6 tok/s",
-      "delta": 71.255,
-      "absoluteDelta": 71.255,
-      "direction": "up",
-      "isImprovement": true
-    },
-    {
-      "model": {
-        "id": "8c29d66d-bf98-4ea3-8572-5409353ecc66",
-        "slug": "qwen3-6-27b",
-        "name": "Qwen3.6 27B (Reasoning)",
-        "provider": "Alibaba"
-      },
-      "metric": "endToEndResponseSeconds",
-      "metricLabel": "End-to-end response",
-      "previousValue": 34.223,
-      "currentValue": 98.704,
-      "previousFormatted": "34.22 s",
-      "currentFormatted": "98.70 s",
-      "delta": 64.481,
-      "absoluteDelta": 64.481,
-      "direction": "up",
-      "isImprovement": false
-    },
-    {
-      "model": {
-        "id": "0de67206-4d36-4d10-b8f6-cf37fa747a03",
-        "slug": "kimi-k2-6",
-        "name": "Kimi K2.6",
-        "provider": "Kimi"
-      },
-      "metric": "endToEndResponseSeconds",
-      "metricLabel": "End-to-end response",
-      "previousValue": 44.111,
-      "currentValue": 107.326,
-      "previousFormatted": "44.11 s",
-      "currentFormatted": "107.33 s",
-      "delta": 63.215,
-      "absoluteDelta": 63.215,
-      "direction": "up",
-      "isImprovement": false
-    },
-    {
-      "model": {
-        "id": "0de67206-4d36-4d10-b8f6-cf37fa747a03",
-        "slug": "kimi-k2-6",
-        "name": "Kimi K2.6",
-        "provider": "Kimi"
-      },
-      "metric": "outputSpeedTokensPerSecond",
-      "metricLabel": "Output speed",
-      "previousValue": 103.191,
-      "currentValue": 41.994,
-      "previousFormatted": "103.2 tok/s",
-      "currentFormatted": "42.0 tok/s",
-      "delta": -61.197,
-      "absoluteDelta": 61.197,
-      "direction": "down",
-      "isImprovement": false
-    },
-    {
-      "model": {
-        "id": "ab7f016c-a29b-4710-bdf6-6a5cd96aacca",
-        "slug": "nvidia-nemotron-nano-12b-v2-vl",
-        "name": "NVIDIA Nemotron Nano 12B v2 VL (Non-reasoning)",
-        "provider": "NVIDIA"
-      },
-      "metric": "outputSpeedTokensPerSecond",
-      "metricLabel": "Output speed",
-      "previousValue": 223.471,
-      "currentValue": 276.672,
-      "previousFormatted": "223.5 tok/s",
-      "currentFormatted": "276.7 tok/s",
-      "delta": 53.201,
-      "absoluteDelta": 53.201,
-      "direction": "up",
-      "isImprovement": true
-    },
-    {
-      "model": {
-        "id": "f4e8194a-d0e6-48eb-92be-4307de5aeeec",
-        "slug": "gemini-2-5-flash-lite-reasoning",
-        "name": "Gemini 2.5 Flash-Lite (Reasoning)",
-        "provider": "Google"
-      },
-      "metric": "outputSpeedTokensPerSecond",
-      "metricLabel": "Output speed",
-      "previousValue": 236.189,
-      "currentValue": 288.407,
-      "previousFormatted": "236.2 tok/s",
-      "currentFormatted": "288.4 tok/s",
-      "delta": 52.218,
-      "absoluteDelta": 52.218,
-      "direction": "up",
-      "isImprovement": true
     },
     {
       "model": {
@@ -365,300 +341,336 @@
       },
       "metric": "outputSpeedTokensPerSecond",
       "metricLabel": "Output speed",
-      "previousValue": 321.142,
-      "currentValue": 270.942,
-      "previousFormatted": "321.1 tok/s",
-      "currentFormatted": "270.9 tok/s",
-      "delta": -50.2,
-      "absoluteDelta": 50.2,
-      "direction": "down",
+      "previousValue": 270.942,
+      "currentValue": 350.922,
+      "previousFormatted": "270.9 tok/s",
+      "currentFormatted": "350.9 tok/s",
+      "delta": 79.98,
+      "absoluteDelta": 79.98,
+      "direction": "up",
+      "isImprovement": true
+    },
+    {
+      "model": {
+        "id": "5e8b0d98-a3b4-42b5-93d8-ecb748788754",
+        "slug": "grok-4-3-medium",
+        "name": "Grok 4.3 (medium)",
+        "provider": "xAI"
+      },
+      "metric": "outputSpeedTokensPerSecond",
+      "metricLabel": "Output speed",
+      "previousValue": 132.425,
+      "currentValue": 197.575,
+      "previousFormatted": "132.4 tok/s",
+      "currentFormatted": "197.6 tok/s",
+      "delta": 65.15,
+      "absoluteDelta": 65.15,
+      "direction": "up",
+      "isImprovement": true
+    },
+    {
+      "model": {
+        "id": "498862c3-f9ac-49d2-852f-16a02bb0c38f",
+        "slug": "gpt-5-2",
+        "name": "GPT-5.2 (xhigh)",
+        "provider": "OpenAI"
+      },
+      "metric": "latencySeconds",
+      "metricLabel": "Latency",
+      "previousValue": 60.641,
+      "currentValue": 123.368,
+      "previousFormatted": "60.64 s",
+      "currentFormatted": "123.37 s",
+      "delta": 62.727,
+      "absoluteDelta": 62.727,
+      "direction": "up",
       "isImprovement": false
     },
     {
       "model": {
-        "id": "806032ff-6252-4c22-ba99-a126e411b7a4",
-        "slug": "qwen3-max-thinking",
-        "name": "Qwen3 Max Thinking",
-        "provider": "Alibaba"
+        "id": "498862c3-f9ac-49d2-852f-16a02bb0c38f",
+        "slug": "gpt-5-2",
+        "name": "GPT-5.2 (xhigh)",
+        "provider": "OpenAI"
       },
-      "metric": "outputSpeedTokensPerSecond",
-      "metricLabel": "Output speed",
-      "previousValue": 47.488,
-      "currentValue": 0,
-      "previousFormatted": "47.5 tok/s",
-      "currentFormatted": "0.0 tok/s",
-      "delta": -47.488,
-      "absoluteDelta": 47.488,
-      "direction": "down",
+      "metric": "endToEndResponseSeconds",
+      "metricLabel": "End-to-end response",
+      "previousValue": 60.641,
+      "currentValue": 123.368,
+      "previousFormatted": "60.64 s",
+      "currentFormatted": "123.37 s",
+      "delta": 62.727,
+      "absoluteDelta": 62.727,
+      "direction": "up",
       "isImprovement": false
     }
   ],
   "rankChanges": [
     {
       "model": {
-        "id": "d1122eff-ee85-4fdc-8a9f-23bee6590667",
-        "name": "Gemini 3 Pro Preview (high)",
-        "provider": "Google"
-      },
-      "metric": "latencySeconds",
-      "metricLabel": "Latency",
-      "previousRank": 511,
-      "currentRank": 80,
-      "rankDelta": 431,
-      "direction": "up"
-    },
-    {
-      "model": {
-        "id": "d1122eff-ee85-4fdc-8a9f-23bee6590667",
-        "name": "Gemini 3 Pro Preview (high)",
-        "provider": "Google"
-      },
-      "metric": "endToEndResponseSeconds",
-      "metricLabel": "End-to-end response",
-      "previousRank": 464,
-      "currentRank": 80,
-      "rankDelta": 384,
-      "direction": "up"
-    },
-    {
-      "model": {
-        "id": "6056731b-c705-455b-aa0d-43cbf29b1054",
-        "name": "LongCat Flash Lite",
-        "provider": "LongCat"
-      },
-      "metric": "outputSpeedTokensPerSecond",
-      "metricLabel": "Output speed",
-      "previousRank": 127,
-      "currentRank": 456,
-      "rankDelta": -329,
-      "direction": "down"
-    },
-    {
-      "model": {
-        "id": "6056731b-c705-455b-aa0d-43cbf29b1054",
-        "name": "LongCat Flash Lite",
-        "provider": "LongCat"
-      },
-      "metric": "latencySeconds",
-      "metricLabel": "Latency",
-      "previousRank": 469,
-      "currentRank": 157,
-      "rankDelta": 312,
-      "direction": "up"
-    },
-    {
-      "model": {
-        "id": "806032ff-6252-4c22-ba99-a126e411b7a4",
-        "name": "Qwen3 Max Thinking",
-        "provider": "Alibaba"
-      },
-      "metric": "endToEndResponseSeconds",
-      "metricLabel": "End-to-end response",
-      "previousRank": 495,
-      "currentRank": 206,
-      "rankDelta": 289,
-      "direction": "up"
-    },
-    {
-      "model": {
-        "id": "d1122eff-ee85-4fdc-8a9f-23bee6590667",
-        "name": "Gemini 3 Pro Preview (high)",
-        "provider": "Google"
-      },
-      "metric": "outputSpeedTokensPerSecond",
-      "metricLabel": "Output speed",
-      "previousRank": 112,
-      "currentRank": 379,
-      "rankDelta": -267,
-      "direction": "down"
-    },
-    {
-      "model": {
-        "id": "806032ff-6252-4c22-ba99-a126e411b7a4",
-        "name": "Qwen3 Max Thinking",
+        "id": "4ae6c88d-9e4a-4850-89fe-18a1c04a66cc",
+        "name": "Qwen3 0.6B (Reasoning)",
         "provider": "Alibaba"
       },
       "metric": "outputSpeedTokensPerSecond",
       "metricLabel": "Output speed",
-      "previousRank": 251,
-      "currentRank": 505,
-      "rankDelta": -254,
+      "previousRank": 20,
+      "currentRank": 503,
+      "rankDelta": -483,
       "direction": "down"
     },
     {
       "model": {
-        "id": "1d81aa1c-64c8-442a-9c41-81b37e407b91",
-        "name": "Gemini 2.5 Flash-Lite (Non-reasoning)",
-        "provider": "Google"
-      },
-      "metric": "latencySeconds",
-      "metricLabel": "Latency",
-      "previousRank": 476,
-      "currentRank": 241,
-      "rankDelta": 235,
-      "direction": "up"
-    },
-    {
-      "model": {
-        "id": "6056731b-c705-455b-aa0d-43cbf29b1054",
-        "name": "LongCat Flash Lite",
-        "provider": "LongCat"
-      },
-      "metric": "endToEndResponseSeconds",
-      "metricLabel": "End-to-end response",
-      "previousRank": 383,
-      "currentRank": 157,
-      "rankDelta": 226,
-      "direction": "up"
-    },
-    {
-      "model": {
-        "id": "806032ff-6252-4c22-ba99-a126e411b7a4",
-        "name": "Qwen3 Max Thinking",
+        "id": "0e5f6140-1154-4583-a3e0-8c032a338892",
+        "name": "Qwen3 0.6B (Non-reasoning)",
         "provider": "Alibaba"
-      },
-      "metric": "latencySeconds",
-      "metricLabel": "Latency",
-      "previousRank": 415,
-      "currentRank": 206,
-      "rankDelta": 209,
-      "direction": "up"
-    },
-    {
-      "model": {
-        "id": "2cd04201-2b6e-47ef-853e-7601f705f2a8",
-        "name": "Phi-4 Multimodal Instruct",
-        "provider": "Microsoft"
-      },
-      "metric": "latencySeconds",
-      "metricLabel": "Latency",
-      "previousRank": 241,
-      "currentRank": 415,
-      "rankDelta": -174,
-      "direction": "down"
-    },
-    {
-      "model": {
-        "id": "0fc6308e-fbd2-42d3-a216-06da3c43e34e",
-        "name": "Kimi K2.6 (Non-reasoning)",
-        "provider": "Kimi"
       },
       "metric": "outputSpeedTokensPerSecond",
       "metricLabel": "Output speed",
-      "previousRank": 115,
-      "currentRank": 276,
-      "rankDelta": -161,
+      "previousRank": 21,
+      "currentRank": 502,
+      "rankDelta": -481,
       "direction": "down"
     },
     {
       "model": {
-        "id": "1d81aa1c-64c8-442a-9c41-81b37e407b91",
-        "name": "Gemini 2.5 Flash-Lite (Non-reasoning)",
-        "provider": "Google"
+        "id": "6e6e02fd-9cbd-417f-9bfc-673df89c313d",
+        "name": "NVIDIA Nemotron Nano 12B v2 VL (Reasoning)",
+        "provider": "NVIDIA"
       },
-      "metric": "endToEndResponseSeconds",
-      "metricLabel": "End-to-end response",
-      "previousRank": 389,
-      "currentRank": 236,
-      "rankDelta": 153,
+      "metric": "outputSpeedTokensPerSecond",
+      "metricLabel": "Output speed",
+      "previousRank": 481,
+      "currentRank": 12,
+      "rankDelta": 469,
       "direction": "up"
     },
     {
       "model": {
-        "id": "764dd095-6ebd-4760-8eb3-cbc40964db2e",
-        "name": "Sarvam 30B (high)",
+        "id": "34ef2b5c-3df3-437e-b9c5-81346f8c14a8",
+        "name": "Sarvam M (Reasoning)",
         "provider": "Sarvam"
       },
       "metric": "outputSpeedTokensPerSecond",
       "metricLabel": "Output speed",
-      "previousRank": 192,
-      "currentRank": 41,
-      "rankDelta": 151,
-      "direction": "up"
-    },
-    {
-      "model": {
-        "id": "0de67206-4d36-4d10-b8f6-cf37fa747a03",
-        "name": "Kimi K2.6",
-        "provider": "Kimi"
-      },
-      "metric": "outputSpeedTokensPerSecond",
-      "metricLabel": "Output speed",
-      "previousRank": 126,
-      "currentRank": 271,
-      "rankDelta": -145,
+      "previousRank": 91,
+      "currentRank": 520,
+      "rankDelta": -429,
       "direction": "down"
     },
     {
       "model": {
-        "id": "5c3dd927-48a3-4f3c-8045-9b135f62dfbb",
-        "name": "Nova Lite",
-        "provider": "Amazon"
+        "id": "2bb84433-f38e-4edc-9b65-4d7b1f473db9",
+        "name": "Qwen3 1.7B (Non-reasoning)",
+        "provider": "Alibaba"
       },
       "metric": "outputSpeedTokensPerSecond",
       "metricLabel": "Output speed",
-      "previousRank": 165,
-      "currentRank": 26,
-      "rankDelta": 139,
-      "direction": "up"
+      "previousRank": 97,
+      "currentRank": 504,
+      "rankDelta": -407,
+      "direction": "down"
     },
     {
       "model": {
-        "id": "2d28a13a-096e-475a-beb8-26bbd1c7d51c",
-        "name": "Qwen3.5 9B (Reasoning)",
+        "id": "5962d643-0a6f-4630-bb08-ab5720d80056",
+        "name": "Qwen3 1.7B (Reasoning)",
         "provider": "Alibaba"
+      },
+      "metric": "outputSpeedTokensPerSecond",
+      "metricLabel": "Output speed",
+      "previousRank": 98,
+      "currentRank": 505,
+      "rankDelta": -407,
+      "direction": "down"
+    },
+    {
+      "model": {
+        "id": "ae4fe623-80ab-4ea3-8921-70a18ea0fc7e",
+        "name": "ERNIE 4.5 300B A47B",
+        "provider": "Baidu"
       },
       "metric": "latencySeconds",
       "metricLabel": "Latency",
-      "previousRank": 238,
-      "currentRank": 374,
-      "rankDelta": -136,
-      "direction": "down"
-    },
-    {
-      "model": {
-        "id": "272ff333-442f-4169-a804-ac9177bc99d7",
-        "name": "MiniMax-M2.1",
-        "provider": "MiniMax"
-      },
-      "metric": "outputSpeedTokensPerSecond",
-      "metricLabel": "Output speed",
-      "previousRank": 168,
-      "currentRank": 38,
-      "rankDelta": 130,
+      "previousRank": 438,
+      "currentRank": 49,
+      "rankDelta": 389,
       "direction": "up"
     },
     {
       "model": {
-        "id": "c8673741-5e1a-46a1-9e4f-710a5c920982",
-        "name": "GLM-4.7-Flash (Non-reasoning)",
-        "provider": "Z AI"
+        "id": "e46198a7-cd29-4afd-933d-cdf180f0f305",
+        "name": "Qwen3 4B (Non-reasoning)",
+        "provider": "Alibaba"
       },
       "metric": "outputSpeedTokensPerSecond",
       "metricLabel": "Output speed",
-      "previousRank": 31,
-      "currentRank": 156,
-      "rankDelta": -125,
+      "previousRank": 139,
+      "currentRank": 506,
+      "rankDelta": -367,
       "direction": "down"
     },
     {
       "model": {
-        "id": "2cd04201-2b6e-47ef-853e-7601f705f2a8",
-        "name": "Phi-4 Multimodal Instruct",
-        "provider": "Microsoft"
+        "id": "191a2097-cce3-49cf-881e-0c790892059f",
+        "name": "Qwen3 4B (Reasoning)",
+        "provider": "Alibaba"
+      },
+      "metric": "outputSpeedTokensPerSecond",
+      "metricLabel": "Output speed",
+      "previousRank": 141,
+      "currentRank": 507,
+      "rankDelta": -366,
+      "direction": "down"
+    },
+    {
+      "model": {
+        "id": "ae4fe623-80ab-4ea3-8921-70a18ea0fc7e",
+        "name": "ERNIE 4.5 300B A47B",
+        "provider": "Baidu"
       },
       "metric": "endToEndResponseSeconds",
       "metricLabel": "End-to-end response",
-      "previousRank": 235,
-      "currentRank": 355,
-      "rankDelta": -120,
+      "previousRank": 370,
+      "currentRank": 49,
+      "rankDelta": 321,
+      "direction": "up"
+    },
+    {
+      "model": {
+        "id": "b4f7d7a4-869a-4ee7-b17a-4046cd1e79fd",
+        "name": "Qwen2.5 Instruct 72B",
+        "provider": "Alibaba"
+      },
+      "metric": "outputSpeedTokensPerSecond",
+      "metricLabel": "Output speed",
+      "previousRank": 234,
+      "currentRank": 500,
+      "rankDelta": -266,
       "direction": "down"
+    },
+    {
+      "model": {
+        "id": "191a2097-cce3-49cf-881e-0c790892059f",
+        "name": "Qwen3 4B (Reasoning)",
+        "provider": "Alibaba"
+      },
+      "metric": "endToEndResponseSeconds",
+      "metricLabel": "End-to-end response",
+      "previousRank": 460,
+      "currentRank": 212,
+      "rankDelta": 248,
+      "direction": "up"
+    },
+    {
+      "model": {
+        "id": "7393c56a-ec31-48e9-b804-c04f2d2cb641",
+        "name": "Llama 3.1 Nemotron Instruct 70B",
+        "provider": "NVIDIA"
+      },
+      "metric": "latencySeconds",
+      "metricLabel": "Latency",
+      "previousRank": 233,
+      "currentRank": 474,
+      "rankDelta": -241,
+      "direction": "down"
+    },
+    {
+      "model": {
+        "id": "b9dc72c6-7bea-4936-a55a-4b0c835fc755",
+        "name": "Qwen2.5 Max",
+        "provider": "Alibaba"
+      },
+      "metric": "outputSpeedTokensPerSecond",
+      "metricLabel": "Output speed",
+      "previousRank": 262,
+      "currentRank": 501,
+      "rankDelta": -239,
+      "direction": "down"
+    },
+    {
+      "model": {
+        "id": "9f873c2f-2c2d-4ccb-9e1b-71bf61b052be",
+        "name": "Phi-4 Mini Instruct",
+        "provider": "Microsoft"
+      },
+      "metric": "latencySeconds",
+      "metricLabel": "Latency",
+      "previousRank": 196,
+      "currentRank": 424,
+      "rankDelta": -228,
+      "direction": "down"
+    },
+    {
+      "model": {
+        "id": "5962d643-0a6f-4630-bb08-ab5720d80056",
+        "name": "Qwen3 1.7B (Reasoning)",
+        "provider": "Alibaba"
+      },
+      "metric": "endToEndResponseSeconds",
+      "metricLabel": "End-to-end response",
+      "previousRank": 438,
+      "currentRank": 210,
+      "rankDelta": 228,
+      "direction": "up"
+    },
+    {
+      "model": {
+        "id": "6e6e02fd-9cbd-417f-9bfc-673df89c313d",
+        "name": "NVIDIA Nemotron Nano 12B v2 VL (Reasoning)",
+        "provider": "NVIDIA"
+      },
+      "metric": "endToEndResponseSeconds",
+      "metricLabel": "End-to-end response",
+      "previousRank": 182,
+      "currentRank": 399,
+      "rankDelta": -217,
+      "direction": "down"
+    },
+    {
+      "model": {
+        "id": "34ef2b5c-3df3-437e-b9c5-81346f8c14a8",
+        "name": "Sarvam M (Reasoning)",
+        "provider": "Sarvam"
+      },
+      "metric": "endToEndResponseSeconds",
+      "metricLabel": "End-to-end response",
+      "previousRank": 436,
+      "currentRank": 225,
+      "rankDelta": 211,
+      "direction": "up"
+    },
+    {
+      "model": {
+        "id": "9f873c2f-2c2d-4ccb-9e1b-71bf61b052be",
+        "name": "Phi-4 Mini Instruct",
+        "provider": "Microsoft"
+      },
+      "metric": "outputSpeedTokensPerSecond",
+      "metricLabel": "Output speed",
+      "previousRank": 495,
+      "currentRank": 294,
+      "rankDelta": 201,
+      "direction": "up"
+    },
+    {
+      "model": {
+        "id": "4ae6c88d-9e4a-4850-89fe-18a1c04a66cc",
+        "name": "Qwen3 0.6B (Reasoning)",
+        "provider": "Alibaba"
+      },
+      "metric": "endToEndResponseSeconds",
+      "metricLabel": "End-to-end response",
+      "previousRank": 409,
+      "currentRank": 208,
+      "rankDelta": 201,
+      "direction": "up"
     }
   ],
   "summary": [
-    "This refresh has 527 models, +4 compared with the previous snapshot.",
-    "New models include Claude Opus 4.8 (Adaptive Reasoning, Max Effort), Gemini 3.5 Flash (medium), GPT-5.5 Instant (May 2026), MiniCPM5-1B (Non-reasoning).",
-    "Largest metric move: Mercury 2 on Output speed, from 718.8 tok/s to 1,004.6 tok/s.",
-    "Largest rank move: Gemini 3 Pro Preview (high) climbed 431 places on Latency."
+    "This refresh has 533 models, +6 compared with the previous snapshot.",
+    "New models include Gemma 4 12B (Reasoning), MiniCPM5-1B (Reasoning), MiniMax-M3, Nemotron 3 Ultra 550B A55B (Reasoning), Qwen3.7 Plus.",
+    "Largest metric move: NVIDIA Nemotron Nano 12B v2 VL (Reasoning) on Output speed, from 0.0 tok/s to 293.0 tok/s.",
+    "Largest rank move: Qwen3 0.6B (Reasoning) dropped 483 places on Output speed."
   ]
 }
