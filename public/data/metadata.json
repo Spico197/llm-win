@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-06-08T08:21:41.731Z",
+  "generatedAt": "2026-06-15T09:33:45.709Z",
   "source": "Artificial Analysis",
   "sourceUrl": "https://artificialanalysis.ai/leaderboards/models",
-  "modelCount": 533,
+  "modelCount": 538,
   "availableMetrics": [
     "intelligence",
     "mmlu_pro",
