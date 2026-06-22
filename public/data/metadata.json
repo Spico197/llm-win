@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-06-15T09:33:45.709Z",
+  "generatedAt": "2026-06-22T09:21:08.606Z",
   "source": "Artificial Analysis",
   "sourceUrl": "https://artificialanalysis.ai/leaderboards/models",
-  "modelCount": 538,
+  "modelCount": 540,
   "availableMetrics": [
     "intelligence",
     "mmlu_pro",
@@ -22,7 +22,9 @@
     "outputSpeedTokensPerSecond",
     "latencySeconds",
     "endToEndResponseSeconds",
-    "priceUsdPerMillionTokens"
+    "priceUsdPerMillionTokens",
+    "tau_banking",
+    "terminalbench_v2_1"
   ],
   "rawDataPath": "/data/raw.json",
   "promptOptions": {
