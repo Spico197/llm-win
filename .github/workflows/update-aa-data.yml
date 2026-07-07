@@ -7,10 +7,19 @@ on:
 
 permissions:
   contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
 
 jobs:
   update-data:
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -28,3 +37,12 @@ jobs:
         with:
           commit_message: "Update Artificial Analysis data"
           file_pattern: "public/data/*.json"
+      - run: npm run build
+        env:
+          VITE_GA_ID: ${{ vars.VITE_GA_ID }}
+          VITE_BAIDU_TONGJI_ID: ${{ vars.VITE_BAIDU_TONGJI_ID }}
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+      - id: deployment
+        uses: actions/deploy-pages@v4
