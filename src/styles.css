@@ -193,8 +193,16 @@ select {
 }
 
 .headline-model {
+  background: linear-gradient(
+    to top,
+    rgba(255, 199, 56, 0.36) 0 0.18em,
+    transparent 0.18em
+  );
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
   color: #17120d;
   font-weight: 950;
+  padding: 0 0.04em;
 }
 
 .metric-picker-grid {
