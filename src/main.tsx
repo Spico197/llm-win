@@ -648,7 +648,7 @@ function downloadChainImage({
     : 108;
   const contentBottom =
     96 + 56 + titleLines.length * 52 + 8 + subtitleLines.length * 32 + 24 + rowsHeight;
-  const height = Math.max(560, contentBottom + 64);
+  const height = Math.max(620, contentBottom + 132);
 
   const canvas = document.createElement("canvas");
   canvas.width = Math.round(width * scale);
@@ -676,7 +676,7 @@ function downloadChainImage({
   let cursorY = 96;
   context.fillStyle = "#9b6214";
   context.font = imageFont(900, 24);
-  context.fillText("LLM-WIN.COM", contentX, cursorY);
+  context.fillText("https://llm-win.com", contentX, cursorY);
   cursorY += 56;
 
   context.fillStyle = "#17120d";
@@ -705,6 +705,22 @@ function downloadChainImage({
     context.font = imageFont(800, 28);
     context.fillText("Try another category or swap the models.", contentX + 28, cursorY + 56);
   }
+
+  const footerY = height - cardY - 58;
+  context.strokeStyle = "#f1dca9";
+  context.lineWidth = 1.5;
+  context.beginPath();
+  context.moveTo(contentX, footerY - 24);
+  context.lineTo(contentX + contentWidth, footerY - 24);
+  context.stroke();
+
+  context.fillStyle = "#5f5147";
+  context.font = imageFont(750, 22);
+  context.fillText("GitHub: Spico197/llm-win", contentX, footerY);
+
+  context.fillStyle = "#0f7281";
+  context.font = imageFont(700, 20);
+  context.fillText("https://github.com/Spico197/llm-win", contentX, footerY + 30);
 
   const anchor = document.createElement("a");
   anchor.download = `llm-win-${fromModel?.slug ?? "source"}-vs-${toModel?.slug ?? "target"}.png`;
