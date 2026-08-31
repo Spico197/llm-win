@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-31T01:53:21.267Z",
+  "generatedAt": "2026-08-31T09:43:54.359Z",
   "category": "Overall",
   "pathMaxHops": 9,
   "comparisonRule": "Only source models with lower AA Intelligence Index than the target are checked. A pair is unreachable when no Overall benchmark chain from source to target exists within max hops.",
