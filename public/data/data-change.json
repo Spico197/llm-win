@@ -1,15 +1,754 @@
 {
-  "generatedAt": "2026-08-31T09:43:52.835Z",
-  "previousGeneratedAt": "2026-08-31T01:53:19.025Z",
+  "generatedAt": "2026-09-07T08:17:16.047Z",
+  "previousGeneratedAt": "2026-08-31T09:43:52.835Z",
   "modelCountBefore": 624,
-  "modelCountAfter": 624,
-  "modelCountDelta": 0,
-  "addedModels": [],
+  "modelCountAfter": 643,
+  "modelCountDelta": 19,
+  "addedModels": [
+    {
+      "id": "08242385-ee91-4de6-be7f-271a6d9780ce",
+      "slug": "apodex-1-1",
+      "name": "Apodex 1.1",
+      "provider": "Apodex"
+    },
+    {
+      "id": "9d7d72cd-d95d-45a0-b109-4ad292c9aabd",
+      "slug": "claude-fable-5-1-high",
+      "name": "Claude Fable 5.1 (Adaptive Reasoning, High Effort, Default Fallback)",
+      "provider": "Anthropic"
+    },
+    {
+      "id": "05776db7-f5c0-40f7-b824-079160f8cfa8",
+      "slug": "claude-fable-5-1-low",
+      "name": "Claude Fable 5.1 (Adaptive Reasoning, Low Effort, Default Fallback)",
+      "provider": "Anthropic"
+    },
+    {
+      "id": "3e87c73e-a257-495e-9730-367a66229811",
+      "slug": "claude-fable-5-1",
+      "name": "Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback)",
+      "provider": "Anthropic"
+    },
+    {
+      "id": "3b7de71c-e034-4591-8ca6-6b6be2fa471f",
+      "slug": "claude-fable-5-1-medium",
+      "name": "Claude Fable 5.1 (Adaptive Reasoning, Medium Effort, Default Fallback)",
+      "provider": "Anthropic"
+    },
+    {
+      "id": "9b166bf3-42db-4f63-8338-1c4a1244ffe8",
+      "slug": "claude-fable-5-1-xhigh",
+      "name": "Claude Fable 5.1 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
+      "provider": "Anthropic"
+    },
+    {
+      "id": "8a999846-4c1d-4ce7-a8b7-1310a7166fd7",
+      "slug": "gemini-3-8-flash",
+      "name": "Gemini 3.8 Flash (high)",
+      "provider": "Google"
+    },
+    {
+      "id": "f6db039b-0f3b-485c-9d7f-982988e44f26",
+      "slug": "gemini-3-8-flash-low",
+      "name": "Gemini 3.8 Flash (low)",
+      "provider": "Google"
+    },
+    {
+      "id": "744fa3c1-42a7-4995-b138-fb6be11f463c",
+      "slug": "gemini-3-8-flash-medium",
+      "name": "Gemini 3.8 Flash (medium)",
+      "provider": "Google"
+    },
+    {
+      "id": "e05a4828-0536-4876-870d-a235023f992b",
+      "slug": "gpt-6-astra-high",
+      "name": "GPT-6 Astra (high)",
+      "provider": "OpenAI"
+    },
+    {
+      "id": "a3f8100d-e38f-408b-b0fa-0085dae18dc1",
+      "slug": "gpt-6-astra-low",
+      "name": "GPT-6 Astra (low)",
+      "provider": "OpenAI"
+    },
+    {
+      "id": "2f339a97-9a0d-499a-9cb5-e0db665bfa25",
+      "slug": "gpt-6-astra",
+      "name": "GPT-6 Astra (max)",
+      "provider": "OpenAI"
+    },
+    {
+      "id": "e97a4ef5-e817-480e-9595-12f81dc4974f",
+      "slug": "gpt-6-astra-medium",
+      "name": "GPT-6 Astra (medium)",
+      "provider": "OpenAI"
+    },
+    {
+      "id": "21a0a2f6-bc72-40d2-80db-ea4e66b02b90",
+      "slug": "gpt-6-astra-non-reasoning",
+      "name": "GPT-6 Astra (Non-reasoning)",
+      "provider": "OpenAI"
+    },
+    {
+      "id": "1f541ef3-913f-4eb2-9d07-0e93c7a9a5e3",
+      "slug": "gpt-6-astra-xhigh",
+      "name": "GPT-6 Astra (xhigh)",
+      "provider": "OpenAI"
+    },
+    {
+      "id": "bb3d7e75-8e22-4082-b9d6-1db0803e042f",
+      "slug": "k2-horizon-375b-a23b",
+      "name": "K2 Horizon 375B A23B",
+      "provider": "MBZUAI Institute of Foundation Models"
+    },
+    {
+      "id": "58a40aba-a44f-457f-9cca-75b43d4e6934",
+      "slug": "muse-spark-1-3",
+      "name": "Muse Spark 1.3 (max)",
+      "provider": "Meta"
+    },
+    {
+      "id": "d5170215-69be-4129-849b-26d8d8825bfc",
+      "slug": "muse-spark-1-3-xhigh",
+      "name": "Muse Spark 1.3 (xhigh)",
+      "provider": "Meta"
+    },
+    {
+      "id": "f9739750-6d42-450f-ba1e-2f76c869b4fe",
+      "slug": "quasar-438b",
+      "name": "Quasar 438B (max, based on GLM-5.2)",
+      "provider": "Multiverse Computing"
+    }
+  ],
   "removedModels": [],
-  "metricChanges": [],
-  "rankChanges": [],
+  "metricChanges": [
+    {
+      "model": {
+        "id": "04ee6719-0327-463b-a1a1-70a6a78254f9",
+        "slug": "muse-spark-1-2",
+        "name": "Muse Spark 1.2 (xhigh)",
+        "provider": "Meta"
+      },
+      "metric": "outputSpeedTokensPerSecond",
+      "metricLabel": "Output speed",
+      "previousValue": 0,
+      "currentValue": 223.575,
+      "previousFormatted": "0.0 tok/s",
+      "currentFormatted": "223.6 tok/s",
+      "delta": 223.575,
+      "absoluteDelta": 223.575,
+      "direction": "up",
+      "isImprovement": true
+    },
+    {
+      "model": {
+        "id": "e1bfc488-5f48-4d42-abf6-7f3c53d79f9c",
+        "slug": "lfm2-5-2-6b",
+        "name": "LFM2.5-2.6B",
+        "provider": "Liquid AI"
+      },
+      "metric": "outputSpeedTokensPerSecond",
+      "metricLabel": "Output speed",
+      "previousValue": 0,
+      "currentValue": 206.793,
+      "previousFormatted": "0.0 tok/s",
+      "currentFormatted": "206.8 tok/s",
+      "delta": 206.793,
+      "absoluteDelta": 206.793,
+      "direction": "up",
+      "isImprovement": true
+    },
+    {
+      "model": {
+        "id": "8014c311-fa23-4a4b-8485-8a864db8a113",
+        "slug": "celeris-1",
+        "name": "Celeris-1",
+        "provider": "Celeris"
+      },
+      "metric": "outputSpeedTokensPerSecond",
+      "metricLabel": "Output speed",
+      "previousValue": 1974.754,
+      "currentValue": 2172.372,
+      "previousFormatted": "1,974.8 tok/s",
+      "currentFormatted": "2,172.4 tok/s",
+      "delta": 197.618,
+      "absoluteDelta": 197.618,
+      "direction": "up",
+      "isImprovement": true
+    },
+    {
+      "model": {
+        "id": "f3a0e101-086f-44b3-a1b2-d23498f9716b",
+        "slug": "agnes-2-5-pro-beta",
+        "name": "Agnes 2.5 Pro Beta",
+        "provider": "Sapiens AI"
+      },
+      "metric": "outputSpeedTokensPerSecond",
+      "metricLabel": "Output speed",
+      "previousValue": 151.11,
+      "currentValue": 0,
+      "previousFormatted": "151.1 tok/s",
+      "currentFormatted": "0.0 tok/s",
+      "delta": -151.11,
+      "absoluteDelta": 151.11,
+      "direction": "down",
+      "isImprovement": false
+    },
+    {
+      "model": {
+        "id": "76dcf6ef-39ea-4be0-b693-b88da25b4caf",
+        "slug": "nvidia-nemotron-3-nano-30b-a3b-reasoning",
+        "name": "NVIDIA Nemotron 3 Nano 30B A3B (Reasoning)",
+        "provider": "NVIDIA"
+      },
+      "metric": "outputSpeedTokensPerSecond",
+      "metricLabel": "Output speed",
+      "previousValue": 286.022,
+      "currentValue": 142.767,
+      "previousFormatted": "286.0 tok/s",
+      "currentFormatted": "142.8 tok/s",
+      "delta": -143.255,
+      "absoluteDelta": 143.255,
+      "direction": "down",
+      "isImprovement": false
+    },
+    {
+      "model": {
+        "id": "f1d52583-9d20-4099-99ac-b5df9430c3b6",
+        "slug": "nvidia-nemotron-nano-9b-v2-reasoning",
+        "name": "NVIDIA Nemotron Nano 9B V2 (Reasoning)",
+        "provider": "NVIDIA"
+      },
+      "metric": "outputSpeedTokensPerSecond",
+      "metricLabel": "Output speed",
+      "previousValue": 213.145,
+      "currentValue": 94.506,
+      "previousFormatted": "213.1 tok/s",
+      "currentFormatted": "94.5 tok/s",
+      "delta": -118.639,
+      "absoluteDelta": 118.639,
+      "direction": "down",
+      "isImprovement": false
+    },
+    {
+      "model": {
+        "id": "fc4223e8-4586-4ca1-97ca-bb55ff586947",
+        "slug": "kat-coder-pro-v2",
+        "name": "KAT Coder Pro V2",
+        "provider": "KwaiKAT"
+      },
+      "metric": "outputSpeedTokensPerSecond",
+      "metricLabel": "Output speed",
+      "previousValue": 105.581,
+      "currentValue": 0,
+      "previousFormatted": "105.6 tok/s",
+      "currentFormatted": "0.0 tok/s",
+      "delta": -105.581,
+      "absoluteDelta": 105.581,
+      "direction": "down",
+      "isImprovement": false
+    },
+    {
+      "model": {
+        "id": "23b379f7-18df-492a-9fc1-a56c5a5b9cfc",
+        "slug": "nvidia-nemotron-3-nano-30b-a3b",
+        "name": "NVIDIA Nemotron 3 Nano 30B A3B (Non-reasoning)",
+        "provider": "NVIDIA"
+      },
+      "metric": "outputSpeedTokensPerSecond",
+      "metricLabel": "Output speed",
+      "previousValue": 265.185,
+      "currentValue": 165.785,
+      "previousFormatted": "265.2 tok/s",
+      "currentFormatted": "165.8 tok/s",
+      "delta": -99.4,
+      "absoluteDelta": 99.4,
+      "direction": "down",
+      "isImprovement": false
+    },
+    {
+      "model": {
+        "id": "3c5289e5-1c62-434c-bc44-c51c39f640a1",
+        "slug": "lfm2-5-vl-1-6b",
+        "name": "LFM2.5-VL-1.6B",
+        "provider": "Liquid AI"
+      },
+      "metric": "outputSpeedTokensPerSecond",
+      "metricLabel": "Output speed",
+      "previousValue": 342.183,
+      "currentValue": 440.878,
+      "previousFormatted": "342.2 tok/s",
+      "currentFormatted": "440.9 tok/s",
+      "delta": 98.695,
+      "absoluteDelta": 98.695,
+      "direction": "up",
+      "isImprovement": true
+    },
+    {
+      "model": {
+        "id": "16149b9c-a1e9-4669-a5cb-ff3c00d78f89",
+        "slug": "gpt-oss-20b-low",
+        "name": "gpt-oss-20b (low)",
+        "provider": "OpenAI"
+      },
+      "metric": "outputSpeedTokensPerSecond",
+      "metricLabel": "Output speed",
+      "previousValue": 135.088,
+      "currentValue": 232.436,
+      "previousFormatted": "135.1 tok/s",
+      "currentFormatted": "232.4 tok/s",
+      "delta": 97.348,
+      "absoluteDelta": 97.348,
+      "direction": "up",
+      "isImprovement": true
+    },
+    {
+      "model": {
+        "id": "09f43999-b67b-4c1b-b050-44df41ed7e62",
+        "slug": "devstral-2",
+        "name": "Devstral 2",
+        "provider": "Mistral"
+      },
+      "metric": "outputSpeedTokensPerSecond",
+      "metricLabel": "Output speed",
+      "previousValue": 41.103,
+      "currentValue": 134.894,
+      "previousFormatted": "41.1 tok/s",
+      "currentFormatted": "134.9 tok/s",
+      "delta": 93.791,
+      "absoluteDelta": 93.791,
+      "direction": "up",
+      "isImprovement": true
+    },
+    {
+      "model": {
+        "id": "5b52def2-ac9b-4465-ad80-91ea8079e253",
+        "slug": "nvidia-nemotron-3-ultra-550b-a55b",
+        "name": "Nemotron 3 Ultra 550B A55B (Reasoning)",
+        "provider": "NVIDIA"
+      },
+      "metric": "outputSpeedTokensPerSecond",
+      "metricLabel": "Output speed",
+      "previousValue": 69.788,
+      "currentValue": 156.367,
+      "previousFormatted": "69.8 tok/s",
+      "currentFormatted": "156.4 tok/s",
+      "delta": 86.579,
+      "absoluteDelta": 86.579,
+      "direction": "up",
+      "isImprovement": true
+    },
+    {
+      "model": {
+        "id": "ab7f016c-a29b-4710-bdf6-6a5cd96aacca",
+        "slug": "nvidia-nemotron-nano-12b-v2-vl",
+        "name": "NVIDIA Nemotron Nano 12B v2 VL (Non-reasoning)",
+        "provider": "NVIDIA"
+      },
+      "metric": "outputSpeedTokensPerSecond",
+      "metricLabel": "Output speed",
+      "previousValue": 141.994,
+      "currentValue": 72.097,
+      "previousFormatted": "142.0 tok/s",
+      "currentFormatted": "72.1 tok/s",
+      "delta": -69.897,
+      "absoluteDelta": 69.897,
+      "direction": "down",
+      "isImprovement": false
+    },
+    {
+      "model": {
+        "id": "651ef7ae-9a8f-477e-9c8e-460aa156ba02",
+        "slug": "qwen3-5-4b",
+        "name": "Qwen3.5 4B (Reasoning)",
+        "provider": "Alibaba"
+      },
+      "metric": "endToEndResponseSeconds",
+      "metricLabel": "End-to-end response",
+      "previousValue": 54.656,
+      "currentValue": 115.731,
+      "previousFormatted": "54.66 s",
+      "currentFormatted": "115.73 s",
+      "delta": 61.075,
+      "absoluteDelta": 61.075,
+      "direction": "up",
+      "isImprovement": false
+    },
+    {
+      "model": {
+        "id": "36f73aaf-d38a-4b56-a2b3-d04d17186910",
+        "slug": "gpt-oss-20b",
+        "name": "gpt-oss-20b (high)",
+        "provider": "OpenAI"
+      },
+      "metric": "outputSpeedTokensPerSecond",
+      "metricLabel": "Output speed",
+      "previousValue": 123.275,
+      "currentValue": 184.302,
+      "previousFormatted": "123.3 tok/s",
+      "currentFormatted": "184.3 tok/s",
+      "delta": 61.027,
+      "absoluteDelta": 61.027,
+      "direction": "up",
+      "isImprovement": true
+    },
+    {
+      "model": {
+        "id": "b2331108-72ed-415a-82d1-188633875bbc",
+        "slug": "gemini-3-7-flash",
+        "name": "Gemini 3.7 Flash (high)",
+        "provider": "Google"
+      },
+      "metric": "outputSpeedTokensPerSecond",
+      "metricLabel": "Output speed",
+      "previousValue": 345.24,
+      "currentValue": 284.382,
+      "previousFormatted": "345.2 tok/s",
+      "currentFormatted": "284.4 tok/s",
+      "delta": -60.858,
+      "absoluteDelta": 60.858,
+      "direction": "down",
+      "isImprovement": false
+    },
+    {
+      "model": {
+        "id": "7261504e-503c-4a66-a9d3-a3272cdf9ad6",
+        "slug": "inkling-small",
+        "name": "Inkling Small",
+        "provider": "Thinking Machines"
+      },
+      "metric": "outputSpeedTokensPerSecond",
+      "metricLabel": "Output speed",
+      "previousValue": 61.028,
+      "currentValue": 117.21,
+      "previousFormatted": "61.0 tok/s",
+      "currentFormatted": "117.2 tok/s",
+      "delta": 56.182,
+      "absoluteDelta": 56.182,
+      "direction": "up",
+      "isImprovement": true
+    },
+    {
+      "model": {
+        "id": "1e9907e0-ffac-4595-b006-962e4f1da7cf",
+        "slug": "north-mini-code",
+        "name": "North Mini Code",
+        "provider": "Cohere"
+      },
+      "metric": "outputSpeedTokensPerSecond",
+      "metricLabel": "Output speed",
+      "previousValue": 108.342,
+      "currentValue": 55.565,
+      "previousFormatted": "108.3 tok/s",
+      "currentFormatted": "55.6 tok/s",
+      "delta": -52.777,
+      "absoluteDelta": 52.777,
+      "direction": "down",
+      "isImprovement": false
+    },
+    {
+      "model": {
+        "id": "7eaf926c-5f39-4e58-ae50-c38b5fc630fc",
+        "slug": "ling-3-0-tiny",
+        "name": "Ling 3.0 Tiny",
+        "provider": "InclusionAI"
+      },
+      "metric": "outputSpeedTokensPerSecond",
+      "metricLabel": "Output speed",
+      "previousValue": 196.514,
+      "currentValue": 143.798,
+      "previousFormatted": "196.5 tok/s",
+      "currentFormatted": "143.8 tok/s",
+      "delta": -52.716,
+      "absoluteDelta": 52.716,
+      "direction": "down",
+      "isImprovement": false
+    },
+    {
+      "model": {
+        "id": "b6d2e43d-3082-43f5-9318-0f4dbcb54163",
+        "slug": "trinity-large-thinking",
+        "name": "Trinity Large Thinking",
+        "provider": "Arcee AI"
+      },
+      "metric": "outputSpeedTokensPerSecond",
+      "metricLabel": "Output speed",
+      "previousValue": 279.052,
+      "currentValue": 328.262,
+      "previousFormatted": "279.1 tok/s",
+      "currentFormatted": "328.3 tok/s",
+      "delta": 49.21,
+      "absoluteDelta": 49.21,
+      "direction": "up",
+      "isImprovement": true
+    }
+  ],
+  "rankChanges": [
+    {
+      "model": {
+        "id": "76361085-f5dc-49ec-b069-fe56ca885933",
+        "name": "Command-R+ (Apr '24)",
+        "provider": "Cohere"
+      },
+      "metric": "priceUsdPerMillionTokens",
+      "metricLabel": "Blended price",
+      "previousRank": 580,
+      "currentRank": 13,
+      "rankDelta": 567,
+      "direction": "up"
+    },
+    {
+      "model": {
+        "id": "f3a0e101-086f-44b3-a1b2-d23498f9716b",
+        "name": "Agnes 2.5 Pro Beta",
+        "provider": "Sapiens AI"
+      },
+      "metric": "endToEndResponseSeconds",
+      "metricLabel": "End-to-end response",
+      "previousRank": 548,
+      "currentRank": 2,
+      "rankDelta": 546,
+      "direction": "up"
+    },
+    {
+      "model": {
+        "id": "f3a0e101-086f-44b3-a1b2-d23498f9716b",
+        "name": "Agnes 2.5 Pro Beta",
+        "provider": "Sapiens AI"
+      },
+      "metric": "latencySeconds",
+      "metricLabel": "Latency",
+      "previousRank": 544,
+      "currentRank": 2,
+      "rankDelta": 542,
+      "direction": "up"
+    },
+    {
+      "model": {
+        "id": "04ee6719-0327-463b-a1a1-70a6a78254f9",
+        "name": "Muse Spark 1.2 (xhigh)",
+        "provider": "Meta"
+      },
+      "metric": "outputSpeedTokensPerSecond",
+      "metricLabel": "Output speed",
+      "previousRank": 513,
+      "currentRank": 22,
+      "rankDelta": 491,
+      "direction": "up"
+    },
+    {
+      "model": {
+        "id": "e1bfc488-5f48-4d42-abf6-7f3c53d79f9c",
+        "name": "LFM2.5-2.6B",
+        "provider": "Liquid AI"
+      },
+      "metric": "outputSpeedTokensPerSecond",
+      "metricLabel": "Output speed",
+      "previousRank": 447,
+      "currentRank": 27,
+      "rankDelta": 420,
+      "direction": "up"
+    },
+    {
+      "model": {
+        "id": "e1bfc488-5f48-4d42-abf6-7f3c53d79f9c",
+        "name": "LFM2.5-2.6B",
+        "provider": "Liquid AI"
+      },
+      "metric": "scicode",
+      "metricLabel": "SciCode",
+      "previousRank": 505,
+      "currentRank": 107,
+      "rankDelta": 398,
+      "direction": "up"
+    },
+    {
+      "model": {
+        "id": "abe9f0c7-f4f6-430d-ba42-f45afdd4841b",
+        "name": "Command-R (Mar '24)",
+        "provider": "Cohere"
+      },
+      "metric": "priceUsdPerMillionTokens",
+      "metricLabel": "Blended price",
+      "previousRank": 400,
+      "currentRank": 12,
+      "rankDelta": 388,
+      "direction": "up"
+    },
+    {
+      "model": {
+        "id": "fc4223e8-4586-4ca1-97ca-bb55ff586947",
+        "name": "KAT Coder Pro V2",
+        "provider": "KwaiKAT"
+      },
+      "metric": "outputSpeedTokensPerSecond",
+      "metricLabel": "Output speed",
+      "previousRank": 83,
+      "currentRank": 451,
+      "rankDelta": -368,
+      "direction": "down"
+    },
+    {
+      "model": {
+        "id": "8014c311-fa23-4a4b-8485-8a864db8a113",
+        "name": "Celeris-1",
+        "provider": "Celeris"
+      },
+      "metric": "scicode",
+      "metricLabel": "SciCode",
+      "previousRank": 465,
+      "currentRank": 106,
+      "rankDelta": 359,
+      "direction": "up"
+    },
+    {
+      "model": {
+        "id": "7eaf926c-5f39-4e58-ae50-c38b5fc630fc",
+        "name": "Ling 3.0 Tiny",
+        "provider": "InclusionAI"
+      },
+      "metric": "scicode",
+      "metricLabel": "SciCode",
+      "previousRank": 428,
+      "currentRank": 105,
+      "rankDelta": 323,
+      "direction": "up"
+    },
+    {
+      "model": {
+        "id": "0c64b008-20c3-408d-bd68-15136df8cd2c",
+        "name": "Granite 4.2 3B",
+        "provider": "IBM"
+      },
+      "metric": "scicode",
+      "metricLabel": "SciCode",
+      "previousRank": 421,
+      "currentRank": 104,
+      "rankDelta": 317,
+      "direction": "up"
+    },
+    {
+      "model": {
+        "id": "e1bfc488-5f48-4d42-abf6-7f3c53d79f9c",
+        "name": "LFM2.5-2.6B",
+        "provider": "Liquid AI"
+      },
+      "metric": "latencySeconds",
+      "metricLabel": "Latency",
+      "previousRank": 265,
+      "currentRank": 579,
+      "rankDelta": -314,
+      "direction": "down"
+    },
+    {
+      "model": {
+        "id": "e1bfc488-5f48-4d42-abf6-7f3c53d79f9c",
+        "name": "LFM2.5-2.6B",
+        "provider": "Liquid AI"
+      },
+      "metric": "endToEndResponseSeconds",
+      "metricLabel": "End-to-end response",
+      "previousRank": 265,
+      "currentRank": 552,
+      "rankDelta": -287,
+      "direction": "down"
+    },
+    {
+      "model": {
+        "id": "04ee6719-0327-463b-a1a1-70a6a78254f9",
+        "name": "Muse Spark 1.2 (xhigh)",
+        "provider": "Meta"
+      },
+      "metric": "latencySeconds",
+      "metricLabel": "Latency",
+      "previousRank": 331,
+      "currentRank": 601,
+      "rankDelta": -270,
+      "direction": "down"
+    },
+    {
+      "model": {
+        "id": "fc4223e8-4586-4ca1-97ca-bb55ff586947",
+        "name": "KAT Coder Pro V2",
+        "provider": "KwaiKAT"
+      },
+      "metric": "latencySeconds",
+      "metricLabel": "Latency",
+      "previousRank": 510,
+      "currentRank": 253,
+      "rankDelta": 257,
+      "direction": "up"
+    },
+    {
+      "model": {
+        "id": "04ee6719-0327-463b-a1a1-70a6a78254f9",
+        "name": "Muse Spark 1.2 (xhigh)",
+        "provider": "Meta"
+      },
+      "metric": "endToEndResponseSeconds",
+      "metricLabel": "End-to-end response",
+      "previousRank": 331,
+      "currentRank": 568,
+      "rankDelta": -237,
+      "direction": "down"
+    },
+    {
+      "model": {
+        "id": "adfae555-f489-4f3e-9064-c6b7fcdd0783",
+        "name": "Granite 4.2 8B",
+        "provider": "IBM"
+      },
+      "metric": "scicode",
+      "metricLabel": "SciCode",
+      "previousRank": 339,
+      "currentRank": 103,
+      "rankDelta": 236,
+      "direction": "up"
+    },
+    {
+      "model": {
+        "id": "fc4223e8-4586-4ca1-97ca-bb55ff586947",
+        "name": "KAT Coder Pro V2",
+        "provider": "KwaiKAT"
+      },
+      "metric": "endToEndResponseSeconds",
+      "metricLabel": "End-to-end response",
+      "previousRank": 482,
+      "currentRank": 253,
+      "rankDelta": 229,
+      "direction": "up"
+    },
+    {
+      "model": {
+        "id": "29976311-665a-4b2f-ac72-557c33e0758e",
+        "name": "Nemotron 3.5 Lightning",
+        "provider": "NVIDIA"
+      },
+      "metric": "scicode",
+      "metricLabel": "SciCode",
+      "previousRank": 326,
+      "currentRank": 102,
+      "rankDelta": 224,
+      "direction": "up"
+    },
+    {
+      "model": {
+        "id": "c1c5db7c-968f-445a-a274-7b5689348bf8",
+        "name": "G9v3-39A5B",
+        "provider": "AI9Stars"
+      },
+      "metric": "scicode",
+      "metricLabel": "SciCode",
+      "previousRank": 297,
+      "currentRank": 97,
+      "rankDelta": 200,
+      "direction": "up"
+    }
+  ],
   "summary": [
-    "This refresh has 624 models, no count change compared with the previous snapshot.",
-    "No material model, metric, or rank changes were detected."
+    "This refresh has 643 models, +19 compared with the previous snapshot.",
+    "New models include Apodex 1.1, Claude Fable 5.1 (Adaptive Reasoning, High Effort, Default Fallback), Claude Fable 5.1 (Adaptive Reasoning, Low Effort, Default Fallback), Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback), Claude Fable 5.1 (Adaptive Reasoning, Medium Effort, Default Fallback).",
+    "Largest metric move: Muse Spark 1.2 (xhigh) on Output speed, from 0.0 tok/s to 223.6 tok/s.",
+    "Largest rank move: Command-R+ (Apr '24) climbed 567 places on Blended price."
   ]
 }
