@@ -1,170 +1,109 @@
 {
-  "generatedAt": "2026-09-28T09:45:18.332Z",
-  "previousGeneratedAt": "2026-09-21T08:55:44.886Z",
-  "modelCountBefore": 653,
-  "modelCountAfter": 674,
-  "modelCountDelta": 21,
+  "generatedAt": "2026-10-05T10:25:12.684Z",
+  "previousGeneratedAt": "2026-09-28T09:45:18.332Z",
+  "modelCountBefore": 674,
+  "modelCountAfter": 690,
+  "modelCountDelta": 16,
   "addedModels": [
     {
-      "id": "f314eade-2232-44bf-a3ab-9b326bc67de6",
-      "slug": "claude-opus-5-5-high",
-      "name": "Claude Opus 5.5 (Adaptive Reasoning, High Effort, Default Fallback)",
+      "id": "268525e2-f873-4178-bc07-e6a0ee1f002d",
+      "slug": "claude-sonnet-5-5-high",
+      "name": "Claude Sonnet 5.5 (High, Default Fallback)",
       "provider": "Anthropic"
     },
     {
-      "id": "4416ca93-fde6-4b7b-abbc-3a6be109cc3d",
-      "slug": "claude-opus-5-5-low",
-      "name": "Claude Opus 5.5 (Adaptive Reasoning, Low Effort, Default Fallback)",
+      "id": "bbc2ffea-cf6b-43be-8c41-1769347e234d",
+      "slug": "claude-sonnet-5-5-low",
+      "name": "Claude Sonnet 5.5 (Low, Default Fallback)",
       "provider": "Anthropic"
     },
     {
-      "id": "2f3c4dc9-a450-4303-8697-0237257cf08f",
-      "slug": "claude-opus-5-5",
-      "name": "Claude Opus 5.5 (Adaptive Reasoning, Max Effort, Default Fallback)",
+      "id": "b171d979-5ec1-45de-b8b9-db1ee65e77ec",
+      "slug": "claude-sonnet-5-5",
+      "name": "Claude Sonnet 5.5 (Max, Default Fallback)",
       "provider": "Anthropic"
     },
     {
-      "id": "ea9e0da6-169f-43c6-92f5-730a10d6ff8d",
-      "slug": "claude-opus-5-5-medium",
-      "name": "Claude Opus 5.5 (Adaptive Reasoning, Medium Effort, Default Fallback)",
+      "id": "042e8a37-fcd0-40f4-8f41-99215fb68eda",
+      "slug": "claude-sonnet-5-5-medium",
+      "name": "Claude Sonnet 5.5 (Medium, Default Fallback)",
       "provider": "Anthropic"
     },
     {
-      "id": "df5bf99d-d228-4715-b41b-19ca86118777",
-      "slug": "claude-opus-5-5-xhigh",
-      "name": "Claude Opus 5.5 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
+      "id": "975aeaef-50bd-4a65-9c73-f1015adcd4d4",
+      "slug": "claude-sonnet-5-5-xhigh",
+      "name": "Claude Sonnet 5.5 (Xhigh, Default Fallback)",
       "provider": "Anthropic"
     },
     {
-      "id": "73c96f99-0de3-4668-a4bd-b106a0fe18f2",
-      "slug": "deepseek-v4-1-flash-non-reasoning",
-      "name": "DeepSeek V4.1 Flash (Non-Reasoning)",
+      "id": "d4f5b250-be37-4801-85e6-32fda4179337",
+      "slug": "deepseek-v4-pro-non-reasoning",
+      "name": "DeepSeek V4 Pro 0813 (Non-reasoning)",
       "provider": "DeepSeek"
     },
     {
-      "id": "cc1e488b-8ba4-464d-875d-690166b15ad3",
-      "slug": "glm-5-3-low",
-      "name": "GLM-5.3 (low)",
-      "provider": "Z AI"
+      "id": "d366dfa1-d940-4788-aa73-d298c45699b3",
+      "slug": "gemini-4-argon",
+      "name": "Gemini 4 Argon (High)",
+      "provider": "Google"
     },
     {
-      "id": "7d1229bc-deea-4717-ba5b-f59a35d991e3",
-      "slug": "gpt-6-luna-high",
-      "name": "GPT-6 Luna (high)",
+      "id": "3b84fee3-b70a-41bc-819e-5fbdef9a0042",
+      "slug": "gpt-6-1-sol-high",
+      "name": "GPT-6.1 Sol (High)",
       "provider": "OpenAI"
     },
     {
-      "id": "bf9708d8-933d-44f6-affa-b696a7a650c9",
-      "slug": "gpt-6-luna-low",
-      "name": "GPT-6 Luna (low)",
+      "id": "e76e0fe5-93ca-4272-9359-2eb1740467d1",
+      "slug": "gpt-6-1-sol-low",
+      "name": "GPT-6.1 Sol (Low)",
       "provider": "OpenAI"
     },
     {
-      "id": "6fb13851-40ce-4bda-ad3f-6b38e0c5daa7",
-      "slug": "gpt-6-luna",
-      "name": "GPT-6 Luna (max)",
+      "id": "b25ac058-1e33-4c31-bbc9-a20c3ad0717a",
+      "slug": "gpt-6-1-sol",
+      "name": "GPT-6.1 Sol (Max)",
       "provider": "OpenAI"
     },
     {
-      "id": "36667da0-9222-4967-adbb-f7efa15ad213",
-      "slug": "gpt-6-luna-medium",
-      "name": "GPT-6 Luna (medium)",
+      "id": "a2e51d62-ea4e-4f15-8be0-be9dc1fb489d",
+      "slug": "gpt-6-1-sol-medium",
+      "name": "GPT-6.1 Sol (Medium)",
       "provider": "OpenAI"
     },
     {
-      "id": "63cb48ea-0b0c-4e07-8ded-6d28dec4fa28",
-      "slug": "gpt-6-luna-non-reasoning",
-      "name": "GPT-6 Luna (Non-reasoning)",
+      "id": "092a3b0e-c5c8-45dc-bf1b-53673c8ff352",
+      "slug": "gpt-6-1-sol-xhigh",
+      "name": "GPT-6.1 Sol (Xhigh)",
       "provider": "OpenAI"
     },
     {
-      "id": "19813eb2-460a-475c-af65-810bb8660fec",
-      "slug": "gpt-6-luna-xhigh",
-      "name": "GPT-6 Luna (xhigh)",
-      "provider": "OpenAI"
-    },
-    {
-      "id": "52eebe3e-6ede-4e46-92db-c5dea49fc410",
-      "slug": "gpt-6-sol-high",
-      "name": "GPT-6 Sol (high)",
-      "provider": "OpenAI"
-    },
-    {
-      "id": "01459872-433a-4ab2-8e99-7083162172eb",
-      "slug": "gpt-6-sol-low",
-      "name": "GPT-6 Sol (low)",
-      "provider": "OpenAI"
-    },
-    {
-      "id": "c50ea08c-88c0-4eb7-85b8-27f2bbf6d527",
-      "slug": "gpt-6-sol",
-      "name": "GPT-6 Sol (max)",
-      "provider": "OpenAI"
-    },
-    {
-      "id": "780a4a85-17ff-4175-a8dd-ebca4823e61b",
-      "slug": "gpt-6-sol-medium",
-      "name": "GPT-6 Sol (medium)",
-      "provider": "OpenAI"
-    },
-    {
-      "id": "d3e20e76-9e1a-45b6-b809-ad6aa37430cf",
-      "slug": "gpt-6-sol-non-reasoning",
-      "name": "GPT-6 Sol (Non-reasoning)",
-      "provider": "OpenAI"
-    },
-    {
-      "id": "da2642fe-9f73-4788-b5af-24edcd55b37e",
-      "slug": "gpt-6-sol-xhigh",
-      "name": "GPT-6 Sol (xhigh)",
-      "provider": "OpenAI"
-    },
-    {
-      "id": "272f5f03-aea9-4675-a244-2b753b618cdf",
-      "slug": "grok-4-7-high",
-      "name": "Grok 4.7 (high)",
+      "id": "208c16f0-8c5b-4524-ac8a-ac74c02e80a9",
+      "slug": "grok-4-7-low",
+      "name": "Grok 4.7 (Low)",
       "provider": "SpaceXAI"
-    }
-  ],
-  "removedModels": [
-    {
-      "id": "8decf027-5114-4721-9ee1-81c0552980a0",
-      "slug": "agnes-2-5-pro-alpha",
-      "name": "Agnes 2.5 Pro Alpha",
-      "provider": "Sapiens AI"
     },
     {
-      "id": "f3a0e101-086f-44b3-a1b2-d23498f9716b",
-      "slug": "agnes-2-5-pro-beta",
-      "name": "Agnes 2.5 Pro Beta",
-      "provider": "Sapiens AI"
+      "id": "46f11cdf-1725-4abb-b39b-bd6bd948149c",
+      "slug": "jt-4-1-flash-236b-a21b",
+      "name": "JT-4.1 Flash 236B A21B (Reasoning)",
+      "provider": "China Mobile"
     },
     {
-      "id": "6ace0ead-584f-4ce6-a9b7-6c3f9cc91c3c",
-      "slug": "agnes-3-0-flash",
-      "name": "Agnes 3.0 Flash",
-      "provider": "Sapiens AI"
+      "id": "a6043b9b-628a-4a76-a021-2834e0627d05",
+      "slug": "ling-3-1-flash",
+      "name": "Ling 3.1 Flash",
+      "provider": "InclusionAI"
+    },
+    {
+      "id": "62ea3198-9866-4d9f-8406-a79ee78c7164",
+      "slug": "solar-mini4",
+      "name": "Solar Mini 4",
+      "provider": "Upstage"
     }
   ],
+  "removedModels": [],
   "metricChanges": [
-    {
-      "model": {
-        "id": "016d330a-2141-4afa-b2fc-62b314423dc1",
-        "slug": "mercury-2",
-        "name": "Mercury 2",
-        "provider": "Inception"
-      },
-      "metric": "outputSpeedTokensPerSecond",
-      "metricLabel": "Output speed",
-      "previousValue": 733.939,
-      "currentValue": 0,
-      "previousFormatted": "733.9 tok/s",
-      "currentFormatted": "0.0 tok/s",
-      "delta": -733.939,
-      "absoluteDelta": 733.939,
-      "direction": "down",
-      "isImprovement": false
-    },
     {
       "model": {
         "id": "8014c311-fa23-4a4b-8485-8a864db8a113",
@@ -174,607 +113,624 @@
       },
       "metric": "outputSpeedTokensPerSecond",
       "metricLabel": "Output speed",
-      "previousValue": 2074.564,
-      "currentValue": 2360.73,
-      "previousFormatted": "2,074.6 tok/s",
-      "currentFormatted": "2,360.7 tok/s",
-      "delta": 286.166,
-      "absoluteDelta": 286.166,
+      "previousValue": 2360.73,
+      "currentValue": 2124.464,
+      "previousFormatted": "2,360.7 tok/s",
+      "currentFormatted": "2,124.5 tok/s",
+      "delta": -236.266,
+      "absoluteDelta": 236.266,
+      "direction": "down",
+      "isImprovement": false
+    },
+    {
+      "model": {
+        "id": "6c7b322e-2f35-48ff-9171-fb621a726fc0",
+        "slug": "step-3-7-flash",
+        "name": "Step 3.7 Flash",
+        "provider": "StepFun"
+      },
+      "metric": "outputSpeedTokensPerSecond",
+      "metricLabel": "Output speed",
+      "previousValue": 204.49,
+      "currentValue": 0,
+      "previousFormatted": "204.5 tok/s",
+      "currentFormatted": "0.0 tok/s",
+      "delta": -204.49,
+      "absoluteDelta": 204.49,
+      "direction": "down",
+      "isImprovement": false
+    },
+    {
+      "model": {
+        "id": "6d6fa1c9-b833-40b2-8a58-fa810e24a84e",
+        "slug": "ling-3-0-flash-fin",
+        "name": "Ling-3.0-flash-Fin",
+        "provider": "InclusionAI"
+      },
+      "metric": "outputSpeedTokensPerSecond",
+      "metricLabel": "Output speed",
+      "previousValue": 161.522,
+      "currentValue": 346.22,
+      "previousFormatted": "161.5 tok/s",
+      "currentFormatted": "346.2 tok/s",
+      "delta": 184.698,
+      "absoluteDelta": 184.698,
       "direction": "up",
       "isImprovement": true
     },
     {
       "model": {
-        "id": "8c748e53-61ae-48b8-af8d-eb8298b1e9db",
-        "slug": "nemotron-3-nano-omni-30b-a3b",
-        "name": "Nemotron 3 Nano Omni 30B A3B Reasoning",
+        "id": "433d5c5d-3092-4026-9727-1587ca07915d",
+        "slug": "ling-3-0-flash-vl",
+        "name": "Ling-3.0-flash-VL",
+        "provider": "InclusionAI"
+      },
+      "metric": "outputSpeedTokensPerSecond",
+      "metricLabel": "Output speed",
+      "previousValue": 147.324,
+      "currentValue": 0,
+      "previousFormatted": "147.3 tok/s",
+      "currentFormatted": "0.0 tok/s",
+      "delta": -147.324,
+      "absoluteDelta": 147.324,
+      "direction": "down",
+      "isImprovement": false
+    },
+    {
+      "model": {
+        "id": "f1d52583-9d20-4099-99ac-b5df9430c3b6",
+        "slug": "nvidia-nemotron-nano-9b-v2-reasoning",
+        "name": "NVIDIA Nemotron Nano 9B V2 (Reasoning)",
         "provider": "NVIDIA"
+      },
+      "metric": "endToEndResponseSeconds",
+      "metricLabel": "End-to-end response",
+      "previousValue": 22.96,
+      "currentValue": 162.214,
+      "previousFormatted": "22.96 s",
+      "currentFormatted": "162.21 s",
+      "delta": 139.254,
+      "absoluteDelta": 139.254,
+      "direction": "up",
+      "isImprovement": false
+    },
+    {
+      "model": {
+        "id": "bb3d7e75-8e22-4082-b9d6-1db0803e042f",
+        "slug": "k2-horizon-375b-a23b",
+        "name": "K2 Horizon 375B A23B",
+        "provider": "Institute of Foundation Models"
       },
       "metric": "outputSpeedTokensPerSecond",
       "metricLabel": "Output speed",
       "previousValue": 0,
-      "currentValue": 259.953,
+      "currentValue": 119.516,
       "previousFormatted": "0.0 tok/s",
-      "currentFormatted": "260.0 tok/s",
-      "delta": 259.953,
-      "absoluteDelta": 259.953,
+      "currentFormatted": "119.5 tok/s",
+      "delta": 119.516,
+      "absoluteDelta": 119.516,
       "direction": "up",
       "isImprovement": true
     },
     {
       "model": {
-        "id": "7393c56a-ec31-48e9-b804-c04f2d2cb641",
-        "slug": "llama-3-1-nemotron-instruct-70b",
-        "name": "Llama 3.1 Nemotron Instruct 70B",
-        "provider": "NVIDIA"
+        "id": "23c86e4a-c769-43c0-a056-79e3cd15834f",
+        "slug": "claude-sonnet-5",
+        "name": "Claude Sonnet 5 (Max)",
+        "provider": "Anthropic"
       },
-      "metric": "outputSpeedTokensPerSecond",
-      "metricLabel": "Output speed",
-      "previousValue": 167.936,
+      "metric": "latencySeconds",
+      "metricLabel": "Latency",
+      "previousValue": 110.551,
       "currentValue": 0,
-      "previousFormatted": "167.9 tok/s",
-      "currentFormatted": "0.0 tok/s",
-      "delta": -167.936,
-      "absoluteDelta": 167.936,
+      "previousFormatted": "110.55 s",
+      "currentFormatted": "0.00 s",
+      "delta": -110.551,
+      "absoluteDelta": 110.551,
       "direction": "down",
-      "isImprovement": false
-    },
-    {
-      "model": {
-        "id": "58b812bf-8498-46db-b834-f43ccc614b61",
-        "slug": "gpt-5-6-luna-medium",
-        "name": "GPT-5.6 Luna (medium)",
-        "provider": "OpenAI"
-      },
-      "metric": "outputSpeedTokensPerSecond",
-      "metricLabel": "Output speed",
-      "previousValue": 156.392,
-      "currentValue": 0,
-      "previousFormatted": "156.4 tok/s",
-      "currentFormatted": "0.0 tok/s",
-      "delta": -156.392,
-      "absoluteDelta": 156.392,
-      "direction": "down",
-      "isImprovement": false
-    },
-    {
-      "model": {
-        "id": "87110ff0-1f79-41b4-9976-eda250597317",
-        "slug": "gpt-5-6-luna-xhigh",
-        "name": "GPT-5.6 Luna (xhigh)",
-        "provider": "OpenAI"
-      },
-      "metric": "outputSpeedTokensPerSecond",
-      "metricLabel": "Output speed",
-      "previousValue": 154.161,
-      "currentValue": 0,
-      "previousFormatted": "154.2 tok/s",
-      "currentFormatted": "0.0 tok/s",
-      "delta": -154.161,
-      "absoluteDelta": 154.161,
-      "direction": "down",
-      "isImprovement": false
-    },
-    {
-      "model": {
-        "id": "e1cfa926-9e2b-4a0d-8c31-48366a5041c5",
-        "slug": "llama-nemotron-super-49b-v1-5-reasoning",
-        "name": "Llama Nemotron Super 49B v1.5 (Reasoning)",
-        "provider": "NVIDIA"
-      },
-      "metric": "outputSpeedTokensPerSecond",
-      "metricLabel": "Output speed",
-      "previousValue": 150.033,
-      "currentValue": 0,
-      "previousFormatted": "150.0 tok/s",
-      "currentFormatted": "0.0 tok/s",
-      "delta": -150.033,
-      "absoluteDelta": 150.033,
-      "direction": "down",
-      "isImprovement": false
-    },
-    {
-      "model": {
-        "id": "426d24c8-49ae-482a-b4a8-20f1c53f21c1",
-        "slug": "gpt-5-6-luna",
-        "name": "GPT-5.6 Luna (max)",
-        "provider": "OpenAI"
-      },
-      "metric": "outputSpeedTokensPerSecond",
-      "metricLabel": "Output speed",
-      "previousValue": 148.353,
-      "currentValue": 0,
-      "previousFormatted": "148.4 tok/s",
-      "currentFormatted": "0.0 tok/s",
-      "delta": -148.353,
-      "absoluteDelta": 148.353,
-      "direction": "down",
-      "isImprovement": false
-    },
-    {
-      "model": {
-        "id": "dc64f856-3ded-497d-9527-d41d31267ed5",
-        "slug": "gpt-5-6-luna-non-reasoning",
-        "name": "GPT-5.6 Luna (Non-reasoning)",
-        "provider": "OpenAI"
-      },
-      "metric": "outputSpeedTokensPerSecond",
-      "metricLabel": "Output speed",
-      "previousValue": 144.446,
-      "currentValue": 0,
-      "previousFormatted": "144.4 tok/s",
-      "currentFormatted": "0.0 tok/s",
-      "delta": -144.446,
-      "absoluteDelta": 144.446,
-      "direction": "down",
-      "isImprovement": false
-    },
-    {
-      "model": {
-        "id": "050c61cd-cddc-463a-a30a-a82aaa37be59",
-        "slug": "gpt-5-6-luna-low",
-        "name": "GPT-5.6 Luna (low)",
-        "provider": "OpenAI"
-      },
-      "metric": "outputSpeedTokensPerSecond",
-      "metricLabel": "Output speed",
-      "previousValue": 143.908,
-      "currentValue": 0,
-      "previousFormatted": "143.9 tok/s",
-      "currentFormatted": "0.0 tok/s",
-      "delta": -143.908,
-      "absoluteDelta": 143.908,
-      "direction": "down",
-      "isImprovement": false
-    },
-    {
-      "model": {
-        "id": "aa55297e-8fbf-4372-b4ab-9b068dc6396c",
-        "slug": "gpt-5-6-luna-high",
-        "name": "GPT-5.6 Luna (high)",
-        "provider": "OpenAI"
-      },
-      "metric": "outputSpeedTokensPerSecond",
-      "metricLabel": "Output speed",
-      "previousValue": 142.026,
-      "currentValue": 0,
-      "previousFormatted": "142.0 tok/s",
-      "currentFormatted": "0.0 tok/s",
-      "delta": -142.026,
-      "absoluteDelta": 142.026,
-      "direction": "down",
-      "isImprovement": false
-    },
-    {
-      "model": {
-        "id": "09f43999-b67b-4c1b-b050-44df41ed7e62",
-        "slug": "devstral-2",
-        "name": "Devstral 2",
-        "provider": "Mistral"
-      },
-      "metric": "outputSpeedTokensPerSecond",
-      "metricLabel": "Output speed",
-      "previousValue": 139.5,
-      "currentValue": 0,
-      "previousFormatted": "139.5 tok/s",
-      "currentFormatted": "0.0 tok/s",
-      "delta": -139.5,
-      "absoluteDelta": 139.5,
-      "direction": "down",
-      "isImprovement": false
-    },
-    {
-      "model": {
-        "id": "ce819310-af7c-49d3-9a02-6845111e1788",
-        "slug": "devstral-small-2",
-        "name": "Devstral Small 2",
-        "provider": "Mistral"
-      },
-      "metric": "outputSpeedTokensPerSecond",
-      "metricLabel": "Output speed",
-      "previousValue": 138.441,
-      "currentValue": 0,
-      "previousFormatted": "138.4 tok/s",
-      "currentFormatted": "0.0 tok/s",
-      "delta": -138.441,
-      "absoluteDelta": 138.441,
-      "direction": "down",
-      "isImprovement": false
-    },
-    {
-      "model": {
-        "id": "6e6e02fd-9cbd-417f-9bfc-673df89c313d",
-        "slug": "nvidia-nemotron-nano-12b-v2-vl-reasoning",
-        "name": "NVIDIA Nemotron Nano 12B v2 VL (Reasoning)",
-        "provider": "NVIDIA"
-      },
-      "metric": "outputSpeedTokensPerSecond",
-      "metricLabel": "Output speed",
-      "previousValue": 127.921,
-      "currentValue": 0,
-      "previousFormatted": "127.9 tok/s",
-      "currentFormatted": "0.0 tok/s",
-      "delta": -127.921,
-      "absoluteDelta": 127.921,
-      "direction": "down",
-      "isImprovement": false
-    },
-    {
-      "model": {
-        "id": "26c0b5df-efa7-470f-a65e-2d883329e493",
-        "slug": "llama-nemotron-super-49b-v1-5",
-        "name": "Llama Nemotron Super 49B v1.5 (Non-reasoning)",
-        "provider": "NVIDIA"
-      },
-      "metric": "outputSpeedTokensPerSecond",
-      "metricLabel": "Output speed",
-      "previousValue": 123.324,
-      "currentValue": 0,
-      "previousFormatted": "123.3 tok/s",
-      "currentFormatted": "0.0 tok/s",
-      "delta": -123.324,
-      "absoluteDelta": 123.324,
-      "direction": "down",
-      "isImprovement": false
-    },
-    {
-      "model": {
-        "id": "9999672c-b687-4026-9c15-5cef02ff53bb",
-        "slug": "muse-spark-1-3",
-        "name": "Muse Spark 1.3 (max)",
-        "provider": "Meta"
-      },
-      "metric": "outputSpeedTokensPerSecond",
-      "metricLabel": "Output speed",
-      "previousValue": 278.668,
-      "currentValue": 164.982,
-      "previousFormatted": "278.7 tok/s",
-      "currentFormatted": "165.0 tok/s",
-      "delta": -113.686,
-      "absoluteDelta": 113.686,
-      "direction": "down",
-      "isImprovement": false
-    },
-    {
-      "model": {
-        "id": "0de09623-2b1a-4c8d-86ef-7f5245d4e24b",
-        "slug": "inkling",
-        "name": "Inkling (xhigh)",
-        "provider": "Thinking Machines"
-      },
-      "metric": "outputSpeedTokensPerSecond",
-      "metricLabel": "Output speed",
-      "previousValue": 100.207,
-      "currentValue": 212.26,
-      "previousFormatted": "100.2 tok/s",
-      "currentFormatted": "212.3 tok/s",
-      "delta": 112.053,
-      "absoluteDelta": 112.053,
-      "direction": "up",
       "isImprovement": true
     },
     {
       "model": {
-        "id": "d5170215-69be-4129-849b-26d8d8825bfc",
-        "slug": "muse-spark-1-3-xhigh",
-        "name": "Muse Spark 1.3 (xhigh)",
-        "provider": "Meta"
+        "id": "23c86e4a-c769-43c0-a056-79e3cd15834f",
+        "slug": "claude-sonnet-5",
+        "name": "Claude Sonnet 5 (Max)",
+        "provider": "Anthropic"
       },
-      "metric": "outputSpeedTokensPerSecond",
-      "metricLabel": "Output speed",
-      "previousValue": 261.028,
-      "currentValue": 154.736,
-      "previousFormatted": "261.0 tok/s",
-      "currentFormatted": "154.7 tok/s",
-      "delta": -106.292,
-      "absoluteDelta": 106.292,
+      "metric": "endToEndResponseSeconds",
+      "metricLabel": "End-to-end response",
+      "previousValue": 110.551,
+      "currentValue": 0,
+      "previousFormatted": "110.55 s",
+      "currentFormatted": "0.00 s",
+      "delta": -110.551,
+      "absoluteDelta": 110.551,
       "direction": "down",
+      "isImprovement": true
+    },
+    {
+      "model": {
+        "id": "2f3c4dc9-a450-4303-8697-0237257cf08f",
+        "slug": "claude-opus-5-5",
+        "name": "Claude Opus 5.5 (Max, Default Fallback)",
+        "provider": "Anthropic"
+      },
+      "metric": "latencySeconds",
+      "metricLabel": "Latency",
+      "previousValue": 388.268,
+      "currentValue": 489.353,
+      "previousFormatted": "388.27 s",
+      "currentFormatted": "489.35 s",
+      "delta": 101.085,
+      "absoluteDelta": 101.085,
+      "direction": "up",
       "isImprovement": false
     },
     {
       "model": {
-        "id": "426d24c8-49ae-482a-b4a8-20f1c53f21c1",
-        "slug": "gpt-5-6-luna",
-        "name": "GPT-5.6 Luna (max)",
+        "id": "2f3c4dc9-a450-4303-8697-0237257cf08f",
+        "slug": "claude-opus-5-5",
+        "name": "Claude Opus 5.5 (Max, Default Fallback)",
+        "provider": "Anthropic"
+      },
+      "metric": "endToEndResponseSeconds",
+      "metricLabel": "End-to-end response",
+      "previousValue": 388.268,
+      "currentValue": 489.353,
+      "previousFormatted": "388.27 s",
+      "currentFormatted": "489.35 s",
+      "delta": 101.085,
+      "absoluteDelta": 101.085,
+      "direction": "up",
+      "isImprovement": false
+    },
+    {
+      "model": {
+        "id": "c50ea08c-88c0-4eb7-85b8-27f2bbf6d527",
+        "slug": "gpt-6-sol",
+        "name": "GPT-6 Sol (Max)",
         "provider": "OpenAI"
       },
       "metric": "latencySeconds",
       "metricLabel": "Latency",
-      "previousValue": 80.766,
+      "previousValue": 98.304,
       "currentValue": 0,
-      "previousFormatted": "80.77 s",
+      "previousFormatted": "98.30 s",
       "currentFormatted": "0.00 s",
-      "delta": -80.766,
-      "absoluteDelta": 80.766,
+      "delta": -98.304,
+      "absoluteDelta": 98.304,
       "direction": "down",
       "isImprovement": true
     },
     {
       "model": {
-        "id": "426d24c8-49ae-482a-b4a8-20f1c53f21c1",
-        "slug": "gpt-5-6-luna",
-        "name": "GPT-5.6 Luna (max)",
+        "id": "c50ea08c-88c0-4eb7-85b8-27f2bbf6d527",
+        "slug": "gpt-6-sol",
+        "name": "GPT-6 Sol (Max)",
         "provider": "OpenAI"
       },
       "metric": "endToEndResponseSeconds",
       "metricLabel": "End-to-end response",
-      "previousValue": 80.766,
+      "previousValue": 98.304,
       "currentValue": 0,
-      "previousFormatted": "80.77 s",
+      "previousFormatted": "98.30 s",
       "currentFormatted": "0.00 s",
-      "delta": -80.766,
-      "absoluteDelta": 80.766,
+      "delta": -98.304,
+      "absoluteDelta": 98.304,
       "direction": "down",
       "isImprovement": true
+    },
+    {
+      "model": {
+        "id": "f1d52583-9d20-4099-99ac-b5df9430c3b6",
+        "slug": "nvidia-nemotron-nano-9b-v2-reasoning",
+        "name": "NVIDIA Nemotron Nano 9B V2 (Reasoning)",
+        "provider": "NVIDIA"
+      },
+      "metric": "outputSpeedTokensPerSecond",
+      "metricLabel": "Output speed",
+      "previousValue": 112.189,
+      "currentValue": 18.299,
+      "previousFormatted": "112.2 tok/s",
+      "currentFormatted": "18.3 tok/s",
+      "delta": -93.89,
+      "absoluteDelta": 93.89,
+      "direction": "down",
+      "isImprovement": false
+    },
+    {
+      "model": {
+        "id": "8d0cb231-7303-452c-9923-a9620b948475",
+        "slug": "kimi-k2-7-code",
+        "name": "Kimi K2.7 Code",
+        "provider": "Kimi"
+      },
+      "metric": "outputSpeedTokensPerSecond",
+      "metricLabel": "Output speed",
+      "previousValue": 0,
+      "currentValue": 93.349,
+      "previousFormatted": "0.0 tok/s",
+      "currentFormatted": "93.3 tok/s",
+      "delta": 93.349,
+      "absoluteDelta": 93.349,
+      "direction": "up",
+      "isImprovement": true
+    },
+    {
+      "model": {
+        "id": "c50ea08c-88c0-4eb7-85b8-27f2bbf6d527",
+        "slug": "gpt-6-sol",
+        "name": "GPT-6 Sol (Max)",
+        "provider": "OpenAI"
+      },
+      "metric": "outputSpeedTokensPerSecond",
+      "metricLabel": "Output speed",
+      "previousValue": 84.989,
+      "currentValue": 0,
+      "previousFormatted": "85.0 tok/s",
+      "currentFormatted": "0.0 tok/s",
+      "delta": -84.989,
+      "absoluteDelta": 84.989,
+      "direction": "down",
+      "isImprovement": false
+    },
+    {
+      "model": {
+        "id": "23c86e4a-c769-43c0-a056-79e3cd15834f",
+        "slug": "claude-sonnet-5",
+        "name": "Claude Sonnet 5 (Max)",
+        "provider": "Anthropic"
+      },
+      "metric": "outputSpeedTokensPerSecond",
+      "metricLabel": "Output speed",
+      "previousValue": 82.344,
+      "currentValue": 0,
+      "previousFormatted": "82.3 tok/s",
+      "currentFormatted": "0.0 tok/s",
+      "delta": -82.344,
+      "absoluteDelta": 82.344,
+      "direction": "down",
+      "isImprovement": false
+    },
+    {
+      "model": {
+        "id": "d3e20e76-9e1a-45b6-b809-ad6aa37430cf",
+        "slug": "gpt-6-sol-non-reasoning",
+        "name": "GPT-6 Sol (Non-reasoning)",
+        "provider": "OpenAI"
+      },
+      "metric": "outputSpeedTokensPerSecond",
+      "metricLabel": "Output speed",
+      "previousValue": 80.563,
+      "currentValue": 0,
+      "previousFormatted": "80.6 tok/s",
+      "currentFormatted": "0.0 tok/s",
+      "delta": -80.563,
+      "absoluteDelta": 80.563,
+      "direction": "down",
+      "isImprovement": false
+    },
+    {
+      "model": {
+        "id": "01459872-433a-4ab2-8e99-7083162172eb",
+        "slug": "gpt-6-sol-low",
+        "name": "GPT-6 Sol (Low)",
+        "provider": "OpenAI"
+      },
+      "metric": "outputSpeedTokensPerSecond",
+      "metricLabel": "Output speed",
+      "previousValue": 80.376,
+      "currentValue": 0,
+      "previousFormatted": "80.4 tok/s",
+      "currentFormatted": "0.0 tok/s",
+      "delta": -80.376,
+      "absoluteDelta": 80.376,
+      "direction": "down",
+      "isImprovement": false
+    },
+    {
+      "model": {
+        "id": "c8adc5cf-fd5a-407b-af51-dc3bede3e49c",
+        "slug": "grok-4-6",
+        "name": "Grok 4.6 (High)",
+        "provider": "SpaceXAI"
+      },
+      "metric": "outputSpeedTokensPerSecond",
+      "metricLabel": "Output speed",
+      "previousValue": 79.11,
+      "currentValue": 0,
+      "previousFormatted": "79.1 tok/s",
+      "currentFormatted": "0.0 tok/s",
+      "delta": -79.11,
+      "absoluteDelta": 79.11,
+      "direction": "down",
+      "isImprovement": false
+    },
+    {
+      "model": {
+        "id": "26614164-6840-4e17-a65a-2deb2fe7e87b",
+        "slug": "grok-4-6-medium",
+        "name": "Grok 4.6 (Medium)",
+        "provider": "SpaceXAI"
+      },
+      "metric": "outputSpeedTokensPerSecond",
+      "metricLabel": "Output speed",
+      "previousValue": 77.613,
+      "currentValue": 0,
+      "previousFormatted": "77.6 tok/s",
+      "currentFormatted": "0.0 tok/s",
+      "delta": -77.613,
+      "absoluteDelta": 77.613,
+      "direction": "down",
+      "isImprovement": false
     }
   ],
   "rankChanges": [
     {
       "model": {
-        "id": "b8fc61f7-5e9a-49e6-8547-6ac56db24627",
-        "name": "Claude Opus 5 (Adaptive Reasoning, Max Effort)",
-        "provider": "Anthropic"
-      },
-      "metric": "latencySeconds",
-      "metricLabel": "Latency",
-      "previousRank": 641,
-      "currentRank": 37,
-      "rankDelta": 604,
-      "direction": "up"
-    },
-    {
-      "model": {
-        "id": "1305c921-7aaa-4d6d-99b5-99b3acf15e19",
-        "name": "Claude Opus 5 (Adaptive Reasoning, Xhigh Effort)",
-        "provider": "Anthropic"
-      },
-      "metric": "latencySeconds",
-      "metricLabel": "Latency",
-      "previousRank": 632,
-      "currentRank": 39,
-      "rankDelta": 593,
-      "direction": "up"
-    },
-    {
-      "model": {
-        "id": "712be54a-77ae-41b2-9a58-21181479d6ee",
-        "name": "Claude Opus 5 (Adaptive Reasoning, High Effort)",
-        "provider": "Anthropic"
-      },
-      "metric": "latencySeconds",
-      "metricLabel": "Latency",
-      "previousRank": 623,
-      "currentRank": 35,
-      "rankDelta": 588,
-      "direction": "up"
-    },
-    {
-      "model": {
-        "id": "b8fc61f7-5e9a-49e6-8547-6ac56db24627",
-        "name": "Claude Opus 5 (Adaptive Reasoning, Max Effort)",
-        "provider": "Anthropic"
-      },
-      "metric": "endToEndResponseSeconds",
-      "metricLabel": "End-to-end response",
-      "previousRank": 618,
-      "currentRank": 37,
-      "rankDelta": 581,
-      "direction": "up"
-    },
-    {
-      "model": {
-        "id": "ff51be8f-e362-4a7e-9043-687ba15de207",
-        "name": "Claude Opus 5 (Adaptive Reasoning, Medium Effort)",
-        "provider": "Anthropic"
-      },
-      "metric": "latencySeconds",
-      "metricLabel": "Latency",
-      "previousRank": 614,
-      "currentRank": 38,
-      "rankDelta": 576,
-      "direction": "up"
-    },
-    {
-      "model": {
-        "id": "20928ba9-3a3f-415f-9519-b84ff64ecf34",
-        "name": "Claude Opus 5 (Adaptive Reasoning, Low Effort)",
-        "provider": "Anthropic"
-      },
-      "metric": "latencySeconds",
-      "metricLabel": "Latency",
-      "previousRank": 594,
-      "currentRank": 36,
-      "rankDelta": 558,
-      "direction": "up"
-    },
-    {
-      "model": {
-        "id": "1305c921-7aaa-4d6d-99b5-99b3acf15e19",
-        "name": "Claude Opus 5 (Adaptive Reasoning, Xhigh Effort)",
-        "provider": "Anthropic"
-      },
-      "metric": "endToEndResponseSeconds",
-      "metricLabel": "End-to-end response",
-      "previousRank": 594,
-      "currentRank": 39,
-      "rankDelta": 555,
-      "direction": "up"
-    },
-    {
-      "model": {
-        "id": "8c748e53-61ae-48b8-af8d-eb8298b1e9db",
-        "name": "Nemotron 3 Nano Omni 30B A3B Reasoning",
-        "provider": "NVIDIA"
+        "id": "6c7b322e-2f35-48ff-9171-fb621a726fc0",
+        "name": "Step 3.7 Flash",
+        "provider": "StepFun"
       },
       "metric": "outputSpeedTokensPerSecond",
       "metricLabel": "Output speed",
-      "previousRank": 536,
-      "currentRank": 10,
-      "rankDelta": 526,
-      "direction": "up"
-    },
-    {
-      "model": {
-        "id": "712be54a-77ae-41b2-9a58-21181479d6ee",
-        "name": "Claude Opus 5 (Adaptive Reasoning, High Effort)",
-        "provider": "Anthropic"
-      },
-      "metric": "endToEndResponseSeconds",
-      "metricLabel": "End-to-end response",
-      "previousRank": 560,
-      "currentRank": 35,
-      "rankDelta": 525,
-      "direction": "up"
-    },
-    {
-      "model": {
-        "id": "016d330a-2141-4afa-b2fc-62b314423dc1",
-        "name": "Mercury 2",
-        "provider": "Inception"
-      },
-      "metric": "outputSpeedTokensPerSecond",
-      "metricLabel": "Output speed",
-      "previousRank": 2,
-      "currentRank": 514,
-      "rankDelta": -512,
+      "previousRank": 28,
+      "currentRank": 687,
+      "rankDelta": -659,
       "direction": "down"
     },
     {
       "model": {
-        "id": "ff51be8f-e362-4a7e-9043-687ba15de207",
-        "name": "Claude Opus 5 (Adaptive Reasoning, Medium Effort)",
+        "id": "23c86e4a-c769-43c0-a056-79e3cd15834f",
+        "name": "Claude Sonnet 5 (Max)",
         "provider": "Anthropic"
       },
-      "metric": "endToEndResponseSeconds",
-      "metricLabel": "End-to-end response",
-      "previousRank": 550,
-      "currentRank": 38,
-      "rankDelta": 512,
+      "metric": "latencySeconds",
+      "metricLabel": "Latency",
+      "previousRank": 671,
+      "currentRank": 45,
+      "rankDelta": 626,
       "direction": "up"
     },
     {
       "model": {
-        "id": "20928ba9-3a3f-415f-9519-b84ff64ecf34",
-        "name": "Claude Opus 5 (Adaptive Reasoning, Low Effort)",
+        "id": "23c86e4a-c769-43c0-a056-79e3cd15834f",
+        "name": "Claude Sonnet 5 (Max)",
+        "provider": "Anthropic"
+      },
+      "metric": "endToEndResponseSeconds",
+      "metricLabel": "End-to-end response",
+      "previousRank": 671,
+      "currentRank": 45,
+      "rankDelta": 626,
+      "direction": "up"
+    },
+    {
+      "model": {
+        "id": "99f376bf-cbcb-4124-bf3e-6b0a4e6e9bea",
+        "name": "Claude Sonnet 5 (Xhigh)",
+        "provider": "Anthropic"
+      },
+      "metric": "latencySeconds",
+      "metricLabel": "Latency",
+      "previousRank": 645,
+      "currentRank": 48,
+      "rankDelta": 597,
+      "direction": "up"
+    },
+    {
+      "model": {
+        "id": "ba0224cf-0351-4f56-8508-b3f1a740ae4a",
+        "name": "Claude Sonnet 5 (High)",
+        "provider": "Anthropic"
+      },
+      "metric": "latencySeconds",
+      "metricLabel": "Latency",
+      "previousRank": 622,
+      "currentRank": 43,
+      "rankDelta": 579,
+      "direction": "up"
+    },
+    {
+      "model": {
+        "id": "effcd151-7c31-4437-af3d-e88daeae9385",
+        "name": "Claude Sonnet 5 (Medium)",
+        "provider": "Anthropic"
+      },
+      "metric": "latencySeconds",
+      "metricLabel": "Latency",
+      "previousRank": 592,
+      "currentRank": 46,
+      "rankDelta": 546,
+      "direction": "up"
+    },
+    {
+      "model": {
+        "id": "99f376bf-cbcb-4124-bf3e-6b0a4e6e9bea",
+        "name": "Claude Sonnet 5 (Xhigh)",
+        "provider": "Anthropic"
+      },
+      "metric": "endToEndResponseSeconds",
+      "metricLabel": "End-to-end response",
+      "previousRank": 592,
+      "currentRank": 48,
+      "rankDelta": 544,
+      "direction": "up"
+    },
+    {
+      "model": {
+        "id": "142b93bf-09c4-42dc-9c3a-50b1a222cbd4",
+        "name": "Claude Sonnet 5 (Low)",
+        "provider": "Anthropic"
+      },
+      "metric": "latencySeconds",
+      "metricLabel": "Latency",
+      "previousRank": 576,
+      "currentRank": 44,
+      "rankDelta": 532,
+      "direction": "up"
+    },
+    {
+      "model": {
+        "id": "ba0224cf-0351-4f56-8508-b3f1a740ae4a",
+        "name": "Claude Sonnet 5 (High)",
+        "provider": "Anthropic"
+      },
+      "metric": "endToEndResponseSeconds",
+      "metricLabel": "End-to-end response",
+      "previousRank": 567,
+      "currentRank": 43,
+      "rankDelta": 524,
+      "direction": "up"
+    },
+    {
+      "model": {
+        "id": "d58b9ada-fd9d-4fff-a086-242034657963",
+        "name": "Claude Sonnet 5 (Non-reasoning, High)",
+        "provider": "Anthropic"
+      },
+      "metric": "latencySeconds",
+      "metricLabel": "Latency",
+      "previousRank": 566,
+      "currentRank": 47,
+      "rankDelta": 519,
+      "direction": "up"
+    },
+    {
+      "model": {
+        "id": "effcd151-7c31-4437-af3d-e88daeae9385",
+        "name": "Claude Sonnet 5 (Medium)",
+        "provider": "Anthropic"
+      },
+      "metric": "endToEndResponseSeconds",
+      "metricLabel": "End-to-end response",
+      "previousRank": 555,
+      "currentRank": 46,
+      "rankDelta": 509,
+      "direction": "up"
+    },
+    {
+      "model": {
+        "id": "142b93bf-09c4-42dc-9c3a-50b1a222cbd4",
+        "name": "Claude Sonnet 5 (Low)",
+        "provider": "Anthropic"
+      },
+      "metric": "endToEndResponseSeconds",
+      "metricLabel": "End-to-end response",
+      "previousRank": 548,
+      "currentRank": 44,
+      "rankDelta": 504,
+      "direction": "up"
+    },
+    {
+      "model": {
+        "id": "d58b9ada-fd9d-4fff-a086-242034657963",
+        "name": "Claude Sonnet 5 (Non-reasoning, High)",
         "provider": "Anthropic"
       },
       "metric": "endToEndResponseSeconds",
       "metricLabel": "End-to-end response",
       "previousRank": 542,
-      "currentRank": 36,
-      "rankDelta": 506,
+      "currentRank": 47,
+      "rankDelta": 495,
       "direction": "up"
     },
     {
       "model": {
-        "id": "6e6e02fd-9cbd-417f-9bfc-673df89c313d",
-        "name": "NVIDIA Nemotron Nano 12B v2 VL (Reasoning)",
-        "provider": "NVIDIA"
+        "id": "433d5c5d-3092-4026-9727-1587ca07915d",
+        "name": "Ling-3.0-flash-VL",
+        "provider": "InclusionAI"
       },
       "metric": "outputSpeedTokensPerSecond",
       "metricLabel": "Output speed",
-      "previousRank": 64,
-      "currentRank": 566,
-      "rankDelta": -502,
-      "direction": "down"
-    },
-    {
-      "model": {
-        "id": "e1cfa926-9e2b-4a0d-8c31-48366a5041c5",
-        "name": "Llama Nemotron Super 49B v1.5 (Reasoning)",
-        "provider": "NVIDIA"
-      },
-      "metric": "outputSpeedTokensPerSecond",
-      "metricLabel": "Output speed",
-      "previousRank": 45,
-      "currentRank": 507,
-      "rankDelta": -462,
-      "direction": "down"
-    },
-    {
-      "model": {
-        "id": "7393c56a-ec31-48e9-b804-c04f2d2cb641",
-        "name": "Llama 3.1 Nemotron Instruct 70B",
-        "provider": "NVIDIA"
-      },
-      "metric": "outputSpeedTokensPerSecond",
-      "metricLabel": "Output speed",
-      "previousRank": 35,
+      "previousRank": 52,
       "currentRank": 496,
-      "rankDelta": -461,
+      "rankDelta": -444,
       "direction": "down"
     },
     {
       "model": {
-        "id": "09f43999-b67b-4c1b-b050-44df41ed7e62",
-        "name": "Devstral 2",
-        "provider": "Mistral"
+        "id": "c50ea08c-88c0-4eb7-85b8-27f2bbf6d527",
+        "name": "GPT-6 Sol (Max)",
+        "provider": "OpenAI"
       },
       "metric": "latencySeconds",
       "metricLabel": "Latency",
-      "previousRank": 527,
-      "currentRank": 81,
-      "rankDelta": 446,
+      "previousRank": 669,
+      "currentRank": 247,
+      "rankDelta": 422,
       "direction": "up"
     },
     {
       "model": {
-        "id": "ce819310-af7c-49d3-9a02-6845111e1788",
-        "name": "Devstral Small 2",
-        "provider": "Mistral"
+        "id": "c50ea08c-88c0-4eb7-85b8-27f2bbf6d527",
+        "name": "GPT-6 Sol (Max)",
+        "provider": "OpenAI"
       },
-      "metric": "latencySeconds",
-      "metricLabel": "Latency",
-      "previousRank": 525,
-      "currentRank": 85,
-      "rankDelta": 440,
+      "metric": "endToEndResponseSeconds",
+      "metricLabel": "End-to-end response",
+      "previousRank": 669,
+      "currentRank": 247,
+      "rankDelta": 422,
       "direction": "up"
     },
     {
       "model": {
-        "id": "26c0b5df-efa7-470f-a65e-2d883329e493",
-        "name": "Llama Nemotron Super 49B v1.5 (Non-reasoning)",
-        "provider": "NVIDIA"
+        "id": "da2642fe-9f73-4788-b5af-24edcd55b37e",
+        "name": "GPT-6 Sol (Xhigh)",
+        "provider": "OpenAI"
+      },
+      "metric": "latencySeconds",
+      "metricLabel": "Latency",
+      "previousRank": 662,
+      "currentRank": 250,
+      "rankDelta": 412,
+      "direction": "up"
+    },
+    {
+      "model": {
+        "id": "52eebe3e-6ede-4e46-92db-c5dea49fc410",
+        "name": "GPT-6 Sol (High)",
+        "provider": "OpenAI"
+      },
+      "metric": "latencySeconds",
+      "metricLabel": "Latency",
+      "previousRank": 651,
+      "currentRank": 245,
+      "rankDelta": 406,
+      "direction": "up"
+    },
+    {
+      "model": {
+        "id": "da2642fe-9f73-4788-b5af-24edcd55b37e",
+        "name": "GPT-6 Sol (Xhigh)",
+        "provider": "OpenAI"
+      },
+      "metric": "endToEndResponseSeconds",
+      "metricLabel": "End-to-end response",
+      "previousRank": 641,
+      "currentRank": 250,
+      "rankDelta": 391,
+      "direction": "up"
+    },
+    {
+      "model": {
+        "id": "22d09131-343b-4adf-8760-533e20a2155f",
+        "name": "MiMo-V2.5",
+        "provider": "Xiaomi"
       },
       "metric": "outputSpeedTokensPerSecond",
       "metricLabel": "Output speed",
-      "previousRank": 67,
-      "currentRank": 506,
-      "rankDelta": -439,
+      "previousRank": 144,
+      "currentRank": 534,
+      "rankDelta": -390,
       "direction": "down"
-    },
-    {
-      "model": {
-        "id": "09f43999-b67b-4c1b-b050-44df41ed7e62",
-        "name": "Devstral 2",
-        "provider": "Mistral"
-      },
-      "metric": "endToEndResponseSeconds",
-      "metricLabel": "End-to-end response",
-      "previousRank": 510,
-      "currentRank": 81,
-      "rankDelta": 429,
-      "direction": "up"
-    },
-    {
-      "model": {
-        "id": "ce819310-af7c-49d3-9a02-6845111e1788",
-        "name": "Devstral Small 2",
-        "provider": "Mistral"
-      },
-      "metric": "endToEndResponseSeconds",
-      "metricLabel": "End-to-end response",
-      "previousRank": 509,
-      "currentRank": 85,
-      "rankDelta": 424,
-      "direction": "up"
     }
   ],
   "summary": [
-    "This refresh has 674 models, +21 compared with the previous snapshot.",
-    "New models include Claude Opus 5.5 (Adaptive Reasoning, High Effort, Default Fallback), Claude Opus 5.5 (Adaptive Reasoning, Low Effort, Default Fallback), Claude Opus 5.5 (Adaptive Reasoning, Max Effort, Default Fallback), Claude Opus 5.5 (Adaptive Reasoning, Medium Effort, Default Fallback), Claude Opus 5.5 (Adaptive Reasoning, Xhigh Effort, Default Fallback).",
-    "Removed models include Agnes 2.5 Pro Alpha, Agnes 2.5 Pro Beta, Agnes 3.0 Flash.",
-    "Largest metric move: Mercury 2 on Output speed, from 733.9 tok/s to 0.0 tok/s.",
-    "Largest rank move: Claude Opus 5 (Adaptive Reasoning, Max Effort) climbed 604 places on Latency."
+    "This refresh has 690 models, +16 compared with the previous snapshot.",
+    "New models include Claude Sonnet 5.5 (High, Default Fallback), Claude Sonnet 5.5 (Low, Default Fallback), Claude Sonnet 5.5 (Max, Default Fallback), Claude Sonnet 5.5 (Medium, Default Fallback), Claude Sonnet 5.5 (Xhigh, Default Fallback).",
+    "Largest metric move: Celeris-1 on Output speed, from 2,360.7 tok/s to 2,124.5 tok/s.",
+    "Largest rank move: Step 3.7 Flash dropped 659 places on Output speed."
   ]
 }
